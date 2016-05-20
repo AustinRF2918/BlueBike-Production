@@ -1,0 +1,20 @@
+@mixin transition-time($time){
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -ms-transition: all $time ease;
+    -o-transition: all $time ease;
+}
+
+@mixin no-select
+{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+@mixin remove-shadow()
+{
+    -webkit-appearence: button;
+}

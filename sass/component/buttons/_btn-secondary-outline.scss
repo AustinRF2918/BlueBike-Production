@@ -1,0 +1,17 @@
+.btn-secondary-outline
+{
+    @include transition-time(0.5s);
+    border: 2px solid $btn-secondary-outline-border;
+    color: $btn-secondary-outline-text;
+    line-height: 60px;
+    width: 230px;
+    font-family: $button-general-font;
+    font-size: 20px;
+
+    &:hover
+    {
+        background: $btn-secondary-outline-background-fade;
+        border: 2px solid $btn-secondary-outline-border;
+        color: $btn-secondary-outline-text;
+    }
+}

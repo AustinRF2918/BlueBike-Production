@@ -1,0 +1,48 @@
+//Easy color names.
+$ebony-black: black;
+$pearly-white: white;
+$navy-blue: #2C3E50;
+$navy-blue-dark: #1A242F;
+$teal-green: #0C648C;
+$black-blue: #1a242f;
+
+//Navbar Coloration
+$navbar-background: $navy-blue;
+$navbar-color: $pearly-white;
+$navbar-color-hover: $teal-green;
+$navbar-button: $ebony-black;
+$navbar-button-border: $black-blue;
+$navbar-toggled-border: darken($teal-green, 30%);
+
+//Section Coloration
+    //Introduction
+    $section-introduction-background: $teal-green;
+    $section-introduction-text: $pearly-white;
+
+    //Portfolio
+    $section-portfolio-background: $pearly-white;
+    $section-portfolio-text: $navy-blue;
+
+    //About
+    $section-about-background: $teal-green;
+    $section-about-text: $pearly-white;
+
+//Breaks Coloration
+    //Regular starlight border.
+    $break-starlight-border: $pearly-white;
+    $break-starlight-background: $teal-green;
+    $break-starlight-color: $pearly-white;
+
+    //Inverse starlight border
+    $break-starlight-border-inverse: $navy-blue;
+    $break-starlight-background-inverse: $pearly-white;
+    $break-starlight-color-inverse: $navy-blue;
+
+//Clickable Coloration
+    $clickable-fade: $teal-green;
+    $clickable-icon: $pearly-white;
+
+//Button Coloration
+    $btn-secondary-outline-border: $pearly-white;
+    $btn-secondary-outline-text: $navy-blue;
+    $btn-secondary-outline-background-fade: $pearly-white;

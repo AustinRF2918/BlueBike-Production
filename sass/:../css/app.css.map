@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UACA;EACI,UAAU,ECAM,OAAU",
+"sources": ["../../layout/navbar-components/_general-navbar.scss","../../base/_color.scss"],
+"names": [],
+"file": "app.css"
+}

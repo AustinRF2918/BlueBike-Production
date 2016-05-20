@@ -1,0 +1,36 @@
+.starlight{
+    border: 3px solid $break-starlight-border;
+    padding: 0;
+    text-align: center;
+    max-width: 250px;
+    &::after{
+        content: "\f005";
+        font-family: FontAwesome;
+        display: inline-block;
+        position: relative;
+        top: -0.8em;
+        font-size: 2em;
+        padding: 0 0.25em;
+        background-color: $break-starlight-background;
+        color: $break-starlight-color;
+    }
+}
+
+.starlight-inverse{
+    border: 3px solid $break-starlight-border-inverse;
+    padding: 0;
+    text-align: center;
+    max-width: 250px;
+    &::after{
+        content: "\f005";
+        font-family: FontAwesome;
+        display: inline-block;
+        position: relative;
+        top: -0.8em;
+        font-size: 2em;
+        padding: 0 0.25em;
+        background-color: $break-starlight-background-inverse;
+        color: $break-starlight-color-inverse;
+    }
+}
+

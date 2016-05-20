@@ -1,0 +1,32 @@
+.about
+{
+    &-container
+    {
+	@media screen and (min-width: 768px)
+	{
+	    padding-top: 60px;
+	    padding-bottom: 60px;
+	}
+
+	@media screen and (max-width: 767px)
+	{
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+    }
+
+    h2{
+	font-family: $about-header-font;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3em;
+    }
+
+    p{
+	font-family: $about-paragraph-font;
+	font-size: 20px;
+    }
+
+    background: $section-about-background;
+    color: $section-about-text;
+}

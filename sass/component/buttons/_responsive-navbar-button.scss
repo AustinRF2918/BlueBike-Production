@@ -1,0 +1,21 @@
+.bb-navbar-button
+{
+    background: transparent;
+    border: 1px solid $navbar-button-border;
+    border-radius: 4px;
+    padding: 6px 7px;
+    &:hover, &:active, &:focus{
+	background: $navy-blue-dark;
+    }
+}
+
+.bb-navbar-icon-bar
+{
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    border-radius: 1px;
+}

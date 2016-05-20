@@ -1,0 +1,94 @@
+.bb-navbar
+{
+    border-radius: 0px;
+    background: $navbar-background;
+
+    //Initial Height!
+    height: 80px;
+    //End variable.
+
+    @media screen and (max-width: 767px)
+    {
+        //Responsive Height!
+        height: 50px;
+        //End variable.
+    }
+
+    &-toggle
+    {
+        position: absolute;
+        top: 50px;
+        height: 130px;
+        display: none;
+    }
+
+    &-button
+    {
+        @media screen and (min-width: 768px)
+        {
+            display: none !important;
+        }
+    }
+
+    &-nav, &-brand, &-nav-mobile{
+        font-family: $navbar-font;
+        font-weight: 700;
+        color: $navbar-color;
+    }
+
+    &-nav{
+
+        @media screen and (max-width: 767px)
+        {
+            display: none !important;
+        }
+
+        //Initial Margin!
+        margin-top: 15px;
+        //End variable.
+        font-size: 15px;
+        text-transform: uppercase;
+
+        &-mobile
+        {
+            font-size: 15px;
+            text-transform: uppercase;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    }
+    &-brand{
+
+        @media screen and (max-width: 767px)
+        {
+            margin-top: 0px;
+            font-size: 19px;
+        }
+
+        text-transform: uppercase;
+        margin-top: 6px;
+        font-size: 2em;
+        @include transition-time(0.2s);
+    }
+
+    &-brand:hover, &-brand:active, &-brand:focus{
+        color: $navbar-color-hover;
+    }
+
+    &-nav:hover, &-nav:active, &-nav:focus{
+        color: $navbar-color-hover;
+   }
+}
+
+.mobile-nav-list
+{
+    position: absolute;
+    margin-left: 0px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.button-on
+{
+    border-bottom: 1px $navbar-toggled-border solid;
+}
