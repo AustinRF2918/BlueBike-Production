@@ -4,14 +4,13 @@ $pearly-white: white;
 $navy-blue: #2C3E50;
 $navy-blue-dark: #1A242F;
 $teal-green: #0C648C;
+$light-coral: #ff6347;
 $black-blue: #1a242f;
 
 //Navbar Coloration
 $navbar-background: $navy-blue;
 $navbar-color: $pearly-white;
 $navbar-color-hover: $teal-green;
-$navbar-button: $ebony-black;
-$navbar-button-border: $black-blue;
 $navbar-toggled-border: darken($teal-green, 30%);
 
 //Section Coloration
@@ -26,6 +25,18 @@ $navbar-toggled-border: darken($teal-green, 30%);
     //About
     $section-about-background: $teal-green;
     $section-about-text: $pearly-white;
+
+    //Contact
+    $section-contact-background: $teal-green;
+    $section-contact-text: $pearly-white;
+
+    //Footer top.
+    $section-footer-top-background: $navy-blue;
+    $section-footer-top-text: $pearly-white;
+
+    //Footer bottom
+    $section-footer-bottom-background: $navy-blue-dark;
+    $section-footer-bottom-text: $pearly-white;
 
 //Breaks Coloration
     //Regular starlight border.
@@ -43,6 +54,17 @@ $navbar-toggled-border: darken($teal-green, 30%);
     $clickable-icon: $pearly-white;
 
 //Button Coloration
+    //Btn secondary outline.
     $btn-secondary-outline-border: $pearly-white;
     $btn-secondary-outline-text: $navy-blue;
     $btn-secondary-outline-background-fade: $pearly-white;
+
+    //Btn navbar 
+    $navbar-button: $ebony-black;
+    $navbar-button-border: $black-blue;
+
+    //Btn send
+    $btn-send-border: $pearly-white;
+    $btn-send-border-hover: $light-coral;
+    $btn-send-text: $navy-blue;
+    $btn-send-background-fade: $light-coral;

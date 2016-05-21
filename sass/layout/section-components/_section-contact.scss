@@ -1,4 +1,4 @@
-.portfolio
+.contact
 {
     &-container
     {
@@ -16,14 +16,14 @@
     }
 
     h2{
-	font-family: $portfolio-header-font;
+	font-family: $contact-header-font;
 	text-transform: uppercase;
 	font-weight: 700;
     font-size: 3em;
     }
 
-    background: $section-portfolio-background;
-    color: $section-portfolio-text;
+    background: $section-contact-background;
+    color: $section-contact-text;
 
     &-overlay
     {

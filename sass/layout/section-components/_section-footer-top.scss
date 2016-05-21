@@ -1,0 +1,33 @@
+.footer-top
+{
+    &-container
+    {
+	@media screen and (min-height: 768px)
+	{
+	    padding-top: 50px;
+	    padding-bottom: 20px;
+	}
+
+	@media screen and (max-height: 767px)
+	{
+	    padding-top: 90px;
+	    padding-bottom: 20px;
+	}
+    }
+
+    h3{
+	font-family: $footer-top-header-font;
+	text-transform: uppercase;
+	font-weight: 700;
+    font-size: 1.75em;
+    }
+
+    p{
+        font-family: $footer-top-paragraph-font;
+        font-size: 1.25em;
+    }
+
+    background: $section-footer-top-background;
+    color: $section-footer-top-text;
+
+}
