@@ -1,17 +1,15 @@
-$footer-bottom-padding-offset: 10px;
-
 .footer-bottom
 {
-    @media screen and (min-width: 768px)
+    @include desktop
     {
-        padding-top: 0px + $footer-bottom-padding-offset;
-        padding-bottom: 0px + $footer-bottom-padding-offset;
+        padding-top: $bottom-footer-padding-top;
+        padding-bottom: $bottom-footer-padding-bottom;
     }
 
-    @media screen and (max-width: 767px)
+    @include mobile
     {
-        padding-top: 0px + $footer-bottom-padding-offset;
-        padding-bottom: 0px + $footer-bottom-padding-offset;
+        padding-top: $bottom-footer-padding-mobile-top;
+        padding-bottom: $bottom-footer-padding-mobile-bottom;
     }
 
     p{

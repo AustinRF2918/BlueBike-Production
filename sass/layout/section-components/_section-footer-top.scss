@@ -1,32 +1,30 @@
-$footer-top-padding-offset: 20px;
-
 .footer-top
 {
     &-container
     {
-	@media screen and (min-width: 768px)
-	{
-	    padding-top: 50px + $footer-top-padding-offset;
-	    padding-bottom: 50px + $footer-top-padding-offset;
-	}
+        @include desktop
+        {
+            padding-top: $top-footer-padding-top;
+            padding-bottom: $top-footer-padding-bottom;
+        }
 
-	@media screen and (max-width: 767px)
-	{
-	    padding-top: 50px + $footer-top-padding-offset;
-	    padding-bottom: 50px + $footer-top-padding-offset;
-	}
+        @include mobile
+        {
+            padding-top: $top-footer-padding-mobile-top;
+            padding-bottom: $top-footer-padding-mobile-bottom;
+        }
     }
 
     h3{
     @extend %is-important;
 	font-family: $footer-top-header-font;
 
-        @media screen and (max-width: 767px)
+    @include mobile
         {
             font-size: $footer-subheader-small-size;
         }
 
-        @media screen and (min-width: 768px)
+        @include desktop
         {
             font-size: $footer-subheader-small-mobile-size;
         }
@@ -36,12 +34,12 @@ $footer-top-padding-offset: 20px;
     p{
         font-family: $footer-top-paragraph-font;
 
-        @media screen and (max-width: 767px)
+        @include mobile
         {
             font-size: $footer-paragraph-mobile-size;
         }
 
-        @media screen and (min-width: 768px)
+        @include desktop
         {
             font-size: $footer-paragraph-size;
         }

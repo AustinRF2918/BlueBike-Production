@@ -1,19 +1,17 @@
-$contact-padding-offset: 20px;
-
 .contact
 {
     &-container
     {
-        @media screen and (min-height: 768px)
+        @include desktop
         {
-            padding-top: 80px + $contact-padding-offset;
-            padding-bottom: 80px + $contact-padding-offset;
+            padding-top: $contact-padding-mobile-top;
+            padding-bottom: $contact-padding-mobile-bottom;
         }
 
-        @media screen and (max-height: 767px)
+        @include mobile
         {
-            padding-top: 70px + $contact-padding-offset;
-            padding-bottom: 70px + $contact-padding-offset;
+            padding-top: $contact-padding-top;
+            padding-bottom: $contact-padding-bottom;
         }
     }
 
@@ -21,12 +19,12 @@ $contact-padding-offset: 20px;
         @extend %is-important;
         font-family: $contact-header-font;
 
-        @media screen and (min-width: 768px)
+        @include desktop
         {
             font-size: $contact-subheader-medium-size;
         }
 
-        @media screen and (max-width: 767px)
+        @include mobile
         {
             font-size: $contact-subheader-medium-mobile-size;
         }

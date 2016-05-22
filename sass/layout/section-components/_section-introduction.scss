@@ -1,27 +1,25 @@
-$introduction-padding-offset: 50px;
-
 .introduction
 {
     &-container
     {
-	@media screen and (min-height: 768px)
-	{
-	    padding-top: 150px + $introduction-padding-offset;
-	    padding-bottom: 100px + $introduction-padding-offset;
-	}
+        @include desktop
+        {
+            padding-top: $introduction-padding-top;
+            padding-bottom: $introduction-padding-bottom;
+        }
 
-	@media screen and (max-height: 767px)
-	{
-	    padding-top: 90px + $introduction-padding-offset;
-	    padding-bottom: 20px + $introduction-padding-offset;
-	}
+        @include mobile
+        {
+            padding-top: $introduction-padding-mobile-top;
+            padding-bottom: $introduction-padding-mobile-bottom;
+        }
     }
 
     h1{
         font-family: $introduction-header-font;
         @extend %is-important;
 
-        @media screen and (max-height: 767px)
+        @include mobile
         {
             font-size: $introduction-header-mobile-size;
         }
@@ -30,12 +28,12 @@ $introduction-padding-offset: 50px;
     h3{
 	font-family: $introduction-subheader-font;
 
-        @media screen and (min-width: 768px)
+        @include desktop
         {
             font-size: $introduction-subheader-small-size;
         }
 
-        @media screen and (max-width: 767px)
+        @include mobile
         {
             font-size: $introduction-subheader-small-mobile-size;
         }
@@ -44,12 +42,12 @@ $introduction-padding-offset: 50px;
     h2{
         font-family: $introduction-subheader-font;
 
-        @media screen and (min-width: 768px)
+        @include desktop
         {
             font-size: $introduction-subheader-medium-size;
         }
 
-        @media screen and (max-width: 767px)
+        @include mobile
         {
             font-size: $introduction-subheader-medium-mobile-size;
         }

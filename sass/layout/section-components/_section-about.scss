@@ -1,19 +1,17 @@
-$about-padding-offset: 40px;
-
 .about
 {
     &-container
     {
-        @media screen and (min-width: 768px)
+        @include desktop
         {
-            padding-top: 20px + $about-padding-offset;
-            padding-bottom: 60px + $about-padding-offset;
+            padding-top: $about-padding-top;
+            padding-bottom: $about-padding-bottom;
         }
 
-        @media screen and (max-width: 767px)
+        @include mobile
         {
-            padding-top: 20px + $about-padding-offset;
-            padding-bottom: 20px + $about-padding-offset;
+            padding-top: $about-padding-mobile-top;
+            padding-bottom: $about-padding-mobile-bottom;
         }
     }
 
@@ -21,12 +19,12 @@ $about-padding-offset: 40px;
         font-family: $about-header-font;
         @extend %is-important;
 
-        @media screen and (min-width: 768px)
+        @include desktop
         {
             font-size: $about-subheader-medium-size;
         }
 
-        @media screen and (max-width: 767px)
+        @include mobile
         {
             font-size: $about-subheader-medium-mobile-size;
         }
@@ -35,12 +33,12 @@ $about-padding-offset: 40px;
     p{
         font-family: $about-paragraph-font;
 
-        @media screen and (min-width: 768px)
+        @include desktop
         {
             font-size: $about-paragraph-size;
         }
 
-        @media screen and (max-width: 767px)
+        @include mobile
         {
             font-size: $about-paragraph-mobile-size;
         }

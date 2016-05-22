@@ -1,19 +1,17 @@
-$portfolio-padding-offset: 40px;
-
 .portfolio
 {
     &-container
     {
-        @media screen and (min-height: 768px)
+        @include desktop
         {
-            padding-top: 70px + $portfolio-padding-offset;
-            padding-bottom: 100px + $portfolio-padding-offset;
+            padding-top: $portfolio-padding-top;
+            padding-bottom: $portfolio-padding-bottom;
         }
 
-        @media screen and (max-height: 767px)
+        @include mobile
         {
-            padding-top: 90px + $portfolio-padding-offset;
-            padding-bottom: 20px + $portfolio-padding-offset;
+            padding-top: $portfolio-padding-mobile-top;
+            padding-bottom: $portfolio-padding-mobile-bottom;
         }
     }
 
