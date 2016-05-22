@@ -1,70 +1,89 @@
-//Easy color names.
+//Descriptive color names.
 $ebony-black: black;
 $pearly-white: white;
 $navy-blue: #2C3E50;
 $navy-blue-dark: #1A242F;
 $teal-green: #0C648C;
+$teal-green-dark: darken(#0C648C, 30%);
 $light-coral: #ff6347;
 $black-blue: #1a242f;
+$coral: coral;
+
+//Pallet Colors: Allows rapid changing of colors.
+//Note: Only utilize these in actually colorations in
+//REFERENCE to other elements.
+
+$color-palette-1: $ebony-black;
+$color-palette-2: $pearly-white;
+$color-palette-3: $navy-blue;
+$color-palette-4: $navy-blue-dark;
+$color-palette-5: $teal-green;
+$color-palette-6: $teal-green-dark;
+$color-palette-7: $light-coral;
+$color-palette-8: $black-blue;
 
 //Navbar Coloration
-$navbar-background: $navy-blue;
-$navbar-color: $pearly-white;
-$navbar-color-hover: $teal-green;
-$navbar-toggled-border: darken($teal-green, 30%);
+$navbar-background: $color-palette-3;
+$navbar-color: $color-palette-2;
+$navbar-color-hover: $color-palette-5;
+$navbar-toggled-border: $color-palette-6;
 
 //Section Coloration
     //Introduction
-    $section-introduction-background: $teal-green;
-    $section-introduction-text: $pearly-white;
+    $section-introduction-background: $color-palette-5;
+    $section-introduction-text: $color-palette-2;
 
     //Portfolio
-    $section-portfolio-background: $pearly-white;
-    $section-portfolio-text: $navy-blue;
+    $section-portfolio-background: $color-palette-2;
+    $section-portfolio-text: $color-palette-3;
 
     //About
-    $section-about-background: $teal-green;
-    $section-about-text: $pearly-white;
+    $section-about-background: $color-palette-5;
+    $section-about-text: $color-palette-2;
+
+    //Medias
+    $section-media-background: $color-palette-2;
+    $section-media-text: $color-palette-3;
 
     //Contact
-    $section-contact-background: $teal-green;
-    $section-contact-text: $pearly-white;
+    $section-contact-background: $color-palette-5;
+    $section-contact-text: $color-palette-2;
 
     //Footer top.
-    $section-footer-top-background: $navy-blue;
-    $section-footer-top-text: $pearly-white;
+    $section-footer-top-background: $color-palette-3;
+    $section-footer-top-text: $color-palette-2;
 
     //Footer bottom
-    $section-footer-bottom-background: $navy-blue-dark;
-    $section-footer-bottom-text: $pearly-white;
+    $section-footer-bottom-background: $color-palette-4;
+    $section-footer-bottom-text: $color-palette-2;
 
 //Breaks Coloration
     //Regular starlight border.
-    $break-starlight-border: $pearly-white;
-    $break-starlight-background: $teal-green;
-    $break-starlight-color: $pearly-white;
+    $break-starlight-border: $color-palette-2;
+    $break-starlight-background: $color-palette-5;
+    $break-starlight-color: $color-palette-2;
 
     //Inverse starlight border
-    $break-starlight-border-inverse: $navy-blue;
-    $break-starlight-background-inverse: $pearly-white;
-    $break-starlight-color-inverse: $navy-blue;
+    $break-starlight-border-inverse: $color-palette-3;
+    $break-starlight-background-inverse: $color-palette-2;
+    $break-starlight-color-inverse: $color-palette-3;
 
 //Clickable Coloration
-    $clickable-fade: $teal-green;
-    $clickable-icon: $pearly-white;
+    $clickable-fade: $color-palette-5;
+    $clickable-icon: $color-palette-2;
 
 //Button Coloration
     //Btn secondary outline.
-    $btn-secondary-outline-border: $pearly-white;
-    $btn-secondary-outline-text: $navy-blue;
-    $btn-secondary-outline-background-fade: $pearly-white;
+    $btn-secondary-outline-border: $color-palette-2;
+    $btn-secondary-outline-text: $color-palette-3;
+    $btn-secondary-outline-background-fade: $color-palette-2;
 
     //Btn navbar 
-    $navbar-button: $ebony-black;
-    $navbar-button-border: $black-blue;
+    $navbar-button: $color-palette-1;
+    $navbar-button-border: $color-palette-8;
 
     //Btn send
-    $btn-send-border: $pearly-white;
-    $btn-send-border-hover: $light-coral;
-    $btn-send-text: $navy-blue;
-    $btn-send-background-fade: $light-coral;
+    $btn-send-border: $color-palette-2;
+    $btn-send-border-hover: $color-palette-7;
+    $btn-send-text: $color-palette-3;
+    $btn-send-background-fade: $color-palette-7;

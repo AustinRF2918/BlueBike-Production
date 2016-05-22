@@ -1,27 +1,109 @@
-//Navbar Fonts.
-$navbar-font: 'Montserrat', sans-serif;
+//General Font Families
+$primary-font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-//Button Fonts.
-$button-general-font: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//Section Font Families
+    //Navbar Fonts.
+    $navbar-font: $primary-font-family;
 
-//Introduction Fonts.
-$introduction-header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$introduction-subheader-font: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //Button Fonts.
+    $button-general-font: $secondary-font-family;
 
-//Portfolio Fonts.
-$portfolio-header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //Introduction Fonts.
+    $introduction-header-font: $primary-font-family;
+    $introduction-subheader-font: $primary-font-family;
 
-//About Fonts.
-$about-header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$about-paragraph-font: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //Portfolio Fonts.
+    $portfolio-header-font: $primary-font-family;
 
-//Contact Fonts.
-$contact-header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //About Fonts.
+    $about-header-font: $primary-font-family ;
+    $about-paragraph-font: $secondary-font-family;
 
-//Footer fonts.
-$footer-top-header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$footer-top-paragraph-font: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //Media Fonts.
+    $media-header-font: $primary-font-family;
 
-//Footer fonts.
-$footer-bottom-header-font: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$footer-bottom-paragraph-font: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //Contact Fonts.
+    $contact-header-font: $primary-font-family;
+
+    //Footer fonts.
+    $footer-top-header-font: $primary-font-family;
+    $footer-top-paragraph-font: $secondary-font-family;
+
+    //Footer fonts.
+    $footer-bottom-header-font: $primary-font-family;
+    $footer-bottom-paragraph-font: $secondary-font-family;
+
+//Font Stylizations
+%is-important {
+     text-transform: uppercase;
+     font-weight: 700;
+}
+
+//General Font Sizes
+    //Major Header: Desktop (H1)
+    $major-header-1: 3em;
+    //Major Header: Mobile (H1)
+    $major-header-mobile-1: 2em;
+
+    //Major Header: Desktop (H2)
+    $major-header-2: 2.25em;
+    //Major Header: Mobile (H2)
+    $major-header-mobile-2: 1.75em;
+        //Alternates
+        $major-header-2-section-delta: .5em;
+        $major-header-2-section: $major-header-2 + $major-header-2-section-delta;
+        $major-header-mobile-2-section: $major-header-mobile-2 + $major-header-2-section-delta;
+
+    //Major Header: Desktop (H3)
+    $major-header-3: 1.75em;
+    //Major Header: Mobile (H3)
+    $major-header-mobile-3: 1.25em;
+
+    //General Paragraph (P)
+    $paragraph-large: 1.25em;
+        //Alternates
+        $paragraph-ledium: 1.125em;
+    $paragraph-medium: 1em;
+    $paragraph-small: .9em;
+    $paragraph-extra-small: .8em;
+
+//Section Font Sizes
+    //Introduction
+    $introduction-header-mobile-size: $major-header-mobile-1;
+    $introduction-subheader-medium-size: $major-header-2;
+    $introduction-subheader-medium-mobile-size: $major-header-mobile-2;
+    $introduction-subheader-small-size: $major-header-3;
+    $introduction-subheader-small-mobile-size: $major-header-mobile-3;
+
+    //Portfolio
+    $portfolio-subheader-medium-size: $major-header-2-section;
+    $portfolio-subheader-medium-mobile-size: $major-header-mobile-2-section;
+
+    //About
+    $about-subheader-medium-size: $major-header-2-section;
+    $about-subheader-medium-mobile-size: $major-header-mobile-2-section;
+    $about-paragraph-size: $paragraph-large;
+    $about-paragraph-mobile-size: $paragraph-medium;
+    
+    //Medias
+    $media-subheader-medium-size: $major-header-2-section;
+    $media-subheader-medium-mobile-size: $major-header-mobile-2-section;
+    $media-subheader-small-size: $major-header-3;
+    $media-subheader-small-mobile-size: $major-header-mobile-3;
+    $media-paragraph-size: $paragraph-large;
+    $media-paragraph-mobile-size: $paragraph-medium;
+
+    //Contact
+    $contact-subheader-medium-size: $major-header-2-section;
+    $contact-subheader-medium-mobile-size: $major-header-mobile-2-section;
+
+    //Footer-Top
+    $footer-subheader-small-size: $major-header-2;
+    $footer-subheader-small-mobile-size: $major-header-mobile-2;
+    $footer-paragraph-size: $paragraph-ledium;
+    $footer-paragraph-mobile-size: $paragraph-medium;
+
+    //Footer-Bottom
+    $footer-bottom-paragraph-size: $paragraph-extra-small;
+    
