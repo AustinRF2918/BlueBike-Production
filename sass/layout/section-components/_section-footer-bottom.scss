@@ -1,15 +1,22 @@
+$footer-bottom-padding-offset: 10px;
+
 .footer-bottom
 {
-    h3{
-	font-family: $footer-bottom-header-font;
-	text-transform: uppercase;
-	font-weight: 700;
-    font-size: 1.75em;
+    @media screen and (min-width: 768px)
+    {
+        padding-top: 0px + $footer-bottom-padding-offset;
+        padding-bottom: 0px + $footer-bottom-padding-offset;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+        padding-top: 0px + $footer-bottom-padding-offset;
+        padding-bottom: 0px + $footer-bottom-padding-offset;
     }
 
     p{
         font-family: $footer-bottom-paragraph-font;
-        font-size: .9em;
+        font-size: $footer-bottom-paragraph-size;
     }
 
     background: $section-footer-bottom-background;

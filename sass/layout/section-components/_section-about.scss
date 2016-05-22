@@ -1,30 +1,49 @@
+$about-padding-offset: 40px;
+
 .about
 {
     &-container
     {
-	@media screen and (min-width: 768px)
-	{
-	    padding-top: 60px;
-	    padding-bottom: 60px;
-	}
+        @media screen and (min-width: 768px)
+        {
+            padding-top: 20px + $about-padding-offset;
+            padding-bottom: 60px + $about-padding-offset;
+        }
 
-	@media screen and (max-width: 767px)
-	{
-	    padding-top: 20px;
-	    padding-bottom: 20px;
-	}
+        @media screen and (max-width: 767px)
+        {
+            padding-top: 20px + $about-padding-offset;
+            padding-bottom: 20px + $about-padding-offset;
+        }
     }
 
     h2{
-	font-family: $about-header-font;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 3em;
+        font-family: $about-header-font;
+        @extend %is-important;
+
+        @media screen and (min-width: 768px)
+        {
+            font-size: $about-subheader-medium-size;
+        }
+
+        @media screen and (max-width: 767px)
+        {
+            font-size: $about-subheader-medium-mobile-size;
+        }
     }
 
     p{
-	font-family: $about-paragraph-font;
-	font-size: 20px;
+        font-family: $about-paragraph-font;
+
+        @media screen and (min-width: 768px)
+        {
+            font-size: $about-paragraph-size;
+        }
+
+        @media screen and (max-width: 767px)
+        {
+            font-size: $about-paragraph-mobile-size;
+        }
     }
 
     background: $section-about-background;

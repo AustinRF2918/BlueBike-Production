@@ -1,25 +1,26 @@
+$portfolio-padding-offset: 40px;
+
 .portfolio
 {
     &-container
     {
-	@media screen and (min-height: 768px)
-	{
-	    padding-top: 100px;
-	    padding-bottom: 100px;
-	}
+        @media screen and (min-height: 768px)
+        {
+            padding-top: 70px + $portfolio-padding-offset;
+            padding-bottom: 100px + $portfolio-padding-offset;
+        }
 
-	@media screen and (max-height: 767px)
-	{
-	    padding-top: 90px;
-	    padding-bottom: 20px;
-	}
+        @media screen and (max-height: 767px)
+        {
+            padding-top: 90px + $portfolio-padding-offset;
+            padding-bottom: 20px + $portfolio-padding-offset;
+        }
     }
 
     h2{
-	font-family: $portfolio-header-font;
-	text-transform: uppercase;
-	font-weight: 700;
-    font-size: 3em;
+        @extend %is-important;
+        font-family: $portfolio-header-font;
+        font-size: $portfolio-subheader-medium-size;
     }
 
     background: $section-portfolio-background;
@@ -27,12 +28,13 @@
 
     &-overlay
     {
-        cursor: pointer;
         @include transition-time(.5s);
+        cursor: pointer;
         position: relative;
     }
 
     &-overlay:after{
+        //Make these utility mixins.
         @include transition-time(.5s);
         position: absolute;
         content: "";
@@ -48,10 +50,9 @@
     {
         opacity: .9;
     }
-
-    
 }
 
+//Refactor to seperate portion.
 .hover-icon
 {
     pointer-events: none;

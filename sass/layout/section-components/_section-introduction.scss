@@ -1,48 +1,44 @@
+$introduction-padding-offset: 50px;
+
 .introduction
 {
     &-container
     {
 	@media screen and (min-height: 768px)
 	{
-	    padding-top: 200px;
-	    padding-bottom: 100px;
+	    padding-top: 150px + $introduction-padding-offset;
+	    padding-bottom: 100px + $introduction-padding-offset;
 	}
 
 	@media screen and (max-height: 767px)
 	{
-	    padding-top: 90px;
-	    padding-bottom: 20px;
+	    padding-top: 90px + $introduction-padding-offset;
+	    padding-bottom: 20px + $introduction-padding-offset;
 	}
     }
 
     h1{
-	font-family: $introduction-header-font;
-	text-transform: uppercase;
-	font-weight: 700;
+        font-family: $introduction-header-font;
+        @extend %is-important;
 
-	@media screen and (min-height: 768px)
-	{
-	    font-size: 3em;
-	}
-
-	@media screen and (max-height: 767px)
-	{
-	    font-size: 2em;
-	}
+        @media screen and (max-height: 767px)
+        {
+            font-size: $introduction-header-mobile-size;
+        }
     }
 
     h3{
 	font-family: $introduction-subheader-font;
 
-	@media screen and (min-width: 768px)
-	{
-	    font-size: 1.75em;
-	}
+        @media screen and (min-width: 768px)
+        {
+            font-size: $introduction-subheader-small-size;
+        }
 
-	@media screen and (max-width: 767px)
-	{
-	    font-size: 1.25em;
-	}
+        @media screen and (max-width: 767px)
+        {
+            font-size: $introduction-subheader-small-mobile-size;
+        }
     }
 
     h2{
@@ -50,13 +46,13 @@
 
         @media screen and (min-width: 768px)
         {
-            font-size: 2.25em;
+            font-size: $introduction-subheader-medium-size;
         }
 
         @media screen and (max-width: 767px)
         {
-            font-size: 1.75em;
-        }    
+            font-size: $introduction-subheader-medium-mobile-size;
+        }
     }
 
     background: $section-introduction-background;

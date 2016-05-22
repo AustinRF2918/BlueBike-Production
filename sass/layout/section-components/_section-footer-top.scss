@@ -1,30 +1,50 @@
+$footer-top-padding-offset: 20px;
+
 .footer-top
 {
     &-container
     {
-	@media screen and (min-height: 768px)
+	@media screen and (min-width: 768px)
 	{
-	    padding-top: 50px;
-	    padding-bottom: 20px;
+	    padding-top: 50px + $footer-top-padding-offset;
+	    padding-bottom: 50px + $footer-top-padding-offset;
 	}
 
-	@media screen and (max-height: 767px)
+	@media screen and (max-width: 767px)
 	{
-	    padding-top: 90px;
-	    padding-bottom: 20px;
+	    padding-top: 50px + $footer-top-padding-offset;
+	    padding-bottom: 50px + $footer-top-padding-offset;
 	}
     }
 
     h3{
+    @extend %is-important;
 	font-family: $footer-top-header-font;
-	text-transform: uppercase;
-	font-weight: 700;
-    font-size: 1.75em;
+
+        @media screen and (max-width: 767px)
+        {
+            font-size: $footer-subheader-small-size;
+        }
+
+        @media screen and (min-width: 768px)
+        {
+            font-size: $footer-subheader-small-mobile-size;
+        }
+
     }
 
     p{
         font-family: $footer-top-paragraph-font;
-        font-size: 1.25em;
+
+        @media screen and (max-width: 767px)
+        {
+            font-size: $footer-paragraph-mobile-size;
+        }
+
+        @media screen and (min-width: 768px)
+        {
+            font-size: $footer-paragraph-size;
+        }
     }
 
     background: $section-footer-top-background;

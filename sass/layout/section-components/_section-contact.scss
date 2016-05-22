@@ -1,75 +1,37 @@
+$contact-padding-offset: 20px;
+
 .contact
 {
     &-container
     {
-	@media screen and (min-height: 768px)
-	{
-	    padding-top: 100px;
-	    padding-bottom: 100px;
-	}
+        @media screen and (min-height: 768px)
+        {
+            padding-top: 80px + $contact-padding-offset;
+            padding-bottom: 80px + $contact-padding-offset;
+        }
 
-	@media screen and (max-height: 767px)
-	{
-	    padding-top: 90px;
-	    padding-bottom: 20px;
-	}
+        @media screen and (max-height: 767px)
+        {
+            padding-top: 70px + $contact-padding-offset;
+            padding-bottom: 70px + $contact-padding-offset;
+        }
     }
 
     h2{
-	font-family: $contact-header-font;
-	text-transform: uppercase;
-	font-weight: 700;
-    font-size: 3em;
+        @extend %is-important;
+        font-family: $contact-header-font;
+
+        @media screen and (min-width: 768px)
+        {
+            font-size: $contact-subheader-medium-size;
+        }
+
+        @media screen and (max-width: 767px)
+        {
+            font-size: $contact-subheader-medium-mobile-size;
+        }
     }
 
     background: $section-contact-background;
     color: $section-contact-text;
-
-    &-overlay
-    {
-        cursor: pointer;
-        @include transition-time(.5s);
-        position: relative;
-    }
-
-    &-overlay:after{
-        @include transition-time(.5s);
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        background-color: $clickable-fade;
-    }
-
-    &-overlay:hover:after
-    {
-        opacity: .9;
-    }
-
-    
-}
-
-.hover-icon
-{
-    pointer-events: none;
-    width: 0px;
-    height: 0px;
-    @include no-select;
-    @include transition-time(.5s);
-    position: absolute;
-    z-index: 1;
-    color: $pearly-white;
-}
-
-.hover-icon:hover
-{
-    width: 0px;
-    height: 0px;
-    @include no-select;
-    position: absolute;
-    z-index: 1;
-    @include transition-time(.5s);
 }

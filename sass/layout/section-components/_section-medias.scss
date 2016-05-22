@@ -1,46 +1,62 @@
+$medias-padding-offset: 20px;
+
 .medias
 {
     &-container
     {
-	@media screen and (min-height: 768px)
-	{
-	    padding-top: 100px;
-	    padding-bottom: 100px;
-	}
+        @media screen and (min-height: 768px)
+        {
+            padding-top: 80px + $medias-padding-offset;
+            padding-bottom: 80px + $medias-padding-offset;
+        }
 
-	@media screen and (max-height: 767px)
-	{
-	    padding-top: 90px;
-	    padding-bottom: 20px;
-	}
-    }
-
-    @media screen and (min-width: 768px)
-    {
-        p{
-            font-size: 24px;
+        @media screen and (max-height: 767px)
+        {
+            padding-top: 70px + $medias-padding-offset;
+            padding-bottom: 70px + $medias-padding-offset;
         }
     }
 
-    @media screen and (max-width: 767px)
-    {
-        p{
-            font-size: 1.25em;
+    p{
+        @media screen and (min-width: 768px)
+        {
+            font-size: $media-paragraph-size;
+        }
+        @media screen and (max-width: 767px)
+        {
+            font-size: $media-paragraph-mobile-size;
         }
     }
+
 
     h2{
-    font-family: $portfolio-header-font;
-	text-transform: uppercase;
-	font-weight: 700;
-    font-size: 3em;
+        font-family: $media-header-font;
+        @extend %is-important;
+        @media screen and (min-width: 768px)
+        {
+            font-size: $media-subheader-medium-size;
+        }
+
+        @media screen and (max-width: 767px)
+        {
+            font-size: $media-subheader-medium-mobile-size;
+        }
     }
 
     h3{
+        font-family: $media-header-font;
         text-align: center;
-         font-size: 1.6em;
+        @media screen and (min-width: 768px)
+        {
+            font-size: $media-subheader-small-size;
+        }
+
+        @media screen and (max-width: 767px)
+        {
+            font-size: $media-subheader-small-mobile-size;
+        }
     }
 
-    background: $section-portfolio-background;
-    color: $section-portfolio-text;
+    background: $section-media-background;
+    color: $section-media-text;
 }
