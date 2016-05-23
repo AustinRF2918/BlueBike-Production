@@ -1,8 +1,9 @@
 .btn-send
 {
     @include transition-time(0.5s);
-    border: 2px solid $btn-send-border;
+    border: 2px solid $btn-send-background;
     color: $btn-send-text;
+    background: $btn-send-background;
     line-height: 60px;
     width: 230px;
     font-family: $button-general-font;

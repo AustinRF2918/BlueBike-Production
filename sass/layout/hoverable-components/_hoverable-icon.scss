@@ -1,0 +1,24 @@
+.hover-icon
+{
+    @include no-select;
+    @include transition-time($hoverable-icon-time);
+
+    pointer-events: none;
+
+    width: 0px;
+    height: 0px;
+    position: absolute;
+
+    z-index: 1;
+    color: $icon-hoverable-color;
+}
+
+.hover-icon:hover
+{
+    @include no-select;
+    @include transition-time($hoverable-icon-time);
+    
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}

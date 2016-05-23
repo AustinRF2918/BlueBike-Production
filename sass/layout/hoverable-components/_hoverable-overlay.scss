@@ -1,0 +1,27 @@
+.portfolio
+{
+    &-overlay
+    {
+        @include transition-time($hoverable-icon-time);
+        cursor: pointer;
+        position: relative;
+    }
+
+    &-overlay:after
+    {
+        @include transition-time($hoverable-icon-time);
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: $hoverable-icon-opacity-before;
+        background-color: $clickable-fade;
+    }
+
+    &-overlay:hover:after
+    {
+        opacity: $hoverable-icon-opacity-after;
+    }
+}

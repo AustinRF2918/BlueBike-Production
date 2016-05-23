@@ -3,7 +3,7 @@ $ebony-black: black;
 $pearly-white: white;
 $navy-blue: #2C3E50;
 $navy-blue-dark: #1A242F;
-$teal-green: #0C648C;
+$teal-green: darken(#0C648C, 5%);
 $teal-green-dark: darken(#0C648C, 30%);
 $light-coral: #ff6347;
 $black-blue: #1a242f;
@@ -73,17 +73,22 @@ $navbar-toggled-border: $color-palette-6;
     $clickable-icon: $color-palette-2;
 
 //Button Coloration
-    //Btn secondary outline.
+    //Btn Secondary Outline.
     $btn-secondary-outline-border: $color-palette-2;
-    $btn-secondary-outline-text: $color-palette-3;
+    $btn-secondary-outline-text: $color-palette-2;
     $btn-secondary-outline-background-fade: $color-palette-2;
+    $btn-secondary-outline-text-fade: $color-palette-1;
 
-    //Btn navbar 
+    //Btn Navbar 
     $navbar-button: $color-palette-1;
     $navbar-button-border: $color-palette-8;
 
-    //Btn send
+    //Btn Send
     $btn-send-border: $color-palette-2;
     $btn-send-border-hover: $color-palette-7;
     $btn-send-text: $color-palette-3;
+    $btn-send-background: $color-palette-2;
     $btn-send-background-fade: $color-palette-7;
+
+//Hoverable icons
+    $icon-hoverable-color: $color-palette-2;

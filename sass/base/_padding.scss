@@ -1,0 +1,86 @@
+//General section padding goes here for symetricism of page.
+
+//padding offset is symetrical on both sides.
+//padding top is obvious
+//padding bottom is obvious
+
+//Introduction
+$introduction-padding-offset: 50px;
+
+    //Desktop
+    $introduction-padding-top: 150px + $introduction-padding-offset;
+    $introduction-padding-bottom: 100px + $introduction-padding-offset;
+
+    //Mobile
+    $introduction-padding-mobile-top: 90px + $introduction-padding-offset;
+    $introduction-padding-mobile-bottom: 20px + $introduction-padding-offset;
+
+//Portfolio
+$portfolio-padding-offset: 40px;
+
+    //Desktop
+    $portfolio-padding-top: 70px + $portfolio-padding-offset;
+    $portfolio-padding-bottom: 100px + $portfolio-padding-offset;
+
+    //Mobile
+    $portfolio-padding-mobile-top: 90px + $portfolio-padding-offset;
+    $portfolio-padding-mobile-bottom: 20px + $portfolio-padding-offset;
+
+//About
+$about-padding-offset: 40px;
+
+    //Desktop
+    $about-padding-top: 40px + $about-padding-offset;
+    $about-padding-bottom: 60px + $about-padding-offset;
+
+    //Mobile
+    $about-padding-mobile-top: 10px + $about-padding-offset;
+    $about-padding-mobile-bottom: 20px + $about-padding-offset;
+
+//Medias
+$medias-padding-offset: 20px;
+
+    //Desktop
+    $medias-padding-top: 80px + $medias-padding-offset;
+    $medias-padding-bottom: 80px + $medias-padding-offset;
+
+    //Mobile
+    $medias-padding-mobile-top: 70px + $medias-padding-offset;
+    $medias-padding-mobile-bottom: 70px + $medias-padding-offset;
+
+//Contact
+$contact-padding-offset: 20px;
+
+    //Desktop
+    $contact-padding-top: 80px + $contact-padding-offset;
+    $contact-padding-bottom: 80px + $contact-padding-offset;
+
+    //Mobile
+    $contact-padding-mobile-top: 70px + $contact-padding-offset;
+    $contact-padding-mobile-bottom: 70px + $contact-padding-offset;
+
+//Top-Footer
+$top-footer-padding-offset: 20px;
+
+    //Desktop
+    $top-footer-padding-top: 50px + $top-footer-padding-offset;
+    $top-footer-padding-bottom: 50px + $top-footer-padding-offset;
+
+    //Mobile
+    $top-footer-padding-mobile-top: 50px + $top-footer-padding-offset;
+    $top-footer-padding-mobile-bottom: 50px + $top-footer-padding-offset;
+
+//Bottom-Footer
+$bottom-footer-padding-offset: 10px;
+
+    //Deskbottom
+    $bottom-footer-padding-top: 0px + $bottom-footer-padding-offset;
+    $bottom-footer-padding-bottom: 0px + $bottom-footer-padding-offset;
+
+    //Mobile
+    $bottom-footer-padding-mobile-top: 0px + $bottom-footer-padding-offset;
+    $bottom-footer-padding-mobile-bottom: 0px + $bottom-footer-padding-offset;
+
+
+
+
