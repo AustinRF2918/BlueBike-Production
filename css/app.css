@@ -69,6 +69,18 @@
     border: 2px solid #ff6347;
     color: #2C3E50; }
 
+.btn-lightbox-close {
+  position: fixed;
+  z-index: 1051;
+  right: 20px;
+  top: 10px;
+  color: white;
+  font-size: 40px;
+  background: transparent;
+  border: rgba(0, 0, 0, 0.9); }
+  .btn-lightbox-close:hover {
+    color: #1A242F; }
+
 .starlight {
   border: 3px solid white;
   padding: 0;
@@ -103,6 +115,34 @@
 
 .form-control {
   line-height: 40px; }
+
+.lightbox-portfolio-wrapper {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.9); }
+.lightbox-portfolio-top-wrapper {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.9); }
+.lightbox-portfolio-header {
+  color: white;
+  padding-top: 20vh; }
+
+.lightbox-wrapper {
+  z-index: 1050;
+  height: 98vh;
+  width: 100vw;
+  position: fixed;
+  top: 2vh; }
+  .lightbox-wrapper-hidden {
+    display: none; }
+
+.lightbox-top-wrapper {
+  z-index: 1050;
+  height: 2vh;
+  top: 0px;
+  width: 100vw;
+  position: fixed; }
+  .lightbox-top-wrapper-hidden {
+    display: none; }
 
 .bb-navbar {
   border-radius: 0px;

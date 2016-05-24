@@ -34,6 +34,12 @@ $secondary-font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     $footer-bottom-header-font: $primary-font-family;
     $footer-bottom-paragraph-font: $secondary-font-family;
 
+//Application Fonts
+    //Lightbox
+    $lightbox-portfolio-header-font: $primary-font-family;
+    //Lightbox buttons
+	$btn-lightbox-close-font-size: 40px;
+
 //Font Stylizations
 %is-important {
      text-transform: uppercase;

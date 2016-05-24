@@ -1,0 +1,17 @@
+.btn-lightbox-close
+{
+
+    &:hover
+    {
+	color: $btn-lightbox-close-color-hover;
+    }
+
+    position: fixed;
+    z-index: $lightbox-button-z-index;
+    right: $btn-lightbox-close-right;
+    top: $btn-lightbox-close-top;
+    color: $btn-lightbox-close-color;
+    font-size: $btn-lightbox-close-font-size;
+    background: $btn-lightbox-close-background;
+    border: $lightbox-portfolio-background;
+}

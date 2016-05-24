@@ -1,0 +1,15 @@
+//WARNING: DOESN'T SCALE QUITE WELL TO MOBILE DEVICES/
+$full-screen-height: 100vh;
+$full-screen-width: 100vw;
+
+//Lightbox Fixed Positioning
+    //Lightbox wrapper offsets.
+    $lightbox-wrapper-height-offset: 2vh;
+
+    //Lightbox top wrapper offsets.
+    $lightbox-top-wrapper-height-offset: 2vh;
+
+    //Lightbox buttons.
+        //Lighbox button positional offsets.
+	$btn-lightbox-close-top: 10px;
+	$btn-lightbox-close-right: 20px;

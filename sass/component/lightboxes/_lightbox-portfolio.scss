@@ -1,0 +1,23 @@
+.lightbox-portfolio
+{
+    &-wrapper
+    {
+	//Stylization
+	font-family: $lightbox-portfolio-header-font;
+	background: $lightbox-portfolio-background;
+    }
+
+    &-top-wrapper
+    {
+	//Stylization
+	font-family: $lightbox-portfolio-header-font;
+	background: $lightbox-portfolio-background;
+    }
+	
+    &-header
+    {
+	//WARNING: MUST BE REFACTORED WITH SASS CONSTANTS.
+	color: $lightbox-portfolio-text;
+	padding-top: $top-lightbox-portfolio-padding-top;
+    }
+}

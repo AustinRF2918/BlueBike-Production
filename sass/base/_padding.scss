@@ -12,80 +12,83 @@ $offset-modulation: 1;
 //Introduction
 $introduction-padding-offset: 50px * $offset-modulation;
 
-    //Desktop
-    $introduction-padding-top: 150px + $introduction-padding-offset * $offset-modulation;
-    $introduction-padding-bottom: 100px + $introduction-padding-offset * $offset-modulation;
+//Desktop
+$introduction-padding-top: 150px + $introduction-padding-offset * $offset-modulation;
+$introduction-padding-bottom: 100px + $introduction-padding-offset * $offset-modulation;
 
-    //Mobile
-    $introduction-padding-mobile-top: 90px + $introduction-padding-offset * $offset-modulation;
-    $introduction-padding-mobile-bottom: 20px + $introduction-padding-offset * $offset-modulation;
+//Mobile
+$introduction-padding-mobile-top: 90px + $introduction-padding-offset * $offset-modulation;
+$introduction-padding-mobile-bottom: 20px + $introduction-padding-offset * $offset-modulation;
 
 //Portfolio
 $portfolio-padding-offset: 40px * $offset-modulation;
 
-    //Desktop
-    $portfolio-padding-top: 70px + $portfolio-padding-offset * $offset-modulation;
-    $portfolio-padding-bottom: 100px + $portfolio-padding-offset * $offset-modulation;
+//Desktop
+$portfolio-padding-top: 70px + $portfolio-padding-offset * $offset-modulation;
+$portfolio-padding-bottom: 100px + $portfolio-padding-offset * $offset-modulation;
 
-    //Mobile
-    $portfolio-padding-mobile-top: 90px + $portfolio-padding-offset * $offset-modulation;
-    $portfolio-padding-mobile-bottom: 20px + $portfolio-padding-offset * $offset-modulation;
+//Mobile
+$portfolio-padding-mobile-top: 90px + $portfolio-padding-offset * $offset-modulation;
+$portfolio-padding-mobile-bottom: 20px + $portfolio-padding-offset * $offset-modulation;
 
 //About
 $about-padding-offset: 40px * $offset-modulation;
 
-    //Desktop
-    $about-padding-top: 40px + $about-padding-offset * $offset-modulation;
-    $about-padding-bottom: 60px + $about-padding-offset * $offset-modulation;
+//Desktop
+$about-padding-top: 40px + $about-padding-offset * $offset-modulation;
+$about-padding-bottom: 60px + $about-padding-offset * $offset-modulation;
 
-    //Mobile
-    $about-padding-mobile-top: 10px + $about-padding-offset * $offset-modulation;
-    $about-padding-mobile-bottom: 20px + $about-padding-offset * $offset-modulation;
+//Mobile
+$about-padding-mobile-top: 10px + $about-padding-offset * $offset-modulation;
+$about-padding-mobile-bottom: 20px + $about-padding-offset * $offset-modulation;
 
 //Medias
 $medias-padding-offset: 20px * $offset-modulation;
 
-    //Desktop
-    $medias-padding-top: 80px + $medias-padding-offset * $offset-modulation;
-    $medias-padding-bottom: 80px + $medias-padding-offset * $offset-modulation;
+//Desktop
+$medias-padding-top: 80px + $medias-padding-offset * $offset-modulation;
+$medias-padding-bottom: 80px + $medias-padding-offset * $offset-modulation;
 
-    //Mobile
-    $medias-padding-mobile-top: 70px + $medias-padding-offset * $offset-modulation;
-    $medias-padding-mobile-bottom: 70px + $medias-padding-offset * $offset-modulation;
+//Mobile
+$medias-padding-mobile-top: 70px + $medias-padding-offset * $offset-modulation;
+$medias-padding-mobile-bottom: 70px + $medias-padding-offset * $offset-modulation;
 
 //Contact
 $contact-padding-offset: 20px * $offset-modulation;
 
-    //Desktop
-    $contact-padding-top: 80px + $contact-padding-offset * $offset-modulation;
-    $contact-padding-bottom: 80px + $contact-padding-offset * $offset-modulation;
+//Desktop
+$contact-padding-top: 80px + $contact-padding-offset * $offset-modulation;
+$contact-padding-bottom: 80px + $contact-padding-offset * $offset-modulation;
 
-    //Mobile
-    $contact-padding-mobile-top: 70px + $contact-padding-offset * $offset-modulation;
-    $contact-padding-mobile-bottom: 70px + $contact-padding-offset * $offset-modulation;
+//Mobile
+$contact-padding-mobile-top: 70px + $contact-padding-offset * $offset-modulation;
+$contact-padding-mobile-bottom: 70px + $contact-padding-offset * $offset-modulation;
 
 //Top-Footer
 $top-footer-padding-offset: 20px * $offset-modulation;
 
-    //Desktop
-    $top-footer-padding-top: 50px + $top-footer-padding-offset * $offset-modulation;
-    $top-footer-padding-bottom: 50px + $top-footer-padding-offset * $offset-modulation;
+//Desktop
+$top-footer-padding-top: 50px + $top-footer-padding-offset * $offset-modulation;
+$top-footer-padding-bottom: 50px + $top-footer-padding-offset * $offset-modulation;
 
-    //Mobile
-    $top-footer-padding-mobile-top: 50px + $top-footer-padding-offset * $offset-modulation;
-    $top-footer-padding-mobile-bottom: 50px + $top-footer-padding-offset * $offset-modulation;
+//Mobile
+$top-footer-padding-mobile-top: 50px + $top-footer-padding-offset * $offset-modulation;
+$top-footer-padding-mobile-bottom: 50px + $top-footer-padding-offset * $offset-modulation;
 
 //Bottom-Footer
 $bottom-footer-padding-offset: 10px * $offset-modulation;
 
-    //Deskbottom
-    $bottom-footer-padding-top: 0px + $bottom-footer-padding-offset * $offset-modulation;
-    $bottom-footer-padding-bottom: 0px + $bottom-footer-padding-offset * $offset-modulation;
+//Deskbottom
+$bottom-footer-padding-top: 0px + $bottom-footer-padding-offset * $offset-modulation;
+$bottom-footer-padding-bottom: 0px + $bottom-footer-padding-offset * $offset-modulation;
 
-    //Mobile
-    $bottom-footer-padding-mobile-top: 0px + $bottom-footer-padding-offset * $offset-modulation;
-    $bottom-footer-padding-mobile-bottom: 0px + $bottom-footer-padding-offset * $offset-modulation;
+//Mobile
+$bottom-footer-padding-mobile-top: 0px + $bottom-footer-padding-offset * $offset-modulation;
+$bottom-footer-padding-mobile-bottom: 0px + $bottom-footer-padding-offset * $offset-modulation;
 
+//Lightbox container positioning
+$top-lightbox-portfolio-padding-top: 20vh; //A little different than before, this was uses vh because we
+				 //will disable the ability to scroll.
 
 
 

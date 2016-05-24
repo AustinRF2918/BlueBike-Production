@@ -1,0 +1,33 @@
+.lightbox-wrapper
+{
+    &-hidden
+    {
+	display: none;
+    }
+
+    //Positioning
+    z-index: $lightbox-z-index;
+
+    //Generalizeable Positionings.
+    height: $full-screen-height - $lightbox-wrapper-height-offset;;
+    width: $full-screen-width;
+    position: fixed;
+    top: $lightbox-wrapper-height-offset;;
+}
+.lightbox-top-wrapper
+{
+    &-hidden
+    {
+	display: none;
+    }
+
+    //Positioning
+    z-index: $lightbox-z-index;
+
+    //Generalizeable Positionings.
+    height: $lightbox-wrapper-height-offset;
+    top: 0px;
+    width: $full-screen-width;
+    position: fixed;
+
+}

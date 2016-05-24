@@ -8,6 +8,7 @@ $teal-green-dark: darken(#0C648C, 30%);
 $light-coral: #ff6347;
 $black-blue: #1a242f;
 $coral: coral;
+$ebony-black-partial-transparent: rgba(0, 0, 0, .9);
 
 //Pallet Colors: Allows rapid changing of colors.
 //Note: Only utilize these in actually colorations in
@@ -72,6 +73,11 @@ $navbar-toggled-border: $color-palette-6;
     $clickable-fade: $color-palette-5;
     $clickable-icon: $color-palette-2;
 
+//Lightbox Coloration.
+    //Lightbox Portfolio Coloration
+    $lightbox-portfolio-background: $ebony-black-partial-transparent;
+    $lightbox-portfolio-text: $color-palette-2;
+
 //Button Coloration
     //Btn Secondary Outline.
     $btn-secondary-outline-border: $color-palette-2;
@@ -89,6 +95,12 @@ $navbar-toggled-border: $color-palette-6;
     $btn-send-text: $color-palette-3;
     $btn-send-background: $color-palette-2;
     $btn-send-background-fade: $color-palette-7;
+
+    //Btn Lightbox Close
+    $btn-lightbox-close-border: transparent;
+    $btn-lightbox-close-background: transparent;
+    $btn-lightbox-close-color: $color-palette-2;
+    $btn-lightbox-close-color-hover: $color-palette-4;
 
 //Hoverable icons
     $icon-hoverable-color: $color-palette-2;
