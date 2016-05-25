@@ -13,3 +13,23 @@ $full-screen-width: 100vw;
         //Lighbox button positional offsets.
 	$btn-lightbox-close-top: 10px;
 	$btn-lightbox-close-right: 20px;
+
+//Button Sizing
+    //Prototypes
+	$general-button-width: 250px;
+	$general-button-height: 60px;
+	$general-button-font-size: 20px;
+
+	 
+	    //Btn send
+	    $btn-send-border: $btn-send-background;
+	    $btn-send-height: $general-button-height;
+	    $btn-send-width: $general-button-width;
+	    $btn-send-text-size: $general-button-font-size;
+
+	    $btn-secondary-outline-height: $general-button-height;
+	    $btn-secondary-outline-width: $general-button-width;
+	    $btn-secondary-outline-text-size: $general-button-font-size;
+
+
+

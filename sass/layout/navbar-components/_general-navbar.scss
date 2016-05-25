@@ -71,13 +71,21 @@
         @include transition-time(0.2s);
     }
 
-    &-brand:hover, &-brand:active, &-brand:focus{
-        color: $navbar-color-hover;
+    &-brand:focus{
+        color: $navbar-color;
     }
 
-    &-nav:hover, &-nav:active, &-nav:focus{
-        color: $navbar-color-hover;
-   }
+    &-brand:hover, &-brand:active{
+        color: $navbar-color-hover !important;
+    }
+
+    &-nav:hover, &-nav:active{
+        color: $navbar-color-hover !important;
+    }
+
+    &-nav:focus{
+        color: $navbar-color;
+    }
 }
 
 .mobile-nav-list
@@ -91,4 +99,10 @@
 .button-on
 {
     border-bottom: 1px $navbar-toggled-border solid;
+}
+
+.active
+{
+    @include transition-time(0.4s);
+    color: $navbar-active-color !important;
 }

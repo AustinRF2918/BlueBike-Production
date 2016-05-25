@@ -37,39 +37,39 @@
   border-radius: 1px; }
 
 .btn-secondary-outline {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  transition: 0.5s ease-in all;
   border: 2px solid white;
   color: white;
   line-height: 60px;
-  width: 230px;
+  width: 250px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px; }
   .btn-secondary-outline:hover {
+    transition: 0.5s ease-in all;
     background: white;
-    border: 2px solid white;
+    border: 2px olidbtn-secondary-outline-border;
     color: black; }
 
 .btn-send {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  border: 2px solid white;
+  transition: 0.5s ease-in all;
+  border: white;
   color: #2C3E50;
   background: white;
   line-height: 60px;
-  width: 230px;
+  width: 250px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px; }
-  .btn-send:hover {
-    background: #ff6347;
-    border: 2px solid #ff6347;
-    color: #2C3E50; }
+
+.btn-send-success:hover {
+  background: #3ac465;
+  border: #3ac465; }
+
+.btn-send-failure:hover {
+  background: #c43a54;
+  border: #c43a54; }
 
 .btn-lightbox-close {
+  transition: 0.5s ease-in all;
   position: fixed;
   z-index: 1051;
   right: 20px;
@@ -78,8 +78,22 @@
   font-size: 40px;
   background: transparent;
   border: rgba(0, 0, 0, 0.9); }
-  .btn-lightbox-close:hover {
+  .btn-lightbox-close.ng-show-add, .btn-lightbox-close.ng-show-remove {
+    transition: 0.5s ease-out all; }
+    .btn-lightbox-close.ng-show-add-active, .btn-lightbox-close.ng-show-remove-active {
+      transition: 0.5s ease-in all; }
+  .btn-lightbox-close.ng-hide-add, .btn-lightbox-close.ng-hide-remove {
+    transition: 0.5s ease-out all; }
+    .btn-lightbox-close.ng-hide-add-active, .btn-lightbox-close.ng-hide-remove-active {
+      transition: 0.5s ease-in all; }
+  .btn-lightbox-close.ng-hide {
+    transition: 0.5s ease-in all;
+    opacity: 0; }
+  .btn-lightbox-close:hover, .btn-lightbox-close:active, .btn-lightbox-close:focus {
     color: #1A242F; }
+
+.active {
+  color: black; }
 
 .starlight {
   border: 3px solid white;
@@ -116,6 +130,16 @@
 .form-control {
   line-height: 40px; }
 
+.form-invalid {
+  color: white;
+  background: #c43a54;
+  border-color: #c43a54; }
+
+.form-valid {
+  color: #1A242F;
+  background: #3ac465;
+  border-color: #3ac465; }
+
 .lightbox-portfolio-wrapper {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: rgba(0, 0, 0, 0.9); }
@@ -128,12 +152,20 @@
 
 .lightbox-wrapper {
   z-index: 1050;
-  height: 98vh;
+  height: 98.1vh;
   width: 100vw;
   position: fixed;
   top: 2vh; }
-  .lightbox-wrapper-hidden {
-    display: none; }
+  .lightbox-wrapper.ng-hide-add, .lightbox-wrapper.ng-hide-remove, .lightbox-wrapper.ng-show-add, .lightbox-wrapper.ng-show-remove {
+    transition: 0s linear all; }
+    .lightbox-wrapper.ng-hide-add-active, .lightbox-wrapper.ng-hide-remove-active, .lightbox-wrapper.ng-show-add-active, .lightbox-wrapper.ng-show-remove-active {
+      transition: 0.2s linear all; }
+  .lightbox-wrapper.ng-hide {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    opacity: 0; }
 
 .lightbox-top-wrapper {
   z-index: 1050;
@@ -141,8 +173,16 @@
   top: 0px;
   width: 100vw;
   position: fixed; }
-  .lightbox-top-wrapper-hidden {
-    display: none; }
+  .lightbox-top-wrapper.ng-hide-add, .lightbox-top-wrapper.ng-hide-remove, .lightbox-top-wrapper.ng-show-add, .lightbox-top-wrapper.ng-show-remove {
+    transition: 0s linear all; }
+    .lightbox-top-wrapper.ng-hide-add-active, .lightbox-top-wrapper.ng-hide-remove-active, .lightbox-top-wrapper.ng-show-add-active, .lightbox-top-wrapper.ng-show-remove-active {
+      transition: 0.2s linear all; }
+  .lightbox-top-wrapper.ng-hide {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    opacity: 0; }
 
 .bb-navbar {
   border-radius: 0px;
@@ -187,10 +227,14 @@
       .bb-navbar-brand {
         margin-top: 0px;
         font-size: 19px; } }
-  .bb-navbar-brand:hover, .bb-navbar-brand:active, .bb-navbar-brand:focus {
-    color: #0a5375; }
-  .bb-navbar-nav:hover, .bb-navbar-nav:active, .bb-navbar-nav:focus {
-    color: #0a5375; }
+  .bb-navbar-brand:focus {
+    color: white; }
+  .bb-navbar-brand:hover, .bb-navbar-brand:active {
+    color: #0a5375 !important; }
+  .bb-navbar-nav:hover, .bb-navbar-nav:active {
+    color: #0a5375 !important; }
+  .bb-navbar-nav:focus {
+    color: white; }
 
 .mobile-nav-list {
   position: absolute;
@@ -200,6 +244,13 @@
 
 .button-on {
   border-bottom: 1px black solid; }
+
+.active {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  color: #ff6347 !important; }
 
 .introduction {
   background: #0a5375;
@@ -397,6 +448,10 @@
   background-color: #0a5375; }
 .portfolio-overlay:hover:after {
   opacity: 0.8; }
+.portfolio-circular {
+  border-radius: 50%; }
+.portfolio-circular:after {
+  border-radius: 50%; }
 
 .hover-icon {
   user-select: none;
@@ -412,7 +467,6 @@
   width: 0px;
   height: 0px;
   position: absolute;
-  z-index: 1;
   color: white; }
 
 .hover-icon:hover {

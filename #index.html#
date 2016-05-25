@@ -236,7 +236,7 @@
 	    <div class="row m-t-1">
 	     <div class="form-group col-md-6 col-md-offset-3">
 	       <input ng-focus="focusForm(1)" ng-blur="defocusForm()" ng-focus="checkName()" ng-change="checkName()" ng-model="name" type="text" class="form-control m-t-2" placeholder="Name" id="name"></input>
-	       <input ng-focus="focusForm(4)"ng-blur="defocusForm()" ng-focus="checkEmail()" ng-change="checkEmail()" ng-model="email" type="text" class="form-control m-t-2" placeholder="Email Address" id="email"></input>
+	       <input ng-focus="focusForm(4)" ng-blur="defocusForm()" ng-focus="checkEmail()" ng-change="checkEmail()" ng-model="email" type="text" class="form-control m-t-2" placeholder="Email Address" id="email"></input>
 	       <input ng-focus="focusForm(3)" ng-blur="defocusForm()" ng-focus="checkPhone()" ng-change="checkPhone()" ng-model="phone" type="text" class="form-control m-t-2" placeholder="Phone Number" id="phone"></input>
 	       <textarea ng-focus="focusForm(2)" ng-blur="defocusForm()" ng-focus="checkMessage()" ng-change="checkMessage()" ng-model="message" rows="3" ng-model="name" type="text" class="form-control m-t-2" placeholder="Message" id="input"></textarea>
 	     </div>

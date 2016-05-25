@@ -1,17 +1,18 @@
 .btn-secondary-outline
 {
-    @include transition-time(0.5s);
+    transition: $btn-secondary-outline-transition;
     border: 2px solid $btn-secondary-outline-border;
     color: $btn-secondary-outline-text;
-    line-height: 60px;
-    width: 230px;
+    line-height: $btn-secondary-outline-height;
+    width: $btn-secondary-outline-width;
     font-family: $button-general-font;
-    font-size: 20px;
+    font-size: $btn-secondary-outline-text-size;
 
     &:hover
     {
+    transition: $btn-secondary-outline-transition;
         background: $btn-secondary-outline-background-fade;
-        border: 2px solid $btn-secondary-outline-border;
+        border: 2px olidbtn-secondary-outline-border;
         color: $btn-secondary-outline-text-fade;
     }
 }

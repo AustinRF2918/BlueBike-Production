@@ -1,26 +1,46 @@
 .lightbox-wrapper
 {
+    &.ng-hide-add, &.ng-hide-remove, &.ng-show-add, &.ng-show-remove{
+	&-active{
+	    transition: 0.2s linear all;
+	}
+
+	transition: 0s linear all;
+    }
+
+    &.ng-hide{
+	@include transition-time(0.2s);
+	opacity: 0;
+    }
+
     &-hidden
     {
-	display: none;
     }
 
     //Positioning
     z-index: $lightbox-z-index;
 
     //Generalizeable Positionings.
-    height: $full-screen-height - $lightbox-wrapper-height-offset;;
+    height: $full-screen-height - $lightbox-wrapper-height-offset + 0.1vh;
     width: $full-screen-width;
     position: fixed;
     top: $lightbox-wrapper-height-offset;;
 }
 .lightbox-top-wrapper
 {
-    &-hidden
-    {
-	display: none;
+
+    &.ng-hide-add, &.ng-hide-remove, &.ng-show-add, &.ng-show-remove{
+	&-active{
+	    transition: 0.2s linear all;
+	}
+
+	transition: 0s linear all;
     }
 
+    &.ng-hide{
+	@include transition-time(0.2s);
+	opacity: 0;
+    }
     //Positioning
     z-index: $lightbox-z-index;
 

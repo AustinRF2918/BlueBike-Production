@@ -1,18 +1,29 @@
 .btn-send
 {
-    @include transition-time(0.5s);
-    border: 2px solid $btn-send-background;
+    transition: $btn-send-transition;
+    border: $btn-send-border;
     color: $btn-send-text;
     background: $btn-send-background;
-    line-height: 60px;
-    width: 230px;
+    line-height: $btn-send-height;
+    width: $btn-send-width;
     font-family: $button-general-font;
-    font-size: 20px;
+    font-size: $btn-send-text-size;
+}
 
+.btn-send-success
+{
     &:hover
     {
-        background: $btn-send-background-fade;
-        border: 2px solid $btn-send-border-hover;
-        color: $btn-send-text;
+        background: $btn-send-background-fade-good;
+	border: $btn-send-border-hover-good;
+    }
+}
+
+.btn-send-failure
+{
+    &:hover
+    {
+        background: $btn-send-background-fade-bad;
+	border: $btn-send-border-hover-bad;
     }
 }

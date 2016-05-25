@@ -24,4 +24,14 @@
     {
         opacity: $hoverable-icon-opacity-after;
     }
+
+    &-circular
+    {
+	border-radius: 50%;
+    }
+
+    &-circular:after
+    {
+	border-radius: 50%;
+    }
 }

@@ -1,10 +1,31 @@
 .btn-lightbox-close
 {
+    &.ng-show-add, &.ng-show-remove{
+	&-active{
+	    transition: $btn-lightbox-transition; 
+	}
 
-    &:hover
-    {
+	transition: $btn-lightbox-transition-reset;
+    }
+
+    &.ng-hide-add, &.ng-hide-remove{
+	&-active{
+	    transition: $btn-lightbox-transition; 
+	}
+
+	transition: $btn-lightbox-transition-reset;
+    }
+
+    &.ng-hide{
+	transition: $btn-lightbox-transition; 
+	opacity: 0;
+    }
+
+    &:hover, &:active, &:focus{
 	color: $btn-lightbox-close-color-hover;
     }
+
+    transition: $btn-lightbox-transition; 
 
     position: fixed;
     z-index: $lightbox-button-z-index;
@@ -14,4 +35,9 @@
     font-size: $btn-lightbox-close-font-size;
     background: $btn-lightbox-close-background;
     border: $lightbox-portfolio-background;
+}
+
+.active
+{
+    color: $btn-lightbox-close-color-active;
 }

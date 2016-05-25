@@ -2,3 +2,18 @@
 {
     line-height: 40px;
 }
+
+.form-invalid
+{
+    //REFACTOR
+    color: $form-input-bad-text;
+    background: $form-input-bad-background;
+    border-color: $form-input-bad-background;
+}
+
+.form-valid
+{
+    color: $form-input-good-text;
+    background: $form-input-good-background;
+    border-color: $form-input-good-background;
+}

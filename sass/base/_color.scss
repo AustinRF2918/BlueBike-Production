@@ -9,6 +9,8 @@ $light-coral: #ff6347;
 $black-blue: #1a242f;
 $coral: coral;
 $ebony-black-partial-transparent: rgba(0, 0, 0, .9);
+$velvet-red: lighten(desaturate(#8c0c24, 30%), 20%);
+$froggy-green: lighten(desaturate(#0c8c34, 30%), 20%);
 
 //Pallet Colors: Allows rapid changing of colors.
 //Note: Only utilize these in actually colorations in
@@ -22,12 +24,15 @@ $color-palette-5: $teal-green;
 $color-palette-6: $teal-green-dark;
 $color-palette-7: $light-coral;
 $color-palette-8: $black-blue;
+$color-palette-9: $velvet-red;
+$color-palette-10: $froggy-green;
 
 //Navbar Coloration
 $navbar-background: $color-palette-3;
 $navbar-color: $color-palette-2;
 $navbar-color-hover: $color-palette-5;
 $navbar-toggled-border: $color-palette-6;
+$navbar-active-color: $color-palette-7;
 
 //Section Coloration
     //Introduction
@@ -91,16 +96,30 @@ $navbar-toggled-border: $color-palette-6;
 
     //Btn Send
     $btn-send-border: $color-palette-2;
-    $btn-send-border-hover: $color-palette-7;
     $btn-send-text: $color-palette-3;
     $btn-send-background: $color-palette-2;
-    $btn-send-background-fade: $color-palette-7;
+    //Multiple fade, hovers
+        //Good.
+	$btn-send-border-hover-good: $color-palette-10;
+	$btn-send-background-fade-good: $color-palette-10;
+	//Bad
+	$btn-send-border-hover-bad: $color-palette-9;
+	$btn-send-background-fade-bad: $color-palette-9;
 
     //Btn Lightbox Close
     $btn-lightbox-close-border: transparent;
     $btn-lightbox-close-background: transparent;
     $btn-lightbox-close-color: $color-palette-2;
     $btn-lightbox-close-color-hover: $color-palette-4;
+    $btn-lightbox-close-color-active: $color-palette-1;
 
+//Form Colrations
+    //Form good
+    $form-input-good-background: $color-palette-10;
+    $form-input-bad-background: $color-palette-9;
+    $form-input-good-text: $color-palette-4;
+    $form-input-bad-text: $color-palette-2;
 //Hoverable icons
     $icon-hoverable-color: $color-palette-2;
+
+  

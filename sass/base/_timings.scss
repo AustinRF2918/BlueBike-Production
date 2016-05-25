@@ -1,0 +1,17 @@
+//General constants
+$slow-btn-fade-in: 1s;
+$general-btn-fade-in: 0.5s;
+$fast-btn-fade-in: 0.2s;
+$no-btn-fade-in: 0s;
+
+$main-fade-style: "linear all";
+
+
+//Button Timings.
+    //btn-lightbox
+    $btn-lightbox-transition: $general-btn-fade-in ease-in all;
+    $btn-lightbox-transition-reset:  $general-btn-fade-in ease-out all;
+    //btn-secondary-outline
+    $btn-secondary-outline-transition: $general-btn-fade-in ease-in all;
+    //btn-send
+    $btn-send-transition: $general-btn-fade-in ease-in all;

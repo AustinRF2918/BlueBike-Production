@@ -1,0 +1,94 @@
+var blueBikeApplication = angular.module("BlueBikeLandingPage", ['ngAnimate']);
+
+blueBikeApplication.controller("", function($scope){
+    $scope.lightboxActive = false;
+    $scope.nameBuffer = "";
+    $scope.imageBufferList = "";
+    $scope.imageBuffer = "";
+    $scope.currentImageBuffer = 0;
+
+    //CUSTOM VARIABLES
+	//Focused style
+	$scope.focused = "col-md-6";
+
+	//Nonfocused style
+	$scope.unfocused = "col-md-3";
+
+	//Number of photo/types in gallery.
+	$scope.selectionNumber = 3;
+
+	//Mapping of selection numbers to 
+	$scope.selectionMap = {0 : $('#medium-phone'), 1 : $('#medium-desktop'), 2: $('#medium-laptop')}
+
+	//Names of s.
+	$scope.names = ["The Card Buggy", "Milford Accounting", "Leadsnare"]
+
+	//Mapping of  names to link lists, with selection number as the number of possibiities.
+	$scope.assetMap = {"The Card Buggy" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"],
+			    "Milford Accounting" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"],
+			    "Leadsnare" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"]}
+
+    //Define another function that sets src values.
+    $scope.toggleLightbox = function(arguments)
+    {
+	if (!$scope.lightboxActive && arguments != "close")
+	{
+	    $scope.lightboxActive = !$scope.lightboxActive;
+	    for (var i = 1; i < $scope.selectionNumber; i++)
+	    {
+		makeSmaller($scope.selectionMap[i], $scope.focused, $scope.unfocused)
+	    }
+
+	    makeLarger($scope.selectionMap[0], $scope.unfocused, $scope.focused)
+
+	    $scope.nameBufferNumeric = arguments - 1;
+	    $scope.nameBuffer = $scope.names[arguments - 1];
+	    $scope.imageBufferList = $scope.assetMap[$scope.nameBuffer];
+	    $scope.imageBuffer = $scope.imageBufferList[0];
+
+	    //console.log("Showing lightbox");
+	    //console.log("Toggling Lightbox: ", arguments);
+	}
+
+	if ($scope.lightboxActive && arguments == "close")
+	{
+	    $scope.lightboxActive = !$scope.lightboxActive;
+	    $scope.currentImageBuffer = 0;
+	    //console.log("Hiding lightbox");
+	}
+    };
+
+    $scope.setMediaBuffer = function(numeric)
+    {
+	if (numeric < $scope.selectionNumber && $scope.selectionNumber > 0 && $scope.currentImageBuffer  != numeric)
+	{
+	    makeSmaller($scope.selectionMap[$scope.currentImageBuffer], $scope.focused, $scope.unfocused)
+	    makeLarger($scope.selectionMap[numeric], $scope.unfocused, $scope.focused)
+	}
+	else
+	{
+	    //console.log("Media buffer at invalid position.")
+	}
+
+	//console.log("Seting currentImageBuffer: ", numeric);
+	$scope.currentImageBuffer = numeric;
+	$scope.imageBuffer = $scope.imageBufferList[numeric];
+    };
+});
+
+//Utility functions.
+var makeSmaller = function($selector, focused, nonFocused)
+{
+    if ($selector.hasClass(focused))
+    {
+	$selector.switchClass(focused, nonFocused, 250, "easeInOutQuad");
+    }
+}
+
+var makeLarger = function($selector, nonFocused, focused)
+{
+    if ($selector.hasClass(nonFocused))
+    {
+	$selector.switchClass(nonFocused, focused, 250, "easeInOutQuad");
+    }
+}
