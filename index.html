@@ -87,7 +87,7 @@
       </div>
     </div>
   </section>
-  <div class="lightboxApp"  ng-controller="lightboxController">
+  <div class="lightboxApp"  ng-init="initializeLightbox()" ng-controller="lightboxController">
   <button ng-click="toggleLightbox('close')" ng-show="lightboxActive" type="button" class="ng-hide btn-lightbox-close btn-lightbox-close-hidden">&times;</button> 
   <div ng-show="lightboxActive"  class="ng-hide lightbox-top-wrapper lightbox-portfolio-top-wrapper lightbox-top-wrapper-hidden">
   </div>
@@ -103,20 +103,20 @@
       </div>
       <div class="container">
       <div class="row">
-       <div class="col-md-4 col-md-offset-4">
-	<div id="medium-phone" class="col-xs-4 col-md-6 m-t-3">
+       <div class="col-md-12 text-xs-center">
+	<div id="medium-phone" class="col-xs-4 col-md-offset-4 col-md-2 m-t-3">
 	  <div ng-click="setMediaBuffer(0); $event.stopPropagation()" class="portfolio-overlay portfolio-circular portfolio-caption">
 	    <div class="portfolio-caption-content">
 	    </div>
 		<img class="img-fluid " src="img/asset-phone.png"></img>
 	  </div>
 	</div>
-	<div id="medium-desktop" class="col-xs-4 col-md-3 m-t-3 portfolio-caption">
+	<div id="medium-desktop" class="col-xs-4 col-md-2 m-t-3 portfolio-caption">
 	  <div ng-click="setMediaBuffer(1); $event.stopPropagation()" class="portfolio-circular portfolio-overlay">
 	    <img class="img-fluid center-block" src="img/asset-desktop.png"></img>
 	  </div>
 	</div>
-	<div id="medium-laptop" class="col-xs-4 col-md-3 m-t-3 portfolio-caption">
+	<div id="medium-laptop" class="col-xs-4 col-md-2 m-t-3 portfolio-caption">
 	  <div ng-click="setMediaBuffer(2); $event.stopPropagation()" class="portfolio-overlay portfolio-circular">
 	    <img class="img-fluid center-block" src="img/asset-laptop.png"></img>
 	  </div>

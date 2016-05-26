@@ -9,10 +9,10 @@ blueBikeApplication.controller("lightboxController", function($scope){
 
     //CUSTOM VARIABLES
 	//Focused style
-	$scope.focused = "col-md-6";
+	$scope.focused = "col-md-2";
 
 	//Nonfocused style
-	$scope.unfocused = "col-md-3";
+	$scope.unfocused = "col-md-1";
 
 	//Number of photo/types in gallery.
 	$scope.selectionNumber = 3;
@@ -62,8 +62,7 @@ blueBikeApplication.controller("lightboxController", function($scope){
     {
 	if (numeric < $scope.selectionNumber && $scope.selectionNumber > 0 && $scope.currentImageBuffer  != numeric)
 	{
-	    makeSmaller($scope.selectionMap[$scope.currentImageBuffer], $scope.focused, $scope.unfocused)
-	    makeLarger($scope.selectionMap[numeric], $scope.unfocused, $scope.focused)
+	    rotateImages($scope.selectionMap[$scope.currentImageBuffer], $scope.selectionMap[numeric], $scope.focused, $scope.unfocused);
 	}
 	else
 	{
@@ -74,21 +73,71 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	$scope.currentImageBuffer = numeric;
 	$scope.imageBuffer = $scope.imageBufferList[numeric];
     };
+
+    $scope.setMediaBufferKeyboard = function()
+    {
+	console.log("Changing mediaBuffer location.");
+	//Right Boundary
+	if ($scope.currentImageBuffer == $scope.selectionNumber)
+	{
+	    $scope.currentImageBuffer = 0;
+	}
+	else
+	{
+	    $scope.currentImageBuffer += 1;
+	}
+    };
+    $scope.initializeLightbox = function(){
+
+    $('body').keypress(function(e)
+    {
+	$scope.$apply(function(){
+	    if (e.key === "ArrowLeft" && $scope.currentImageBuffer != 0)
+	    {
+		$scope.setMediaBuffer($scope.currentImageBuffer - 1);
+	    }
+
+	    if (e.key === "ArrowRight" && $scope.currentImageBuffer != $scope.selectionNumber - 1)
+	    {
+		$scope.setMediaBuffer($scope.currentImageBuffer + 1);
+	    }
+	});
+    })
+
+    console.log("Initialized lightbox.");
+    };
 });
 
+var rotateImages = function($selectorOne, $selectorTwo, focused, nonFocused)
+{
+    makeSmaller($selectorOne, focused, nonFocused, 
+		makeLarger, $selectorTwo);
+};
+
 //Utility functions.
-var makeSmaller = function($selector, focused, nonFocused)
+var makeSmaller = function($selector, focused, nonFocused, optionalCallback, optionalSelector)
 {
     if ($selector.hasClass(focused))
     {
 	$selector.switchClass(focused, nonFocused, 250, "easeInOutQuad");
     }
-}
 
-var makeLarger = function($selector, nonFocused, focused)
+    if (optionalCallback != null)
+	{
+	setTimeout(function(){
+	    $selector.switchClass(focused, nonFocused, 250, "easeInOutQuad");
+	    optionalCallback(optionalSelector, nonFocused, focused);
+	});
+    }
+
+};
+
+var makeLarger = function($selector, nonFocused, focused, optionalCallback)
 {
     if ($selector.hasClass(nonFocused))
     {
 	$selector.switchClass(nonFocused, focused, 250, "easeInOutQuad");
     }
-}
+};
+
+
