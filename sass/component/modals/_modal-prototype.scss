@@ -1,4 +1,21 @@
 .modal-alert{
+    &.ng-hide-add, &.ng-hide-remove, &.ng-show-add, &.ng-show-remove{
+	&-active{
+	    transition: 0.2s linear all;
+	}
+
+	transition: 0s linear all;
+    }
+
+    &.ng-hide{
+	@include transition-time(0.2s);
+	opacity: 0;
+    }
+
+    &-hidden
+    {
+    }
+
     z-index: $lightbox-z-index;
     position: fixed;
     height: 100vh;

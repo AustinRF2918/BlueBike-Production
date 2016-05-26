@@ -1,5 +1,8 @@
 
-blueBikeApplication.controller("formValidator", function($scope){
+blueBikeApplication.controller("formValidator", function($scope, $http){
+    $scope.badFlag = false;
+    $scope.goodFlag = false;
+    
     $scope.name = "";
     $scope.nameGood = false;
 
@@ -12,6 +15,70 @@ blueBikeApplication.controller("formValidator", function($scope){
     $scope.message = "";
     $scope.messageGood = false;
 
+    
+    $scope.submit = function(){
+	$http({
+	    method: 'POST',
+	    url : 'submission.php',
+	    data : {
+		clientName: $scope.name,
+		clientEmail: $scope.email,
+		clientPhone: $scope.phone,
+		clientMessage: $scope.message
+	    }
+	});
+    };
+
+    $scope.refreshGUIFlags = function()
+    {
+	console.log("refresh GUI Flags.");
+	if ($scope.nameGood && $scope.emailGood && $scope.phoneGood && $scope.messageGood)
+	{
+	    
+	    $scope.submit();
+	    $scope.goodFlag = true;
+	    $scope.name = "";
+	    $scope.email = "";
+	    $scope.phone = "";
+	    $scope.message = "";
+	    $scope.nameGood = false;
+	    $scope.emailGood = false;
+	    $scope.messageGood = false;
+	    $scope.phoneGood = false;
+	    stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+	}
+	else
+	{
+	    $scope.badFlag = true;
+
+	    if ($scope.nameGood == false)
+	    {
+		$scope.name = "";
+	    }
+
+	    if ($scope.emailGood == false)
+	    {
+		$scope.email = "";
+	    }
+	    
+	    if ($scope.phoneGood == false)
+	    {
+		$scope.phone = "";
+	    }
+
+	    if ($scope.messageGood == false)
+	    {
+		$scope.message = "";
+	    }
+	}
+    }
+
+    $scope.resetGUIFlags = function()
+    {
+	console.log("reset GUI Flags.");
+	$scope.badFlag = false;
+	$scope.goodFlag = false;
+    }
     
     $scope.focusForm = function(numeric){
 	if (numeric == 1)
