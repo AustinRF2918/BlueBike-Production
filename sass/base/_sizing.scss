@@ -20,16 +20,25 @@ $full-screen-width: 100vw;
 	$general-button-height: 60px;
 	$general-button-font-size: 20px;
 
-	 
 	    //Btn send
 	    $btn-send-border: $btn-send-background;
 	    $btn-send-height: $general-button-height;
 	    $btn-send-width: $general-button-width;
 	    $btn-send-text-size: $general-button-font-size;
 
+	    //Btn secondary
 	    $btn-secondary-outline-height: $general-button-height;
 	    $btn-secondary-outline-width: $general-button-width;
 	    $btn-secondary-outline-text-size: $general-button-font-size;
+
+	    //Btn send
+	    $btn-modal-border-good: $btn-modal-border-good;
+	    $btn-modal-border-bad: $btn-modal-border-bad;
+	    $btn-modal-height: $general-button-height;
+	    $btn-modal-width: $general-button-width;
+	    $btn-modal-text-size: $general-button-font-size;
+
+
 
 
 

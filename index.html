@@ -228,37 +228,37 @@
 	  <div class="row">
 	    <div class="col-md-12">
 	      <h1 class="text-xs-center">Could Not Submit Email</h1>
-	      <h3 class="text-xs-center">The data you entered was not valid.</h3>
-	      <hr class="m-t-2 m-b-3 starlight">
+	      <h4 class="text-xs-center">The data you entered was not valid.</h4>
+	      <hr class="m-t-2 m-b-3 starlight-failure">
 	    </div>
 	  </div>
 	  <div class="row text-xs-left">
 	    <div class="col-md-8 col-md-offset-2">
 	      <p>Unfourtunately for whatever reason, our system thinks that the data you entered may not be correct.
 	      Please try re-entering and try again.</p>
-	      <div class="text-xs-center">
-	        <button ng-click="resetGUIFlags()" class="btn btn-secondary m-t-0">Okay</button>
-	      </div>
 	    </div>
+	      <div class="text-xs-center">
+	        <button ng-click="resetGUIFlags()" class="btn btn-modal-failure m-t-0">Okay</button>
+	      </div>
 	  </div>
 	</div>
       </div>
      <div ng-show="goodFlag" ng-hide="!goodFlag" class="modal-alert">
-	<div class="modal-alert-container bg-success">
-	  <div class="row">
+	<div class="modal-alert-container modal-submission-good" ng-click="resetGUIFlags()">
+	  <div class="row" ng-click="resetGUIFlags()">
 	    <div class="col-md-12">
 	      <h1 class="text-xs-center">Success</h1>
 	      <h4 class="text-xs-center">Your email has been sent to Blue Bike Studios.</h4>
-	      <hr class="m-t-3 m-b-3 starlight">
+	      <hr class="m-t-3 m-b-3 starlight-success">
 	    </div>
 	  </div>
 	  <div class="row text-xs-center">
 	    <div class="col-md-8 col-md-offset-2">
 	      <p>We'll get back to you as soon as possible!</p>
-	      <div class="text-xs-center">
-	        <button ng-click="resetGUIFlags()" class="btn btn-primary m-t-1">Okay</button>
-	      </div>
 	    </div>
+	     <div class="text-xs-center">
+	        <button ng-click="resetGUIFlags()" class="btn btn-modal-success m-t-0">Okay</button>
+	     </div>
 	  </div>
 	</div>
       </div>
@@ -279,7 +279,7 @@
 	   </div>     
 	   <div class="row m-t-2">
 	     <div class="text-xs-center">
-		<button ng-click="refreshGUIFlags()" class="btn btn-send btn-send-failure">Send</button>
+		<button ng-mouseenter="stylizeButton()" ng-click="refreshGUIFlags()" class="btn btn-send btn-send-failure">Send</button>
 	     </div>
 	   </div>
       </div>

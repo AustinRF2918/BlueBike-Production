@@ -11,7 +11,12 @@ $main-fade-style: "linear all";
     //btn-lightbox
     $btn-lightbox-transition: $general-btn-fade-in ease-in all;
     $btn-lightbox-transition-reset:  $general-btn-fade-in ease-out all;
+
     //btn-secondary-outline
     $btn-secondary-outline-transition: $general-btn-fade-in ease-in all;
+
     //btn-send
     $btn-send-transition: $general-btn-fade-in ease-in all;
+
+    //btn-modal
+    $btn-modal-transition: $general-btn-fade-in ease-in all;

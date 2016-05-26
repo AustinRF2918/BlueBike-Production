@@ -31,10 +31,9 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 
     $scope.refreshGUIFlags = function()
     {
-	console.log("refresh GUI Flags.");
+	//console.log("refresh GUI Flags.");
 	if ($scope.nameGood && $scope.emailGood && $scope.phoneGood && $scope.messageGood)
 	{
-	    
 	    $scope.submit();
 	    $scope.goodFlag = true;
 	    $scope.name = "";
@@ -45,7 +44,6 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    $scope.emailGood = false;
 	    $scope.messageGood = false;
 	    $scope.phoneGood = false;
-	    stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
 	}
 	else
 	{
@@ -75,7 +73,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 
     $scope.resetGUIFlags = function()
     {
-	console.log("reset GUI Flags.");
+	//console.log("reset GUI Flags.");
 	$scope.badFlag = false;
 	$scope.goodFlag = false;
     }
@@ -112,7 +110,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    defocusInput($("#input"), $scope.inputGood, "form-valid");
 	    defocusInput($("#phone"), $scope.phoneGood, "form-valid");
 	}
-	stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
     }
 
     $scope.checkName = function()
@@ -130,7 +128,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    $scope.nameGood = false;
 	    stylizeInput($("#name"), "form-invalid", "form-valid", $scope.nameGood);
 	}
-	stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
     };
 
     $scope.checkEmail = function()
@@ -148,7 +146,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    $scope.emailGood = false;
 	    stylizeInput($("#email"), "form-invalid", "form-valid", $scope.emailGood);
 	}
-	stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
     };
 
     $scope.checkPhone = function()
@@ -156,6 +154,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	defocusInput($("#input"), $scope.messageGood, "form-valid");
 	defocusInput($("#email"), $scope.emailGood, "form-valid");
 	defocusInput($("#name"), $scope.nameGood, "form-valid");
+
 	if ($scope.phone != "" && validatePhone($scope.phone))
 	{
 	    $scope.phoneGood = true;
@@ -166,7 +165,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    $scope.phoneGood = false;
 	    stylizeInput($("#phone"), "form-invalid", "form-valid", $scope.phoneGood);
 	}
-	stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
     };
     
     $scope.checkMessage = function()
@@ -180,12 +179,43 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    $scope.messageGood = true;
 	    stylizeInput($("#input"), "form-invalid", "form-valid", $scope.messageGood);
 	}
-	else if ($scope.message.length < 5)
+	else  
 	{
 	    $scope.messageGood = false;
 	    stylizeInput($("#input"), "form-invalid", "form-valid", $scope.messageGood);
 	}
-	stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+
+	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+    };
+
+    $scope.stylizeButton = function(boolList)
+    {
+	if (boolList == undefined)
+	{
+	    boolList = [$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood];
+	}
+
+	var flag = true;
+
+	for (var i = 0; i < boolList.length; i++)
+	{
+	    if (boolList[i] == false)
+	    {
+		flag = false;
+		break;
+	    }
+	}
+
+	if (flag == true)
+	{
+	    $('.btn-send').addClass('btn-send-success');
+	    $('.btn-send').removeClass('btn-send-failure');
+	}
+	else
+	{
+	    $('.btn-send').removeClass('btn-send-success');
+	    $('.btn-send').addClass('btn-send-failure');
+	}
     };
 
     $scope.defocusForm = function()
@@ -194,34 +224,9 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	defocusInput($("#phone"), $scope.phoneGood, "form-valid");
 	defocusInput($("#email"), $scope.emailGood, "form-valid");
 	defocusInput($("#name"), $scope.nameGood, "form-valid");
-	stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
-    }
+	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
+    };
 });
-
-var stylizeButton = function(boolList)
-{
-    var flag = true;
-
-    for (var i = 0; i < boolList.length; i++)
-    {
-	if (boolList[i] == false)
-	{
-	    flag = false;
-	    break;
-	}
-    }
-
-    if (flag == true)
-    {
-	$('.btn-send').addClass('btn-send-success');
-	$('.btn-send').removeClass('btn-send-failure');
-    }
-    else
-    {
-	$('.btn-send').removeClass('btn-send-success');
-	$('.btn-send').addClass('btn-send-failure');
-    }
-}
 
 //For during typing.
 var stylizeInput = function($selector, badStyle, goodStyle, currentStatus)
