@@ -223,8 +223,8 @@
 	</div>
   </section>
     <section ng-controller="formValidator" class="contact" id="contact">
-      <div ng-show="badFlag" ng-hide="!badFlag" class="modal-alert">
-	<div class="modal-alert-container modal-submission-bad">
+      <div ng-show="badFlag" ng-hide="!badFlag" class="modal-alert" ng-click="resetGUIFlags()">
+	<div class="modal-alert-container modal-submission-bad" ng-click="$event.stopPropagation()">
 	  <div class="row">
 	    <div class="col-md-12">
 	      <h1 class="text-xs-center">Could Not Submit Email</h1>
@@ -243,9 +243,9 @@
 	  </div>
 	</div>
       </div>
-     <div ng-show="goodFlag" ng-hide="!goodFlag" class="modal-alert">
-	<div class="modal-alert-container modal-submission-good" ng-click="resetGUIFlags()">
-	  <div class="row" ng-click="resetGUIFlags()">
+     <div ng-show="goodFlag" ng-hide="!goodFlag" class="modal-alert" ng-click="resetGUIFlags()">
+	<div class="modal-alert-container modal-submission-good" ng-click="$event.stopPropagation()">
+	  <div class="row">
 	    <div class="col-md-12">
 	      <h1 class="text-xs-center">Success</h1>
 	      <h4 class="text-xs-center">Your email has been sent to Blue Bike Studios.</h4>
