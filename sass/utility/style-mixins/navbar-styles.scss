@@ -1,0 +1,27 @@
+@mixin generateStyle($name, $navNormal, $navHover, $brandNormal, $background)
+{
+    .#{$name}-viewing{
+	&,.active
+	{
+	    @include transition-time(0.5s);
+	    color: $brandNormal !important;
+
+	    &:hover, &:active{
+		color: darken($brandNormal, 10%) !important;
+	    }
+	}
+
+	.navbar-nav{
+	    color: $navNormal;
+
+	    &:hover, &:active, &:focus{
+		color: $navHover;
+	    }
+	    
+	}
+
+	background: $background;
+	    
+
+    }
+}

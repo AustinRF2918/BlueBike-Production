@@ -102,9 +102,7 @@ blueBikeApplication.controller("lightboxController", function($scope){
 		$scope.setMediaBuffer($scope.currentImageBuffer + 1);
 	    }
 	});
-    })
-
-    console.log("Initialized lightbox.");
+    });
     };
 });
 

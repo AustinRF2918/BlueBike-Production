@@ -27,25 +27,25 @@
 
 </head>
 
-<body ng-app="BlueBikeLandingPage" data-offset="71" data-spy="scroll" data-target=".navbar" >
-  
-  <nav class="navbar navbar-fixed-top bb-navbar" id="navbar-generic">
+<body ng-app="BlueBikeLandingPage" data-spy="scroll" data-offset="30" data-target=".navbar">
+  <div ng-controller="navbarController">
+  <nav class="navbar navbar-fixed-top bb-navbar introduction-viewing" id="navbar-generic">
     <div class="container">
-        <li class="nav-item pull-xs-left m-x-1">
-	    <a class="navbar-brand bb-navbar-brand nav-link navbar-nav" href="#introduction">Blue Bike Studios</a>
+	<li class="nav-item pull-xs-left m-x-1">
+	    <a id="nav-1" class="navbar-brand bb-navbar-brand nav-link navbar-nav " href="#introduction">Blue Bike Studios</a>
 	</li>
 	<ul class="nav navbar-nav">
 	    <li class="nav-item active pull-xs-right m-x-1">
-		<a class="nav-link navbar-nav bb-navbar-nav" href="#contact">Contact</a>
+		<a id="nav-5" class="nav-link navbar-nav bb-navbar-nav" href="#contact">Contact</a>
 	    </li>
 	    <li class="nav-item active pull-xs-right m-x-1">
-		<a class="nav-link navbar-nav bb-navbar-nav" href="#medias">Medias</a>
+		<a id="nav-4" class="nav-link navbar-nav bb-navbar-nav" href="#medias">Medias</a>
 	    </li>
 	    <li class="nav-item pull-xs-right m-x-1">
-		<a class="nav-link navbar-nav bb-navbar-nav" href="#about">About</a>
+		<a id="nav-3" class="nav-link navbar-nav bb-navbar-nav" href="#about">About</a>
 	    </li>
 	    <li class="nav-item pull-xs-right m-x-1">
-		<a class="nav-link navbar-nav bb-navbar-nav" href="#portfolio">Portfolio</a>
+		<a id="nav-2" class="nav-link navbar-nav bb-navbar-nav" href="#portfolio">Portfolio</a>
 	    </li>
 	    <li class="nav-item pull-xs-right">
 	      <button id="navbar-mobile-toggler" class="bb-navbar-button" href="#">
@@ -75,6 +75,7 @@
 	</li>
     </ul>
   </nav>
+  </div>
   <section class="introduction" id="introduction">
     <div class="container introduction-container">
       <div class="row">
@@ -318,6 +319,7 @@
   <script src="js/utilities/app.js"></script> 
   <script src="js/utilities/easy-scroll.js"></script> 
   <script src="js/controllers/lightbox.js"></script> 
+  <script src="js/controllers/navbar.js"></script> 
   <script src="js/controllers/forms.js"></script> 
 </body>
 

@@ -282,9 +282,16 @@
   background: #c43a54; }
 
 .bb-navbar {
+  list-style-type: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   border-radius: 0px;
-  background: #2C3E50;
   height: 80px; }
+  .bb-navbar:hover {
+    height: 100px;
+    padding-top: 18px; }
   @media screen and (max-width: 767px) {
     .bb-navbar {
       height: 50px; } }
@@ -298,8 +305,7 @@
       display: none !important; } }
   .bb-navbar-nav, .bb-navbar-brand, .bb-navbar-nav-mobile {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    color: white; }
+    font-weight: 700; }
   .bb-navbar-nav {
     margin-top: 15px;
     font-size: 15px;
@@ -324,14 +330,6 @@
       .bb-navbar-brand {
         margin-top: 0px;
         font-size: 19px; } }
-  .bb-navbar-brand:focus {
-    color: white; }
-  .bb-navbar-brand:hover, .bb-navbar-brand:active {
-    color: #0a5375 !important; }
-  .bb-navbar-nav:hover, .bb-navbar-nav:active {
-    color: #0a5375 !important; }
-  .bb-navbar-nav:focus {
-    color: white; }
 
 .mobile-nav-list {
   position: absolute;
@@ -342,12 +340,80 @@
 .button-on {
   border-bottom: 1px black solid; }
 
-.active {
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  color: #ff6347 !important; }
+.introduction-viewing {
+  background: #2C3E50; }
+  .introduction-viewing, .introduction-viewing .active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    color: #ff6347 !important; }
+    .introduction-viewing:hover, .introduction-viewing:active, .introduction-viewing .active:hover, .introduction-viewing .active:active {
+      color: #ff3814 !important; }
+  .introduction-viewing .navbar-nav {
+    color: white; }
+    .introduction-viewing .navbar-nav:hover, .introduction-viewing .navbar-nav:active, .introduction-viewing .navbar-nav:focus {
+      color: #ff6347; }
+
+.portfolio-viewing {
+  background: #2C3E50; }
+  .portfolio-viewing, .portfolio-viewing .active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    color: #ff6347 !important; }
+    .portfolio-viewing:hover, .portfolio-viewing:active, .portfolio-viewing .active:hover, .portfolio-viewing .active:active {
+      color: #ff3814 !important; }
+  .portfolio-viewing .navbar-nav {
+    color: white; }
+    .portfolio-viewing .navbar-nav:hover, .portfolio-viewing .navbar-nav:active, .portfolio-viewing .navbar-nav:focus {
+      color: #ff6347; }
+
+.about-viewing {
+  background: #2C3E50; }
+  .about-viewing, .about-viewing .active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    color: #ff6347 !important; }
+    .about-viewing:hover, .about-viewing:active, .about-viewing .active:hover, .about-viewing .active:active {
+      color: #ff3814 !important; }
+  .about-viewing .navbar-nav {
+    color: white; }
+    .about-viewing .navbar-nav:hover, .about-viewing .navbar-nav:active, .about-viewing .navbar-nav:focus {
+      color: #ff6347; }
+
+.medias-viewing {
+  background: #2C3E50; }
+  .medias-viewing, .medias-viewing .active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    color: #ff6347 !important; }
+    .medias-viewing:hover, .medias-viewing:active, .medias-viewing .active:hover, .medias-viewing .active:active {
+      color: #ff3814 !important; }
+  .medias-viewing .navbar-nav {
+    color: white; }
+    .medias-viewing .navbar-nav:hover, .medias-viewing .navbar-nav:active, .medias-viewing .navbar-nav:focus {
+      color: #ff6347; }
+
+.contact-viewing {
+  background: #2C3E50; }
+  .contact-viewing, .contact-viewing .active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    color: #ff6347 !important; }
+    .contact-viewing:hover, .contact-viewing:active, .contact-viewing .active:hover, .contact-viewing .active:active {
+      color: #ff3814 !important; }
+  .contact-viewing .navbar-nav {
+    color: white; }
+    .contact-viewing .navbar-nav:hover, .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
+      color: #ff6347; }
 
 .introduction {
   background: #0a5375;
