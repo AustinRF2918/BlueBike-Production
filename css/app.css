@@ -349,7 +349,7 @@
   border: 0px black solid; }
 
 .icon-instagram {
-  border-radius: 30%;
+  border-radius: 100%;
   background: #002640;
   color: #ffffff;
   fill: #ffffff;
@@ -363,7 +363,7 @@
     transform: scale(1.25);
     transition: background-color .3s, transform .3s ease-out; }
 .icon-twitter {
-  border-radius: 30%;
+  border-radius: 100%;
   background: #002640;
   color: #ffffff;
   fill: #ffffff;
@@ -377,7 +377,7 @@
     transform: scale(1.25);
     transition: background-color .3s, transform .3s ease-out; }
 .icon-facebook {
-  border-radius: 30%;
+  border-radius: 100%;
   background: #002640;
   color: #ffffff;
   fill: #ffffff;

@@ -2,7 +2,7 @@
 
 @mixin social-icon($background, $fill, $backgroundHover, $fillHover)
 {
-    border-radius: 30%;
+    border-radius: 100%;
     background: $background;
     color: $fill;
     fill: $fill;
