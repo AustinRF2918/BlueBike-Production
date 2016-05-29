@@ -38,14 +38,14 @@
 	    <li class="nav-item active pull-xs-right m-x-1">
 		<a id="nav-5" class="nav-link navbar-nav bb-navbar-nav" href="#contact">Contact</a>
 	    </li>
+	    <li class="nav-item pull-xs-right m-x-1">
+		<a id="nav-2" class="nav-link navbar-nav bb-navbar-nav" href="#portfolio">Portfolio</a>
+	    </li>
 	    <li class="nav-item active pull-xs-right m-x-1">
 		<a id="nav-4" class="nav-link navbar-nav bb-navbar-nav" href="#medias">Medias</a>
 	    </li>
 	    <li class="nav-item pull-xs-right m-x-1">
 		<a id="nav-3" class="nav-link navbar-nav bb-navbar-nav" href="#about">About</a>
-	    </li>
-	    <li class="nav-item pull-xs-right m-x-1">
-		<a id="nav-2" class="nav-link navbar-nav bb-navbar-nav" href="#portfolio">Portfolio</a>
 	    </li>
 	    <li class="nav-item pull-xs-right">
 	      <button id="navbar-mobile-toggler" class="bb-navbar-button" href="#">
@@ -127,42 +127,12 @@
       </div>
     </div>
   </div>
-  <section class="portfolio" id="portfolio">
-    <div class="container portfolio-container">
-      <div class="row">
-	<div class="col-md-12 text-xs-center">
-	  <h2>Portfolio</h2>
-	   <hr class="starlight-inverse m-y-1">
-	</div>
-      </div>
-      <div class="row">
-	<div class="col-md-4 m-t-2">
-	  <div ng-click="toggleLightbox(1)" class="portfolio-overlay portfolio-caption">
-	    <div class="portfolio-caption-content">
-	    </div>
-	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-cabin.png"/></a>
-	  </div>
-	</div>
-	<div class="col-md-4 m-t-2 portfolio-caption">
-	  <div ng-click="toggleLightbox(2)" class="portfolio-overlay">
-	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-cake.png"/></a>
-	  </div>
-	</div>
-	<div class="col-md-4 m-t-2 portfolio-caption">
-	  <div ng-click="toggleLightbox(3)" class="portfolio-overlay">
-	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-tent.png"/></a>
-	  </div>
-	</div>
-      </div>
-    </div>
-  </section>
-  </div>
-  <section class="about" id="about">
+<section class="about" id="about">
     <div class="container about-container">
     <div class="row">
 	<div class="col-md-12 text-xs-center">
 	   <h2 class="m-b-2">About</h1>
-	   <hr class="starlight m-y-1"/>
+	   <hr class="starlight-about m-y-1"/>
     </div>
     </div>
     <div class="row">
@@ -185,13 +155,13 @@
 	    <h2>100% Responsive Websites</h2>
 	  </div>
 	</div>
-	<div class="row">
+	<div class="row m-t-3">
+	    <hr class="starlight-medias">
+	</div>
+	<div class="row m-t-1">
 	    <div class="col-md-6 col-md-offset-3 m-t-1">
 	    <h3 class="">60% of online traffic comes from mobile devices, we'll help you take advantage of that.</h3>
 	    </div>
-	</div>
-	<div class="row m-t-2">
-	    <hr class="starlight-inverse">
 	</div>
 	<div class="row m-t-2">
 	  <div class="col-md-4">
@@ -223,6 +193,37 @@
 	</div>
 	</div>
   </section>
+  <section class="portfolio" id="portfolio">
+    <div class="container portfolio-container">
+      <div class="row">
+	<div class="col-md-12 text-xs-center">
+	  <h2>Portfolio</h2>
+	   <hr class="starlight-portfolio m-y-1">
+	</div>
+      </div>
+      <div class="row">
+	<div class="col-md-4 m-t-2">
+	  <div ng-click="toggleLightbox(1)" class="portfolio-overlay portfolio-caption">
+	    <div class="portfolio-caption-content">
+	    </div>
+	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-cabin.png"/></a>
+	  </div>
+	</div>
+	<div class="col-md-4 m-t-2 portfolio-caption">
+	  <div ng-click="toggleLightbox(2)" class="portfolio-overlay">
+	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-cake.png"/></a>
+	  </div>
+	</div>
+	<div class="col-md-4 m-t-2 portfolio-caption">
+	  <div ng-click="toggleLightbox(3)" class="portfolio-overlay">
+	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-tent.png"/></a>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </section>
+  </div>
+  
     <section ng-controller="formValidator" class="contact" id="contact">
       <div ng-show="badFlag" ng-hide="!badFlag" class="modal-alert" ng-click="resetGUIFlags()">
 	<div class="modal-alert-container modal-submission-bad" ng-click="$event.stopPropagation()">
@@ -260,8 +261,8 @@
       <div class="row">
 	<div class="col-md-12 text-xs-center">
 	  <h2>Contact</h2>
-	  <h4 class="m-t-1 m-b-3">Send us an email and we'll get back to you as soon as possible!</h4>
-	   <hr class="starlight m-y-1">
+	   <hr class="starlight-contact m-b-1">
+	  <h4 class="m-t-3 m-b-1">Send us an email and we'll get back to you as soon as possible!</h4>
 	</div>
       </div>
 	    <div class="row m-t-1">

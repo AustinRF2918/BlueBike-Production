@@ -5,7 +5,7 @@ $navy-blue: #004573;
 $navy-blue-dark: #1A242F;
 $teal-green: #0073bf;
 $teal-green-dark: darken(#0073bf, 30%);
-$light-coral: #0accb2;
+$light-coral: lighten(saturate(#0accb2, 50%), 20%);
 $black-blue: #1a242f;
 $coral: coral;
 $ebony-black-partial-transparent: rgba(0, 0, 0, .9);
@@ -75,11 +75,11 @@ $color-palette-13: $dark-orangy;
     $section-introduction-text: $color-palette-2;
 
     //Portfolio
-    $section-portfolio-background: $color-palette-2;
-    $section-portfolio-text: $color-palette-3;
+    $section-portfolio-background: $color-palette-3;
+    $section-portfolio-text: $color-palette-2;
 
     //About
-    $section-about-background: $color-palette-5;
+    $section-about-background: $color-palette-3;
     $section-about-text: $color-palette-2;
 
     //Medias
