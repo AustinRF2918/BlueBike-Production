@@ -53,7 +53,7 @@
 .btn-send {
   transition: 0.5s ease-in all;
   border: white;
-  color: #004573;
+  color: #2C3E50;
   background: white;
   line-height: 60px;
   width: 250px;
@@ -132,11 +132,11 @@
     top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
-    background-color: #0073bf;
+    background-color: #0a5375;
     color: white; }
 
 .starlight-inverse {
-  border: 3px solid #004573;
+  border: 3px solid #2C3E50;
   padding: 0;
   text-align: center;
   max-width: 250px; }
@@ -149,7 +149,7 @@
     font-size: 2em;
     padding: 0 0.25em;
     background-color: white;
-    color: #004573; }
+    color: #2C3E50; }
 
 .starlight-success {
   border: 3px solid white;
@@ -281,9 +281,6 @@
   color: white;
   background: #c43a54; }
 
-.no-border {
-  border: 0px black solid; }
-
 .bb-navbar {
   list-style-type: none;
   -webkit-transition: all 0.5s ease;
@@ -341,85 +338,85 @@
   list-style-type: none; }
 
 .button-on {
-  border-bottom: 1px #001726 solid; }
+  border-bottom: 1px black solid; }
 
 .introduction-viewing {
-  background: #004573; }
+  background: #2C3E50; }
   .introduction-viewing, .introduction-viewing .active {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #0accb2 !important; }
+    color: #ff6347 !important; }
     .introduction-viewing:hover, .introduction-viewing:active, .introduction-viewing .active:hover, .introduction-viewing .active:active {
-      color: #089b88 !important; }
+      color: #ff3814 !important; }
   .introduction-viewing .navbar-nav {
     color: white; }
     .introduction-viewing .navbar-nav:hover, .introduction-viewing .navbar-nav:active, .introduction-viewing .navbar-nav:focus {
-      color: #0accb2; }
+      color: #ff6347; }
 
 .portfolio-viewing {
-  background: #004573; }
+  background: #2C3E50; }
   .portfolio-viewing, .portfolio-viewing .active {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #0accb2 !important; }
+    color: #ff6347 !important; }
     .portfolio-viewing:hover, .portfolio-viewing:active, .portfolio-viewing .active:hover, .portfolio-viewing .active:active {
-      color: #089b88 !important; }
+      color: #ff3814 !important; }
   .portfolio-viewing .navbar-nav {
     color: white; }
     .portfolio-viewing .navbar-nav:hover, .portfolio-viewing .navbar-nav:active, .portfolio-viewing .navbar-nav:focus {
-      color: #0accb2; }
+      color: #ff6347; }
 
 .about-viewing {
-  background: #004573; }
+  background: #2C3E50; }
   .about-viewing, .about-viewing .active {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #0accb2 !important; }
+    color: #ff6347 !important; }
     .about-viewing:hover, .about-viewing:active, .about-viewing .active:hover, .about-viewing .active:active {
-      color: #089b88 !important; }
+      color: #ff3814 !important; }
   .about-viewing .navbar-nav {
     color: white; }
     .about-viewing .navbar-nav:hover, .about-viewing .navbar-nav:active, .about-viewing .navbar-nav:focus {
-      color: #0accb2; }
+      color: #ff6347; }
 
 .medias-viewing {
-  background: #004573; }
+  background: #2C3E50; }
   .medias-viewing, .medias-viewing .active {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #0accb2 !important; }
+    color: #ff6347 !important; }
     .medias-viewing:hover, .medias-viewing:active, .medias-viewing .active:hover, .medias-viewing .active:active {
-      color: #089b88 !important; }
+      color: #ff3814 !important; }
   .medias-viewing .navbar-nav {
     color: white; }
     .medias-viewing .navbar-nav:hover, .medias-viewing .navbar-nav:active, .medias-viewing .navbar-nav:focus {
-      color: #0accb2; }
+      color: #ff6347; }
 
 .contact-viewing {
-  background: #004573; }
+  background: #2C3E50; }
   .contact-viewing, .contact-viewing .active {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #0accb2 !important; }
+    color: #ff6347 !important; }
     .contact-viewing:hover, .contact-viewing:active, .contact-viewing .active:hover, .contact-viewing .active:active {
-      color: #089b88 !important; }
+      color: #ff3814 !important; }
   .contact-viewing .navbar-nav {
     color: white; }
     .contact-viewing .navbar-nav:hover, .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
-      color: #0accb2; }
+      color: #ff6347; }
 
 .introduction {
-  background: #0073bf;
+  background: #0a5375;
   color: white; }
   @media (min-width: 768px) {
     .introduction-container {
@@ -446,14 +443,14 @@
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .introduction h2 {
-        font-size: 2.6em; } }
+        font-size: 2.45em; } }
     @media (max-width: 767px) {
       .introduction h2 {
         font-size: 1.75em; } }
 
 .portfolio {
   background: white;
-  color: #004573; }
+  color: #2C3E50; }
   @media (min-width: 768px) {
     .portfolio-container {
       padding-top: 110px;
@@ -464,10 +461,10 @@
       padding-bottom: 60px; } }
   .portfolio h2 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3.1em; }
+    font-size: 2.95em; }
 
 .about {
-  background: #0073bf;
+  background: #0a5375;
   color: white; }
   @media (min-width: 768px) {
     .about-container {
@@ -481,7 +478,7 @@
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .about h2 {
-        font-size: 3.1em; } }
+        font-size: 2.95em; } }
     @media (max-width: 767px) {
       .about h2 {
         font-size: 2.25em; } }
@@ -496,7 +493,7 @@
 
 .medias {
   background: white;
-  color: #004573; }
+  color: #2C3E50; }
   @media screen and (min-height: 768px) {
     .medias-container {
       padding-top: 90px;
@@ -505,26 +502,23 @@
     .medias-container {
       padding-top: 100px;
       padding-bottom: 100px; } }
-  .medias p {
-    color: #1A242F; }
-    @media (min-width: 768px) {
-      .medias p {
-        font-size: 1.25em; } }
-    @media (max-width: 767px) {
-      .medias p {
-        font-size: 1em; } }
+  @media (min-width: 768px) {
+    .medias p {
+      font-size: 1.25em; } }
+  @media (max-width: 767px) {
+    .medias p {
+      font-size: 1em; } }
   .medias h2 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .medias h2 {
-        font-size: 3.1em; } }
+        font-size: 2.95em; } }
     @media (max-width: 767px) {
       .medias h2 {
         font-size: 2.25em; } }
   .medias h3 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
-    color: #1A242F; }
+    text-align: center; }
     @media (min-width: 768px) {
       .medias h3 {
         font-size: 1.75em; } }
@@ -533,7 +527,7 @@
         font-size: 1.25em; } }
 
 .contact {
-  background: #0073bf;
+  background: #0a5375;
   color: white; }
   @media (min-width: 768px) {
     .contact-container {
@@ -547,13 +541,13 @@
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .contact h2 {
-        font-size: 3.1em; } }
+        font-size: 2.95em; } }
     @media (max-width: 767px) {
       .contact h2 {
         font-size: 2.25em; } }
 
 .footer-top {
-  background: #004573;
+  background: #2C3E50;
   color: white; }
   @media (min-width: 768px) {
     .footer-top-container {
@@ -567,7 +561,7 @@
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (max-width: 767px) {
       .footer-top h3 {
-        font-size: 2.6em; } }
+        font-size: 2.45em; } }
     @media (min-width: 768px) {
       .footer-top h3 {
         font-size: 1.75em; } }
@@ -614,7 +608,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: #0073bf; }
+  background-color: #0a5375; }
 .portfolio-overlay:hover:after {
   opacity: 0.8; }
 .portfolio-circular {

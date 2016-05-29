@@ -16,6 +16,7 @@
     }
 
     p{
+	color: $section-media-text-alternative;
         @include desktop
         {
             font-size: $media-paragraph-size;
@@ -44,6 +45,8 @@
     h3{
         font-family: $media-header-font;
         text-align: center;
+	color: $section-media-text-alternative;
+
         @include desktop
         {
             font-size: $media-subheader-small-size;

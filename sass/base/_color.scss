@@ -1,11 +1,11 @@
 //Descriptive color names.
 $ebony-black: black;
 $pearly-white: white;
-$navy-blue: #2C3E50;
+$navy-blue: #004573;
 $navy-blue-dark: #1A242F;
-$teal-green: darken(#0C648C, 5%);
-$teal-green-dark: darken(#0C648C, 30%);
-$light-coral: #ff6347;
+$teal-green: #0073bf;
+$teal-green-dark: darken(#0073bf, 30%);
+$light-coral: #0accb2;
 $black-blue: #1a242f;
 $coral: coral;
 $ebony-black-partial-transparent: rgba(0, 0, 0, .9);
@@ -13,6 +13,7 @@ $velvet-red: lighten(desaturate(#8c0c24, 30%), 20%);
 $froggy-green: lighten(desaturate(#0c8c34, 30%), 20%);
 $velvet-red-dark: lighten(desaturate(#8c0c24, 30%), 5%);
 $froggy-green-dark: lighten(desaturate(#0c8c34, 30%), 5%);
+$dark-orangy: #c77432;
 
 //Pallet Colors: Allows rapid changing of colors.
 //Note: Only utilize these in actually colorations in
@@ -30,6 +31,7 @@ $color-palette-9: $velvet-red;
 $color-palette-10: $froggy-green;
 $color-palette-11: $velvet-red-dark;
 $color-palette-12: $froggy-green-dark;
+$color-palette-13: $dark-orangy;
 
 //Navbar Coloration
     // Introduction.
@@ -83,6 +85,7 @@ $color-palette-12: $froggy-green-dark;
     //Medias
     $section-media-background: $color-palette-2;
     $section-media-text: $color-palette-3;
+    $section-media-text-alternative: $color-palette-4;
 
     //Contact
     $section-contact-background: $color-palette-5;

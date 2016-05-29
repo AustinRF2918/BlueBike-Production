@@ -27,7 +27,7 @@
 
 </head>
 
-<body ng-app="BlueBikeLandingPage" data-spy="scroll" data-offset="30" data-target=".navbar">
+<body ng-app="BlueBikeLandingPage" data-spy="scroll" data-offset="100" data-target=".navbar">
   <div ng-controller="navbarController">
   <nav class="navbar navbar-fixed-top bb-navbar introduction-viewing" id="navbar-generic">
     <div class="container">
@@ -83,7 +83,7 @@
 	   <img class="img-responsive img-desktop" alt="responsive image" src="img/asset-bike.svg"/>
 	   <h1 class="text-phone m-y-2-phone">Blue Bike Web Design</h1>
 	   <hr class="starlight m-t-1">
-	   <h2 class="m-t-3-desktop m-y-2-phone">Web Design - Programming - and Maintainence</h2>
+	   <h2 class="m-t-3-desktop p-t-2 m-b-2 phone">Web Design - Programming - and Maintainence</h2>
 	 </div>
       </div>
     </div>
@@ -195,21 +195,21 @@
 	</div>
 	<div class="row m-t-2">
 	  <div class="col-md-4">
-	    <div class="card" data-src="..." alt="">
+	    <div class="card no-border jump-in" data-src="..." alt="">
 	      <div class="card-block text-xs-center">
 		<img src="img/asset-phone.png"></i>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-md-4">
-	    <div class="card" data-src="..." alt="">
+	    <div class="card no-border jump-in" data-src="..." alt="">
 	      <div class="card-block text-xs-center">
 		<img src="img/asset-desktop.png"></i>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-md-4">
-	    <div class="card" data-src="..." alt="">
+	    <div class="card no-border jump-in" data-src="..." alt="">
 	      <div class="card-block text-xs-center">
 		<img src="img/asset-laptop.png"></i>
 	      </div>
@@ -234,10 +234,6 @@
 	    </div>
 	  </div>
 	  <div class="row text-xs-left">
-	    <div class="col-md-8 col-md-offset-2">
-	      <p>Unfourtunately for whatever reason, our system thinks that the data you entered may not be correct.
-	      Please try re-entering and try again.</p>
-	    </div>
 	      <div class="text-xs-center">
 	        <button ng-click="resetGUIFlags()" class="btn btn-modal-failure m-t-0">Okay</button>
 	      </div>
@@ -254,9 +250,6 @@
 	    </div>
 	  </div>
 	  <div class="row text-xs-center">
-	    <div class="col-md-8 col-md-offset-2">
-	      <p>We'll get back to you as soon as possible!</p>
-	    </div>
 	     <div class="text-xs-center">
 	        <button ng-click="resetGUIFlags()" class="btn btn-modal-success m-t-0">Okay</button>
 	     </div>
@@ -267,6 +260,7 @@
       <div class="row">
 	<div class="col-md-12 text-xs-center">
 	  <h2>Contact</h2>
+	  <h4 class="m-t-1 m-b-3">Send us an email and we'll get back to you as soon as possible!</h4>
 	   <hr class="starlight m-y-1">
 	</div>
       </div>
@@ -312,10 +306,10 @@
   </section>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"</script>
   <script src="js/utilities/app.js"></script> 
   <script src="js/utilities/easy-scroll.js"></script> 
   <script src="js/controllers/lightbox.js"></script> 
