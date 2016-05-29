@@ -1,0 +1,40 @@
+@import 'social-icons';
+
+@mixin social-icon($background, $fill, $backgroundHover, $fillHover)
+{
+    border-radius: 30%;
+    background: $background;
+    color: $fill;
+    fill: $fill;
+    transform: scale(.8);
+    transition: background-color .3s, transform .3s ease-in;
+
+    &:hover
+    {
+	border-radius: 100%;
+	background: $backgroundHover;
+	color: $fillHover;
+	fill: $fillHover;
+	transform: scale(1.25);
+	transition: background-color .3s, transform .3s ease-out;
+    }
+}
+
+.icon
+{
+    &-instagram
+    {
+	@include social-icon(#002640, #ffffff, #125688, #ffffff)
+    }
+
+    &-twitter
+    {
+	@include social-icon(#002640, #ffffff, #0084b4, #ffffff)
+    }
+
+    &-facebook
+    {
+	@include social-icon(#002640, #ffffff, #3b5998, #ffffff)
+    }
+}
+

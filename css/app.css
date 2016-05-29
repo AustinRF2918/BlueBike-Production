@@ -348,6 +348,49 @@
 .no-border {
   border: 0px black solid; }
 
+.icon-instagram {
+  border-radius: 30%;
+  background: #002640;
+  color: #ffffff;
+  fill: #ffffff;
+  transform: scale(0.8);
+  transition: background-color .3s, transform .3s ease-in; }
+  .icon-instagram:hover {
+    border-radius: 100%;
+    background: #125688;
+    color: #ffffff;
+    fill: #ffffff;
+    transform: scale(1.25);
+    transition: background-color .3s, transform .3s ease-out; }
+.icon-twitter {
+  border-radius: 30%;
+  background: #002640;
+  color: #ffffff;
+  fill: #ffffff;
+  transform: scale(0.8);
+  transition: background-color .3s, transform .3s ease-in; }
+  .icon-twitter:hover {
+    border-radius: 100%;
+    background: #0084b4;
+    color: #ffffff;
+    fill: #ffffff;
+    transform: scale(1.25);
+    transition: background-color .3s, transform .3s ease-out; }
+.icon-facebook {
+  border-radius: 30%;
+  background: #002640;
+  color: #ffffff;
+  fill: #ffffff;
+  transform: scale(0.8);
+  transition: background-color .3s, transform .3s ease-in; }
+  .icon-facebook:hover {
+    border-radius: 100%;
+    background: #3b5998;
+    color: #ffffff;
+    fill: #ffffff;
+    transform: scale(1.25);
+    transition: background-color .3s, transform .3s ease-out; }
+
 .bb-navbar {
   list-style-type: none;
   -webkit-transition: all 0.5s ease;
