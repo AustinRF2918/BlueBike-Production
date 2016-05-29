@@ -25,7 +25,7 @@
   border-radius: 4px;
   padding: 6px 7px; }
   .bb-navbar-button:hover, .bb-navbar-button:active, .bb-navbar-button:focus {
-    background: #1A242F; }
+    background: #002640; }
 
 .bb-navbar-icon-bar {
   display: block;
@@ -61,12 +61,12 @@
   font-size: 20px; }
 
 .btn-send-success:hover {
-  background: #3ac465;
-  border: #3ac465; }
+  background: #61d084;
+  border: #61d084; }
 
 .btn-send-failure:hover {
-  background: #c43a54;
-  border: #c43a54; }
+  background: #d06176;
+  border: #d06176; }
 
 .btn-lightbox-close {
   transition: 0.5s ease-in all;
@@ -90,7 +90,7 @@
     transition: 0.5s ease-in all;
     opacity: 0; }
   .btn-lightbox-close:hover, .btn-lightbox-close:active, .btn-lightbox-close:focus {
-    color: #1A242F; }
+    color: #002640; }
 
 .active {
   color: black; }
@@ -164,7 +164,7 @@
     top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
-    background-color: #3ac465;
+    background-color: #61d084;
     color: white; }
 
 .starlight-failure {
@@ -180,7 +180,7 @@
     top: -0.8em;
     font-size: 2em;
     padding: 0 0.25em;
-    background-color: #c43a54;
+    background-color: #d06176;
     color: white; }
 
 .starlight-about {
@@ -210,7 +210,7 @@
     display: inline-block;
     position: relative;
     top: -0.8em;
-    font-size: 4em;
+    font-size: 2.5em;
     padding: 0 0.25em;
     background-color: white;
     color: #004573; }
@@ -226,7 +226,7 @@
     display: inline-block;
     position: relative;
     top: -0.8em;
-    font-size: 2em;
+    font-size: 2.0em;
     padding: 0 0.25em;
     background-color: #004573;
     color: white; }
@@ -252,13 +252,13 @@
 
 .form-invalid {
   color: white;
-  background: #c43a54;
-  border-color: #c43a54; }
+  background: #d06176;
+  border-color: #d06176; }
 
 .form-valid {
-  color: #1A242F;
-  background: #3ac465;
-  border-color: #3ac465; }
+  color: #002640;
+  background: #61d084;
+  border-color: #61d084; }
 
 .lightbox-portfolio-wrapper {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -339,11 +339,11 @@
 
 .modal-submission-good {
   color: white;
-  background: #3ac465; }
+  background: #61d084; }
 
 .modal-submission-bad {
   color: white;
-  background: #c43a54; }
+  background: #d06176; }
 
 .no-border {
   border: 0px black solid; }
@@ -405,7 +405,7 @@
   list-style-type: none; }
 
 .button-on {
-  border-bottom: 1px #001726 solid; }
+  border-bottom: 1px #ff7d26 solid; }
 
 .introduction-viewing {
   background: #004573; }
@@ -414,13 +414,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #3dffe5 !important; }
+    color: #ff7d26 !important; }
     .introduction-viewing:hover, .introduction-viewing:active, .introduction-viewing .active:hover, .introduction-viewing .active:active {
-      color: #0affde !important; }
+      color: #f26100 !important; }
   .introduction-viewing .navbar-nav {
     color: white; }
     .introduction-viewing .navbar-nav:hover, .introduction-viewing .navbar-nav:active, .introduction-viewing .navbar-nav:focus {
-      color: #3dffe5; }
+      color: #ff7d26; }
 
 .portfolio-viewing {
   background: #004573; }
@@ -429,13 +429,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #3dffe5 !important; }
+    color: #ff7d26 !important; }
     .portfolio-viewing:hover, .portfolio-viewing:active, .portfolio-viewing .active:hover, .portfolio-viewing .active:active {
-      color: #0affde !important; }
+      color: #f26100 !important; }
   .portfolio-viewing .navbar-nav {
     color: white; }
     .portfolio-viewing .navbar-nav:hover, .portfolio-viewing .navbar-nav:active, .portfolio-viewing .navbar-nav:focus {
-      color: #3dffe5; }
+      color: #ff7d26; }
 
 .about-viewing {
   background: #004573; }
@@ -444,13 +444,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #3dffe5 !important; }
+    color: #ff7d26 !important; }
     .about-viewing:hover, .about-viewing:active, .about-viewing .active:hover, .about-viewing .active:active {
-      color: #0affde !important; }
+      color: #f26100 !important; }
   .about-viewing .navbar-nav {
     color: white; }
     .about-viewing .navbar-nav:hover, .about-viewing .navbar-nav:active, .about-viewing .navbar-nav:focus {
-      color: #3dffe5; }
+      color: #ff7d26; }
 
 .medias-viewing {
   background: #004573; }
@@ -459,13 +459,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #3dffe5 !important; }
+    color: #ff7d26 !important; }
     .medias-viewing:hover, .medias-viewing:active, .medias-viewing .active:hover, .medias-viewing .active:active {
-      color: #0affde !important; }
+      color: #f26100 !important; }
   .medias-viewing .navbar-nav {
     color: white; }
     .medias-viewing .navbar-nav:hover, .medias-viewing .navbar-nav:active, .medias-viewing .navbar-nav:focus {
-      color: #3dffe5; }
+      color: #ff7d26; }
 
 .contact-viewing {
   background: #004573; }
@@ -474,13 +474,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #3dffe5 !important; }
+    color: #ff7d26 !important; }
     .contact-viewing:hover, .contact-viewing:active, .contact-viewing .active:hover, .contact-viewing .active:active {
-      color: #0affde !important; }
+      color: #f26100 !important; }
   .contact-viewing .navbar-nav {
     color: white; }
     .contact-viewing .navbar-nav:hover, .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
-      color: #3dffe5; }
+      color: #ff7d26; }
 
 .introduction {
   background: #0073bf;
@@ -570,7 +570,7 @@
       padding-top: 100px;
       padding-bottom: 100px; } }
   .medias p {
-    color: #1A242F; }
+    color: #002640; }
     @media (min-width: 768px) {
       .medias p {
         font-size: 1.25em; } }
@@ -588,7 +588,7 @@
   .medias h3 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
-    color: #1A242F; }
+    color: #002640; }
     @media (min-width: 768px) {
       .medias h3 {
         font-size: 1.75em; } }
@@ -645,7 +645,7 @@
         font-size: 1.125em; } }
 
 .footer-bottom {
-  background: #1A242F;
+  background: #002640;
   color: white; }
   @media (min-width: 768px) {
     .footer-bottom {
