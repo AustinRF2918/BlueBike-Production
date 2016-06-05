@@ -4,7 +4,7 @@ $pearly-white: white;
 $navy-blue: #004573;
 $navy-blue-dark: darken(#004573, 10%);
 $teal-green: #0073bf;
-$teal-green-dark: darken(#0073bf, 30%);
+$teal-green-dark: darken(#0073bf, 40%);
 $light-coral: lighten(saturate(#0accb2, 50%), 30%);
 $black-blue: #1a242f;
 $coral: coral;
@@ -24,8 +24,16 @@ $color-palette-2: $pearly-white;
 $color-palette-3: $navy-blue;
 $color-palette-4: $navy-blue-dark;
 $color-palette-5: $teal-green;
-$color-palette-6: invert(lighten($navy-blue, 20%));
-$color-palette-7: invert(lighten($navy-blue, 20%));
+
+
+$color-palette-6: saturate(invert(lighten($navy-blue, 16%)), 30%);
+$color-palette-7: saturate(invert(lighten($navy-blue, 8%)), 30%);
+
+.make-orange
+{
+    color: $color-palette-7 !important;
+}
+
 $color-palette-8: $black-blue;
 $color-palette-9: $velvet-red;
 $color-palette-10: $froggy-green;

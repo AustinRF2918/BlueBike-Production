@@ -1,3 +1,6 @@
+.make-orange {
+  color: #ffa263 !important; }
+
 .introduction h1, .portfolio h2, .about h2, .medias h2, .contact h2, .footer-top h3 {
   text-transform: uppercase;
   font-weight: 700; }
@@ -261,10 +264,10 @@
   border-color: #61d084; }
 
 .lightbox-portfolio-wrapper {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: rgba(0, 0, 0, 0.9); }
 .lightbox-portfolio-top-wrapper {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: rgba(0, 0, 0, 0.9); }
 .lightbox-portfolio-header {
   color: white;
@@ -311,9 +314,15 @@
   width: 100vw;
   top: 2vh; }
   .modal-alert.ng-hide-add, .modal-alert.ng-hide-remove, .modal-alert.ng-show-add, .modal-alert.ng-show-remove {
-    transition: 0s linear all; }
+    -webkit-transition: all 0s ease;
+    -moz-transition: all 0s ease;
+    -ms-transition: all 0s ease;
+    -o-transition: all 0s ease; }
     .modal-alert.ng-hide-add-active, .modal-alert.ng-hide-remove-active, .modal-alert.ng-show-add-active, .modal-alert.ng-show-remove-active {
-      transition: 0.2s linear all; }
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease; }
   .modal-alert.ng-hide {
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -414,7 +423,7 @@
     .bb-navbar-button {
       display: none !important; } }
   .bb-navbar-nav, .bb-navbar-brand, .bb-navbar-nav-mobile {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700; }
   .bb-navbar-nav {
     margin-top: 15px;
@@ -448,7 +457,7 @@
   list-style-type: none; }
 
 .button-on {
-  border-bottom: 1px #ff7d26 solid; }
+  border-bottom: 1px #ff893a solid; }
 
 .introduction-viewing {
   background: #004573; }
@@ -457,13 +466,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #ff7d26 !important; }
+    color: #ffa263 !important; }
     .introduction-viewing:hover, .introduction-viewing:active, .introduction-viewing .active:hover, .introduction-viewing .active:active {
-      color: #f26100 !important; }
+      color: #ff8430 !important; }
   .introduction-viewing .navbar-nav {
     color: white; }
     .introduction-viewing .navbar-nav:hover, .introduction-viewing .navbar-nav:active, .introduction-viewing .navbar-nav:focus {
-      color: #ff7d26; }
+      color: #ffa263; }
 
 .portfolio-viewing {
   background: #004573; }
@@ -472,13 +481,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #ff7d26 !important; }
+    color: #ffa263 !important; }
     .portfolio-viewing:hover, .portfolio-viewing:active, .portfolio-viewing .active:hover, .portfolio-viewing .active:active {
-      color: #f26100 !important; }
+      color: #ff8430 !important; }
   .portfolio-viewing .navbar-nav {
     color: white; }
     .portfolio-viewing .navbar-nav:hover, .portfolio-viewing .navbar-nav:active, .portfolio-viewing .navbar-nav:focus {
-      color: #ff7d26; }
+      color: #ffa263; }
 
 .about-viewing {
   background: #004573; }
@@ -487,13 +496,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #ff7d26 !important; }
+    color: #ffa263 !important; }
     .about-viewing:hover, .about-viewing:active, .about-viewing .active:hover, .about-viewing .active:active {
-      color: #f26100 !important; }
+      color: #ff8430 !important; }
   .about-viewing .navbar-nav {
     color: white; }
     .about-viewing .navbar-nav:hover, .about-viewing .navbar-nav:active, .about-viewing .navbar-nav:focus {
-      color: #ff7d26; }
+      color: #ffa263; }
 
 .medias-viewing {
   background: #004573; }
@@ -502,13 +511,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #ff7d26 !important; }
+    color: #ffa263 !important; }
     .medias-viewing:hover, .medias-viewing:active, .medias-viewing .active:hover, .medias-viewing .active:active {
-      color: #f26100 !important; }
+      color: #ff8430 !important; }
   .medias-viewing .navbar-nav {
     color: white; }
     .medias-viewing .navbar-nav:hover, .medias-viewing .navbar-nav:active, .medias-viewing .navbar-nav:focus {
-      color: #ff7d26; }
+      color: #ffa263; }
 
 .contact-viewing {
   background: #004573; }
@@ -517,13 +526,13 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    color: #ff7d26 !important; }
+    color: #ffa263 !important; }
     .contact-viewing:hover, .contact-viewing:active, .contact-viewing .active:hover, .contact-viewing .active:active {
-      color: #f26100 !important; }
+      color: #ff8430 !important; }
   .contact-viewing .navbar-nav {
     color: white; }
     .contact-viewing .navbar-nav:hover, .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
-      color: #ff7d26; }
+      color: #ffa263; }
 
 .introduction {
   background: #0073bf;
@@ -537,12 +546,12 @@
       padding-top: 140px;
       padding-bottom: 70px; } }
   .introduction h1 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (max-width: 767px) {
       .introduction h1 {
         font-size: 2em; } }
   .introduction h3 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .introduction h3 {
         font-size: 1.75em; } }
@@ -550,7 +559,7 @@
       .introduction h3 {
         font-size: 1.25em; } }
   .introduction h2 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .introduction h2 {
         font-size: 2.6em; } }
@@ -570,7 +579,7 @@
       padding-top: 130px;
       padding-bottom: 60px; } }
   .portfolio h2 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3.1em; }
 
 .about {
@@ -585,7 +594,7 @@
       padding-top: 50px;
       padding-bottom: 60px; } }
   .about h2 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .about h2 {
         font-size: 3.1em; } }
@@ -621,7 +630,7 @@
       .medias p {
         font-size: 1em; } }
   .medias h2 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .medias h2 {
         font-size: 3.1em; } }
@@ -629,7 +638,7 @@
       .medias h2 {
         font-size: 2.25em; } }
   .medias h3 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     color: #002640; }
     @media (min-width: 768px) {
@@ -651,7 +660,7 @@
       padding-top: 100px;
       padding-bottom: 100px; } }
   .contact h2 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (min-width: 768px) {
       .contact h2 {
         font-size: 3.1em; } }
@@ -671,7 +680,7 @@
       padding-top: 70px;
       padding-bottom: 70px; } }
   .footer-top h3 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media (max-width: 767px) {
       .footer-top h3 {
         font-size: 2.6em; } }
