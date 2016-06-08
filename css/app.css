@@ -367,6 +367,10 @@
 .no-border {
   border: 0px black solid; }
 
+.list-social {
+  padding-left: 0px !important;
+  margin-left: 0px !important; }
+
 .icon-instagram {
   border-radius: 100%;
   background: #002640;
@@ -449,6 +453,7 @@
   display: block !important;
   height: 170px !important; }
   .bb-navbar-enabled .mobile-nav-list {
+    padding-left: 0px;
     height: 170px !important; }
 
 .bb-navbar-disabled {
@@ -522,7 +527,6 @@
 
 .mobile-nav-list {
   position: absolute;
-  margin-left: 0px;
   padding-left: 15px;
   list-style-type: none; }
 
