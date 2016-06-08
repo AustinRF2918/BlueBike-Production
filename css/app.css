@@ -542,9 +542,9 @@
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   display: block !important;
-  height: 200px !important; }
+  height: 170px !important; }
   .bb-navbar-enabled .mobile-nav-list {
-    height: 200px !important; }
+    height: 170px !important; }
 
 .bb-navbar-disabled {
   -webkit-transition: all 0.5s ease;
@@ -557,15 +557,17 @@
     height: 0px !important; }
 
 .bb-navbar-toggle {
-  top: 50px; }
+  position: fixed;
+  top: 50px;
+  background: blue; }
   .bb-navbar-toggle-inactive {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    position: absolute;
-    height: 0px;
+    position: fixed;
     display: none;
+    height: 0px;
     top: 0px;
     z-index: -999; }
     .bb-navbar-toggle-inactive .nav-item {
@@ -575,9 +577,8 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    background: blue;
     height: 170px;
-    position: absolute;
+    position: fixed;
     display: block; }
 
 .introduction {

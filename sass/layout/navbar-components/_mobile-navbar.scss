@@ -2,11 +2,14 @@
 {
     @include transition-time(0.5s);
     display: block !important;
-    height: 200px !important;
+
+    //Refactor sizes.
+    height: 170px !important;
 
     .mobile-nav-list
     {
-	height: 200px !important;
+	//Refactor sizes.
+	height: 170px !important;
     }
 }
 
@@ -23,26 +26,38 @@
 }
 .bb-navbar-toggle
 {
+
+    position: fixed;
     top: 50px;
+    background: blue;
 
     &-inactive{
-    @include transition-time(0.5s);
-	position: absolute;
-	height: 0px;
+	@include transition-time(0.5s);
+
+	//Create a punnet-square mixin for these.
+	position: fixed;
 	display: none;
+
+	height: 0px;
 	.nav-item
 	{
 	    display: none;
 	}
+
+	//Can we do this more elegantly?
 	top: 0px;
 	z-index: -999;
     }
 
     &-active{
-    @include transition-time(0.5s);
-	background: blue;
+	@include transition-time(0.5s);
+	//Change background.
+
+	//Refactor sizes.
 	height: 170px;
-	position: absolute;
+
+	//Create a punnet-square mixin for these.
+	position: fixed;
 	display: block;
     }
 
