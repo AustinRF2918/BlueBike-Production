@@ -26,6 +26,7 @@
 }
 .bb-navbar-toggle
 {
+	z-index: -9999;
     position: absolute;
     top: 80px;
     height: 170px;
@@ -50,11 +51,12 @@
 
 	//Can we do this more elegantly?
 	top: 0px;
-	z-index: -999;
+	z-index: -9999;
     }
 
     &-active{
 	@include transition-time(0.5s);
+
 	//Change background.
 
 	//Refactor sizes.
@@ -68,12 +70,20 @@
 }
 .bb-navbar
 {
+    background: $color-palette-3;
     @media screen and (max-width: 767px)
     {
         height: 50px;
     }
 
     &-nav-mobile{
+
+	color: $color-palette-2;
+
+	&:hover, &:focus, &:active{
+	    color: $color-palette-6;
+	}
+
         font-family: $navbar-font;
         font-weight: 700;
 	font-size: 15px;

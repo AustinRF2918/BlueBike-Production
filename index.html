@@ -31,6 +31,7 @@
 </head>
 
 <body ng-app="BlueBikeLandingPage" data-spy="scroll" data-offset="100" data-target=".navbar">
+  <div data-spy="scroll" data-offset="100" data-target=".navbar-two">
   <div ng-controller="navbarController">
   <nav class="navbar navbar-fixed-top bb-navbar introduction-viewing" id="navbar-generic">
     <div class="container">
@@ -57,27 +58,26 @@
             <span class="bb-navbar-icon-bar"></span>
 	      </button>
 	    </li>
-
-
 	</ul>
     </div>
-  </nav>
-  <nav class="navbar navbar-fixed-top bb-navbar bb-navbar-toggle bb-navbar-toggle-inactive bb-navbar-disabled">
+    <nav class="navbar navbar-two navbar-fixed-top bb-navbar bb-navbar-toggle bb-navbar-toggle-inactive bb-navbar-disabled">
     <ul class="mobile-nav-list">
 	<li class="nav-item">
-	    <a class="nav-link bb-navbar-nav-mobile" href="#">Portfolio</a>
+	    <a class="nav-link navbar-nav bb-navbar-nav-mobile" href="#about">About</a>
 	</li>
 	<li class="nav-item">
-	    <a class="nav-link bb-navbar-nav-mobile" href="#">About</a>
+	    <a class="nav-link navbar-nav bb-navbar-nav-mobile" href="#medias">Medias</a>
 	</li>
 	<li class="nav-item">
-	    <a class="nav-link bb-navbar-nav-mobile" href="#">Medias</a>
+	    <a id="nav-5" class="nav-link bb-navbar-nav-mobile" href="#portfolio">Portfolio</a>
 	</li>
 	<li class="nav-item">
-	    <a class="nav-link bb-navbar-nav-mobile" href="#">Contact</a>
+	    <a class="nav-link navbar-nav bb-navbar-nav-mobile" href="#contact">Contact</a>
 	</li>
     </ul>
   </nav>
+  </nav>
+  
   </div>
   <section class="introduction" id="introduction">
     <div class="container introduction-container">
@@ -311,7 +311,7 @@
         </div>
     </div>
   </section>
-  
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> 
