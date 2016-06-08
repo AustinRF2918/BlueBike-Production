@@ -401,44 +401,20 @@
     transition: background-color .3s, transform .3s ease-out; }
 
 .bb-navbar {
-  list-style-type: none;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  list-style-type: none;
   border-radius: 0px;
   height: 80px; }
-  @media screen and (min-width: 768px) {
-    .bb-navbar:hover {
-      height: 100px;
-      padding-top: 18px; } }
-  @media screen and (max-width: 767px) {
-    .bb-navbar {
-      height: 50px; } }
-  .bb-navbar-toggle {
-    position: absolute;
-    top: 80px;
-    height: 170px;
-    display: none;
-    background: blue; }
-  @media screen and (min-width: 768px) {
-    .bb-navbar-button {
-      display: none !important; } }
-  .bb-navbar-nav, .bb-navbar-brand, .bb-navbar-nav-mobile {
+  .bb-navbar-nav, .bb-navbar-brand {
     font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700; }
   .bb-navbar-nav {
     margin-top: 15px;
     font-size: 15px;
     text-transform: uppercase; }
-    @media screen and (max-width: 767px) {
-      .bb-navbar-nav {
-        display: none !important; } }
-    .bb-navbar-nav-mobile {
-      font-size: 15px;
-      text-transform: uppercase;
-      margin-top: 8px;
-      margin-bottom: 8px; }
   .bb-navbar-brand {
     text-transform: uppercase;
     margin-top: 6px;
@@ -447,19 +423,92 @@
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease; }
-    @media screen and (max-width: 767px) {
-      .bb-navbar-brand {
-        margin-top: 0px;
-        font-size: 19px; } }
+
+.button-on {
+  border-bottom: 1px #ff893a solid; }
+
+@media screen and (min-width: 768px) {
+  .bb-navbar-button {
+    display: none !important; } }
+
+.bb-navbar-enabled {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  display: block !important;
+  height: 170px !important; }
+  .bb-navbar-enabled .mobile-nav-list {
+    height: 170px !important; }
+
+.bb-navbar-disabled {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  display: block !important;
+  height: 0px !important; }
+  .bb-navbar-disabled .mobile-nav-list {
+    height: 0px !important; }
+
+.bb-navbar-toggle {
+  position: absolute;
+  top: 80px;
+  height: 170px;
+  display: none;
+  background: blue;
+  position: fixed;
+  top: 50px;
+  background: blue; }
+  .bb-navbar-toggle-inactive {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    position: fixed;
+    display: none;
+    height: 0px;
+    top: 0px;
+    z-index: -999; }
+    .bb-navbar-toggle-inactive .nav-item {
+      display: none; }
+  .bb-navbar-toggle-active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    height: 170px;
+    position: fixed;
+    display: block; }
+
+@media screen and (max-width: 767px) {
+  .bb-navbar {
+    height: 50px; } }
+.bb-navbar-nav-mobile {
+  font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+@media screen and (max-width: 767px) {
+  .bb-navbar-nav {
+    display: none !important; } }
+.bb-navbar-nav-mobile {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+@media screen and (max-width: 767px) {
+  .bb-navbar-brand {
+    margin-top: 0px;
+    font-size: 19px; } }
 
 .mobile-nav-list {
   position: absolute;
   margin-left: 0px;
   padding-left: 15px;
   list-style-type: none; }
-
-.button-on {
-  border-bottom: 1px #ff893a solid; }
 
 .introduction-viewing {
   background: #004573; }
@@ -535,51 +584,6 @@
     color: white; }
     .contact-viewing .navbar-nav:hover, .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
       color: #ffa263; }
-
-.bb-navbar-enabled {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  display: block !important;
-  height: 170px !important; }
-  .bb-navbar-enabled .mobile-nav-list {
-    height: 170px !important; }
-
-.bb-navbar-disabled {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  display: block !important;
-  height: 0px !important; }
-  .bb-navbar-disabled .mobile-nav-list {
-    height: 0px !important; }
-
-.bb-navbar-toggle {
-  position: fixed;
-  top: 50px;
-  background: blue; }
-  .bb-navbar-toggle-inactive {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    position: fixed;
-    display: none;
-    height: 0px;
-    top: 0px;
-    z-index: -999; }
-    .bb-navbar-toggle-inactive .nav-item {
-      display: none; }
-  .bb-navbar-toggle-active {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    height: 170px;
-    position: fixed;
-    display: block; }
 
 .introduction {
   background: #0073bf;

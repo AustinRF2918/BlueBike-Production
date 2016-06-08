@@ -2,112 +2,33 @@
 
 .bb-navbar
 {
-    list-style-type: none;
     @include transition-time(0.5s);
-
+    list-style-type: none;
     border-radius: 0px;
-
-    //Initial Height!
     height: 80px;
-    //End variable.
 
-    &:hover
-    {
-	@media screen and (min-width: 768px)
-	{
-	    height: 100px;
-	    padding-top: 18px;
-	}
-    }
+    
 
-    @media screen and (max-width: 767px)
-    {
-        //Responsive Height!
-        height: 50px;
-        //End variable.
-    }
-
-    &-toggle
-    {
-        position: absolute;
-        top: 80px;
-        height: 170px;
-        display: none;
-	background: blue;
-    }
-
-    &-button
-    {
-        @media screen and (min-width: 768px)
-        {
-            display: none !important;
-        }
-    }
-
-    &-nav, &-brand, &-nav-mobile{
+    &-nav, &-brand{
         font-family: $navbar-font;
         font-weight: 700;
     }
 
     &-nav{
-
-        @media screen and (max-width: 767px)
-        {
-            display: none !important;
-        }
-
-        //Initial Margin!
         margin-top: 15px;
-        //End variable.
         font-size: 15px;
         text-transform: uppercase;
-
-        &-mobile
-        {
-            font-size: 15px;
-            text-transform: uppercase;
-            margin-top: 8px;
-            margin-bottom: 8px;
-        }
     }
     &-brand{
-
-        @media screen and (max-width: 767px)
-        {
-            margin-top: 0px;
-            font-size: 19px;
-        }
-
         text-transform: uppercase;
         margin-top: 6px;
         font-size: 2em;
         @include transition-time(0.2s);
     }
-
-    
-}
-
-.mobile-nav-list
-{
-    position: absolute;
-    margin-left: 0px;
-    padding-left: 15px;
-    list-style-type: none;
 }
 
 .button-on
 {
     border-bottom: 1px $navbar-toggled-border-introduction solid;
 }
-
-$sections : introduction, portfolio, about, medias, contact;
-$section-colors : $navbar-color-introduction, $navbar-color-portfolio, $navbar-color-about, $navbar-color-medias, $navbar-color-contact;
-$section-active-colors : $navbar-active-color-introduction, $navbar-active-color-portfolio, $navbar-active-color-about, $navbar-active-color-medias, $navbar-active-color-contact;
-$section-background : $navbar-background-introduction, $navbar-background-portfolio, $navbar-background-about, $navbar-background-medias, $navbar-background-contact;
-
-@for $item from 1 through length($sections){
-    @include generateStyle(nth($sections, $item), nth($section-colors, $item), nth($section-active-colors, $item), nth($section-active-colors, $item), nth($section-background, $item));
-}
-
-
 

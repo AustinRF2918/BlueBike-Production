@@ -1,0 +1,11 @@
+$sections : introduction, portfolio, about, medias, contact;
+$section-colors : $navbar-color-introduction, $navbar-color-portfolio, $navbar-color-about, $navbar-color-medias, $navbar-color-contact;
+$section-active-colors : $navbar-active-color-introduction, $navbar-active-color-portfolio, $navbar-active-color-about, $navbar-active-color-medias, $navbar-active-color-contact;
+$section-background : $navbar-background-introduction, $navbar-background-portfolio, $navbar-background-about, $navbar-background-medias, $navbar-background-contact;
+
+@for $item from 1 through length($sections){
+    @include generateStyle(nth($sections, $item), nth($section-colors, $item), nth($section-active-colors, $item), nth($section-active-colors, $item), nth($section-background, $item));
+}
+
+
+
