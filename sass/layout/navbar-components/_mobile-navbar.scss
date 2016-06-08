@@ -1,0 +1,49 @@
+.bb-navbar-enabled
+{
+    @include transition-time(0.5s);
+    display: block !important;
+    height: 200px !important;
+
+    .mobile-nav-list
+    {
+	height: 200px !important;
+    }
+}
+
+.bb-navbar-disabled
+{
+    @include transition-time(0.5s);
+    display: block !important;
+    height: 0px !important;
+
+    .mobile-nav-list
+    {
+	height: 0px !important;
+    }
+}
+.bb-navbar-toggle
+{
+    top: 50px;
+
+    &-inactive{
+    @include transition-time(0.5s);
+	position: absolute;
+	height: 0px;
+	display: none;
+	.nav-item
+	{
+	    display: none;
+	}
+	top: 0px;
+	z-index: -999;
+    }
+
+    &-active{
+    @include transition-time(0.5s);
+	background: blue;
+	height: 170px;
+	position: absolute;
+	display: block;
+    }
+
+}

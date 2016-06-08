@@ -408,17 +408,19 @@
   -o-transition: all 0.5s ease;
   border-radius: 0px;
   height: 80px; }
-  .bb-navbar:hover {
-    height: 100px;
-    padding-top: 18px; }
+  @media screen and (min-width: 768px) {
+    .bb-navbar:hover {
+      height: 100px;
+      padding-top: 18px; } }
   @media screen and (max-width: 767px) {
     .bb-navbar {
       height: 50px; } }
   .bb-navbar-toggle {
     position: absolute;
-    top: 50px;
-    height: 130px;
-    display: none; }
+    top: 80px;
+    height: 170px;
+    display: none;
+    background: blue; }
   @media screen and (min-width: 768px) {
     .bb-navbar-button {
       display: none !important; } }
@@ -533,6 +535,50 @@
     color: white; }
     .contact-viewing .navbar-nav:hover, .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
       color: #ffa263; }
+
+.bb-navbar-enabled {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  display: block !important;
+  height: 200px !important; }
+  .bb-navbar-enabled .mobile-nav-list {
+    height: 200px !important; }
+
+.bb-navbar-disabled {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  display: block !important;
+  height: 0px !important; }
+  .bb-navbar-disabled .mobile-nav-list {
+    height: 0px !important; }
+
+.bb-navbar-toggle {
+  top: 50px; }
+  .bb-navbar-toggle-inactive {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    position: absolute;
+    height: 0px;
+    display: none;
+    top: 0px;
+    z-index: -999; }
+    .bb-navbar-toggle-inactive .nav-item {
+      display: none; }
+  .bb-navbar-toggle-active {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    background: blue;
+    height: 170px;
+    position: absolute;
+    display: block; }
 
 .introduction {
   background: #0073bf;
