@@ -22,6 +22,16 @@
     margin-top: 2rem !important;
     margin-bottom: 2rem !important; } }
 
+@media screen and (min-width: 990px) {
+  .p-x-1-desktop {
+    margin: 0 !important;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+@media screen and (max-width: 989px) {
+  .p-x-1-desktop {
+    margin: 0 !important;
+    padding-right: .75rem; } }
+
 .bb-navbar-button {
   background: transparent;
   border: 1px solid #1a242f;

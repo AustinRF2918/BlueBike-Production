@@ -19,13 +19,14 @@
 {
     @media screen and (min-width: 990px)
     {
-	margin: 0 !important;
+	margin: 0px !importan;
 	padding-left: 1rem;
 	padding-right: 1rem;
     }
     @media screen and (max-width: 989px)
     {
-	margin: 0 !important;
-	padding-right: .75rem;
+	margin: 0px;
+	padding-left: .25rem;
+	padding-right: .25rem;
     }
 }
