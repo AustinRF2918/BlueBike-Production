@@ -298,6 +298,7 @@
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0; }
 
 .lightbox-top-wrapper {
@@ -315,6 +316,7 @@
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0; }
 
 .modal-alert {
@@ -327,17 +329,20 @@
     -webkit-transition: all 0s ease;
     -moz-transition: all 0s ease;
     -ms-transition: all 0s ease;
-    -o-transition: all 0s ease; }
+    -o-transition: all 0s ease;
+    transition: all 0s ease; }
     .modal-alert.ng-hide-add-active, .modal-alert.ng-hide-remove-active, .modal-alert.ng-show-add-active, .modal-alert.ng-show-remove-active {
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -ms-transition: all 0.2s ease;
-      -o-transition: all 0.2s ease; }
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
   .modal-alert.ng-hide {
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     opacity: 0; }
   .modal-alert-container {
     margin-top: 30vh;
@@ -367,58 +372,100 @@
 .no-border {
   border: 0px black solid; }
 
-.list-social {
-  padding-left: 0px !important;
-  margin-left: 0px !important; }
-
 .icon-instagram {
   border-radius: 100%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: background-color 0.3s, transform 0.3s ease-in;
+  -moz-transition: background-color 0.3s, transform 0.3s ease-in;
+  -ms-transition: background-color 0.3s, transform 0.3s ease-in;
+  -o-transition: background-color 0.3s, transform 0.3s ease-in;
+  transition: background-color 0.3s, transform 0.3s ease-in;
   background: #002640;
   color: #ffffff;
-  fill: #ffffff;
-  transform: scale(0.8);
-  transition: background-color .3s, transform .3s ease-in; }
+  fill: #ffffff; }
   .icon-instagram:hover {
-    border-radius: 100%;
     background: #125688;
     color: #ffffff;
     fill: #ffffff;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
     transform: scale(1.25);
-    transition: background-color .3s, transform .3s ease-out; }
+    -webkit-transition: background-color 0.3s, transform 0.3s ease-in;
+    -moz-transition: background-color 0.3s, transform 0.3s ease-in;
+    -ms-transition: background-color 0.3s, transform 0.3s ease-in;
+    -o-transition: background-color 0.3s, transform 0.3s ease-in;
+    transition: background-color 0.3s, transform 0.3s ease-in; }
 .icon-twitter {
   border-radius: 100%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: background-color 0.3s, transform 0.3s ease-in;
+  -moz-transition: background-color 0.3s, transform 0.3s ease-in;
+  -ms-transition: background-color 0.3s, transform 0.3s ease-in;
+  -o-transition: background-color 0.3s, transform 0.3s ease-in;
+  transition: background-color 0.3s, transform 0.3s ease-in;
   background: #002640;
   color: #ffffff;
-  fill: #ffffff;
-  transform: scale(0.8);
-  transition: background-color .3s, transform .3s ease-in; }
+  fill: #ffffff; }
   .icon-twitter:hover {
-    border-radius: 100%;
     background: #0084b4;
     color: #ffffff;
     fill: #ffffff;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
     transform: scale(1.25);
-    transition: background-color .3s, transform .3s ease-out; }
+    -webkit-transition: background-color 0.3s, transform 0.3s ease-in;
+    -moz-transition: background-color 0.3s, transform 0.3s ease-in;
+    -ms-transition: background-color 0.3s, transform 0.3s ease-in;
+    -o-transition: background-color 0.3s, transform 0.3s ease-in;
+    transition: background-color 0.3s, transform 0.3s ease-in; }
 .icon-facebook {
   border-radius: 100%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: background-color 0.3s, transform 0.3s ease-in;
+  -moz-transition: background-color 0.3s, transform 0.3s ease-in;
+  -ms-transition: background-color 0.3s, transform 0.3s ease-in;
+  -o-transition: background-color 0.3s, transform 0.3s ease-in;
+  transition: background-color 0.3s, transform 0.3s ease-in;
   background: #002640;
   color: #ffffff;
-  fill: #ffffff;
-  transform: scale(0.8);
-  transition: background-color .3s, transform .3s ease-in; }
+  fill: #ffffff; }
   .icon-facebook:hover {
-    border-radius: 100%;
     background: #3b5998;
     color: #ffffff;
     fill: #ffffff;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
     transform: scale(1.25);
-    transition: background-color .3s, transform .3s ease-out; }
+    -webkit-transition: background-color 0.3s, transform 0.3s ease-in;
+    -moz-transition: background-color 0.3s, transform 0.3s ease-in;
+    -ms-transition: background-color 0.3s, transform 0.3s ease-in;
+    -o-transition: background-color 0.3s, transform 0.3s ease-in;
+    transition: background-color 0.3s, transform 0.3s ease-in; }
 
 .bb-navbar {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   list-style-type: none;
   border-radius: 0px;
   height: 80px; }
@@ -436,7 +483,8 @@
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease; }
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
 
 .button-on {
   border-bottom: 1px #ff893a solid; }
@@ -450,6 +498,7 @@
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: block !important;
   height: 170px !important; }
   .bb-navbar-enabled .mobile-nav-list {
@@ -461,6 +510,7 @@
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: block !important;
   height: 0px !important; }
   .bb-navbar-disabled .mobile-nav-list {
@@ -481,6 +531,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     position: fixed;
     display: none;
     height: 0px;
@@ -493,6 +544,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     height: 170px;
     position: fixed;
     display: block; }
@@ -539,6 +591,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     color: #ffa263 !important; }
     .introduction-viewing:hover, .introduction-viewing:active, .introduction-viewing .active:hover, .introduction-viewing .active:active {
       color: #ff8430 !important; }
@@ -556,6 +609,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     color: #ffa263 !important; }
     .portfolio-viewing:hover, .portfolio-viewing:active, .portfolio-viewing .active:hover, .portfolio-viewing .active:active {
       color: #ff8430 !important; }
@@ -573,6 +627,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     color: #ffa263 !important; }
     .about-viewing:hover, .about-viewing:active, .about-viewing .active:hover, .about-viewing .active:active {
       color: #ff8430 !important; }
@@ -590,6 +645,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     color: #ffa263 !important; }
     .medias-viewing:hover, .medias-viewing:active, .medias-viewing .active:hover, .medias-viewing .active:active {
       color: #ff8430 !important; }
@@ -607,6 +663,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     color: #ffa263 !important; }
     .contact-viewing:hover, .contact-viewing:active, .contact-viewing .active:hover, .contact-viewing .active:active {
       color: #ff8430 !important; }
@@ -795,17 +852,19 @@
     font-size: 0.8em; }
 
 .portfolio-overlay {
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   position: relative; }
 .portfolio-overlay:after {
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: absolute;
   content: "";
   top: 0;
@@ -822,15 +881,16 @@
   border-radius: 50%; }
 
 .hover-icon {
-  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
+  user-select: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   pointer-events: none;
   width: 0px;
   height: 0px;
@@ -838,15 +898,16 @@
   color: white; }
 
 .hover-icon:hover {
-  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
+  user-select: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   width: 0px;
   height: 0px;
   position: absolute; }

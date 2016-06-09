@@ -3,18 +3,37 @@
     -moz-transition: all $time ease;
     -ms-transition: all $time ease;
     -o-transition: all $time ease;
+    transition: all $time ease;
 }
 
 @mixin no-select
 {
-    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
+    user-select: none;
 }
 
-@mixin remove-shadow
+//For use on icons.
+@mixin extended-transition($time, $size)
 {
-    -webkit-appearence: button;
+    -webkit-transform: scale($size);
+    -moz-transform: scale($size);
+    -ms-transform: scale($size);
+    -o-transform: scale($size);
+    transform: scale($size);
+
+    -webkit-transition: background-color $time, transform $time ease-in;
+    -moz-transition: background-color $time, transform $time ease-in;
+    -ms-transition: background-color $time, transform $time ease-in;
+    -o-transition: background-color $time, transform $time ease-in;
+    transition: background-color $time, transform $time ease-in;
+}
+
+@mixin icon-coloration($background, $color)
+{
+    background: $background;
+    color: $color;
+    fill: $color;
 }

@@ -1,4 +1,20 @@
-.list-social{
-    padding-left: 0px !important;
-    margin-left: 0px !important;
+//General icon classes.
+.icon
+{
+    &-instagram
+    {
+	@include iconGenerate(#002640, #ffffff, #125688, #ffffff)
+    }
+
+    &-twitter
+    {
+	@include iconGenerate(#002640, #ffffff, #0084b4, #ffffff)
+    }
+
+    &-facebook
+    {
+	@include iconGenerate(#002640, #ffffff, #3b5998, #ffffff)
+    }
 }
+
+

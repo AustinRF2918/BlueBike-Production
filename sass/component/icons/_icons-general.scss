@@ -1,0 +1,12 @@
+@mixin iconGenerate($background, $fill, $backgroundHover, $fillHover)
+{
+    border-radius: 100%;
+    @include extended-transition($hoverable-icon-time, $hoverable-icon-pre-size);
+    @include icon-coloration($background, $fill);
+    &:hover
+    {
+	@include icon-coloration($backgroundHover, $fillHover);
+	@include extended-transition($hoverable-icon-time, $hoverable-icon-post-size);
+    }
+}
+
