@@ -81,8 +81,12 @@
 
 	color: $color-palette-2;
 
-	&:hover, &:focus, &:active{
+	&:hover{
 	    color: $color-palette-6;
+	}
+
+	&:focus, &:active{
+	    color: $color-palette-2;
 	}
 
         font-family: $navbar-font;

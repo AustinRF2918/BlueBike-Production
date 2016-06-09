@@ -510,8 +510,10 @@
     text-transform: uppercase;
     margin-top: 8px;
     margin-bottom: 8px; }
-    .bb-navbar-nav-mobile:hover, .bb-navbar-nav-mobile:focus, .bb-navbar-nav-mobile:active {
+    .bb-navbar-nav-mobile:hover {
       color: #ff893a; }
+    .bb-navbar-nav-mobile:focus, .bb-navbar-nav-mobile:active {
+      color: white; }
   @media screen and (max-width: 767px) {
     .bb-navbar-nav {
       display: none !important; } }
@@ -542,8 +544,10 @@
       color: #ff8430 !important; }
   .introduction-viewing .navbar-nav {
     color: white; }
-    .introduction-viewing .navbar-nav:hover, .introduction-viewing .navbar-nav:active, .introduction-viewing .navbar-nav:focus {
+    .introduction-viewing .navbar-nav:hover {
       color: #ffa263; }
+    .introduction-viewing .navbar-nav:active, .introduction-viewing .navbar-nav:focus {
+      color: white; }
 
 .portfolio-viewing {
   background: #004573; }
@@ -557,8 +561,10 @@
       color: #ff8430 !important; }
   .portfolio-viewing .navbar-nav {
     color: white; }
-    .portfolio-viewing .navbar-nav:hover, .portfolio-viewing .navbar-nav:active, .portfolio-viewing .navbar-nav:focus {
+    .portfolio-viewing .navbar-nav:hover {
       color: #ffa263; }
+    .portfolio-viewing .navbar-nav:active, .portfolio-viewing .navbar-nav:focus {
+      color: white; }
 
 .about-viewing {
   background: #004573; }
@@ -572,8 +578,10 @@
       color: #ff8430 !important; }
   .about-viewing .navbar-nav {
     color: white; }
-    .about-viewing .navbar-nav:hover, .about-viewing .navbar-nav:active, .about-viewing .navbar-nav:focus {
+    .about-viewing .navbar-nav:hover {
       color: #ffa263; }
+    .about-viewing .navbar-nav:active, .about-viewing .navbar-nav:focus {
+      color: white; }
 
 .medias-viewing {
   background: #004573; }
@@ -587,8 +595,10 @@
       color: #ff8430 !important; }
   .medias-viewing .navbar-nav {
     color: white; }
-    .medias-viewing .navbar-nav:hover, .medias-viewing .navbar-nav:active, .medias-viewing .navbar-nav:focus {
+    .medias-viewing .navbar-nav:hover {
       color: #ffa263; }
+    .medias-viewing .navbar-nav:active, .medias-viewing .navbar-nav:focus {
+      color: white; }
 
 .contact-viewing {
   background: #004573; }
@@ -602,8 +612,10 @@
       color: #ff8430 !important; }
   .contact-viewing .navbar-nav {
     color: white; }
-    .contact-viewing .navbar-nav:hover, .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
+    .contact-viewing .navbar-nav:hover {
       color: #ffa263; }
+    .contact-viewing .navbar-nav:active, .contact-viewing .navbar-nav:focus {
+      color: white; }
 
 .introduction {
   background: #0073bf;

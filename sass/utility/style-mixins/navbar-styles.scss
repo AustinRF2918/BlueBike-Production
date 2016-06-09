@@ -14,8 +14,12 @@
 	.navbar-nav{
 	    color: $navNormal;
 
-	    &:hover, &:active, &:focus{
+	    &:hover{
 		color: $navHover;
+	    }
+
+	    &:active, &:focus{
+		color: $navNormal;
 	    }
 	    
 	}
