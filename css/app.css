@@ -460,6 +460,10 @@
     -o-transition: background-color 0.3s, transform 0.3s ease-in;
     transition: background-color 0.3s, transform 0.3s ease-in; }
 
+.list-social {
+  padding: 0px !important;
+  margin: 0px !important; }
+
 .bb-navbar {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
