@@ -17,16 +17,16 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	//Number of photo/types in gallery.
 	$scope.selectionNumber = 3;
 
-	//Mapping of selection numbers to 
+	//Mapping of selection numbers to
 	$scope.selectionMap = {0 : $('#medium-phone'), 1 : $('#medium-desktop'), 2: $('#medium-laptop')}
 
 	//Names of s.
-	$scope.names = ["The Card Buggy", "Milford Accounting", "Leadsnare"]
+	$scope.names = ["The Card Buggy", "Milford Accounting", "Karen Polzin Modeling"]
 
 	//Mapping of  names to link lists, with selection number as the number of possibiities.
-	$scope.assetMap = {"The Card Buggy" : ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/CardBuggyDesktop.png", "img/CardBuggy/CardBuggyLaptop.png"],
-			    "Milford Accounting" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"],
-			    "Leadsnare" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"]}
+	$scope.assetMap = {"The Card Buggy" : ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/cardbuggypurchase.png", "img/CardBuggy/cardbuggycontact.png"],
+			    "Milford Accounting" : ["img/MilfordAccounting/milfordmobile.png", "img/MilfordAccounting/milfordabout.png", "img/MilfordAccounting/milfordaccountingcontact.png"],
+			    "Karen Polzin Modeling" : ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"]}
 
     //Define another function that sets src values.
     $scope.toggleLightbox = function(arguments)
@@ -108,7 +108,7 @@ blueBikeApplication.controller("lightboxController", function($scope){
 
 var rotateImages = function($selectorOne, $selectorTwo, focused, nonFocused)
 {
-    makeSmaller($selectorOne, focused, nonFocused, 
+    makeSmaller($selectorOne, focused, nonFocused,
 		makeLarger, $selectorTwo);
 };
 
