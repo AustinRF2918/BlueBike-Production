@@ -21,12 +21,12 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	$scope.selectionMap = {0 : $('#medium-phone'), 1 : $('#medium-desktop'), 2: $('#medium-laptop')}
 
 	//Names of s.
-	$scope.names = ["The Card Buggy", "Milford Accounting", "Karen Polzin Modeling"]
+	$scope.names = ["The Card Buggy", "Milford Accounting", "Karen Polzin"]
 
 	//Mapping of  names to link lists, with selection number as the number of possibiities.
 	$scope.assetMap = {"The Card Buggy" : ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/cardbuggypurchase.png", "img/CardBuggy/cardbuggycontact.png"],
 			    "Milford Accounting" : ["img/MilfordAccounting/milfordmobile.png", "img/MilfordAccounting/milfordabout.png", "img/MilfordAccounting/milfordaccountingcontact.png"],
-			    "Karen Polzin Modeling" : ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"]}
+			    "Karen Polzin" : ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"]}
 
     //Define another function that sets src values.
     $scope.toggleLightbox = function(arguments)
