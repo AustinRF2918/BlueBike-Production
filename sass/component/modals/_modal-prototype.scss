@@ -9,10 +9,12 @@
 
     &.ng-hide{
 	@include transition-time(0.2s);
+	z-index: -10000;
 	opacity: 0;
     }
 
-    z-index: $lightbox-z-index - 1;
+    z-index: -10000;
+
     position: fixed;
     height: 100vh;
     width: 100vw;

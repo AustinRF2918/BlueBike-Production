@@ -69,14 +69,14 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 		$scope.message = "";
 	    }
 	}
-    }
+    };
 
     $scope.resetGUIFlags = function()
     {
 	//console.log("reset GUI Flags.");
 	$scope.badFlag = false;
 	$scope.goodFlag = false;
-    }
+    };
     
     $scope.focusForm = function(numeric){
 	if (numeric == 1)
