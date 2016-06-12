@@ -24,7 +24,7 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	$scope.names = ["The Card Buggy", "Milford Accounting", "Leadsnare"]
 
 	//Mapping of  names to link lists, with selection number as the number of possibiities.
-	$scope.assetMap = {"The Card Buggy" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"],
+	$scope.assetMap = {"The Card Buggy" : ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/CardBuggyDesktop.png", "img/CardBuggy/CardBuggyLaptop.png"],
 			    "Milford Accounting" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"],
 			    "Leadsnare" : ["img/asset-phone.png", "img/asset-desktop.png", "img/asset-laptop.png"]}
 

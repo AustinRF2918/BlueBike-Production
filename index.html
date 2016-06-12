@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,10 +27,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
     <link href='fonts/cards.ttf' rel='stylesheet' type='text/css'>
-
-
 </head>
-
 <body ng-app="BlueBikeLandingPage" data-spy="scroll" data-offset="100" data-target=".navbar">
   <div data-spy="scroll" data-offset="100" data-target=".navbar-two">
   <div ng-controller="navbarController">
@@ -104,8 +100,8 @@
       <div class="row">
 	<div class="col-xs-12 text-xs-center lightbox-portfolio-header">
 	  <h1 ng-click="$event.stopPropagation()">{{nameBuffer}}</h1>
-	  <div class="col-xs-4 col-xs-offset-4 text-xs-center">
-	  <img ng-click="$event.stopPropagation()" class="img-fluid center-block" src={{imageBuffer}}></img>
+	  <div class="col-xs-12 p-x-0 m-x-0 text-xs-center">
+	  <img class="lightbox-image m-t-3" ng-click="$event.stopPropagation()" class="img-fluid center-block" src={{imageBuffer}}></img>
 	  </div>
 	</div>
       </div>
