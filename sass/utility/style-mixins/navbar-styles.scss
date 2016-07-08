@@ -25,7 +25,24 @@
 	}
 
 	background: $background;
-	    
+    }
+}
 
+@mixin generateStyleOverrides($name, $navNormal, $navHover, $brandNormal, $background)
+{
+    .#{$name}-at{
+	.navbar-nav{
+	    color: $navNormal;
+
+	    &:hover{
+		color: $navHover !important;
+	    }
+
+	    &:active, &:focus{
+		color: $navNormal !important;
+	    }
+	}
+
+	background: $background;
     }
 }

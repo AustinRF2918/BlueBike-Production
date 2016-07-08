@@ -512,7 +512,7 @@
     transition: all 0.2s ease; }
   .bb-navbar-brand {
     text-transform: uppercase;
-    margin-top: 6px;
+    margin-top: 3px;
     font-size: 2em;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
