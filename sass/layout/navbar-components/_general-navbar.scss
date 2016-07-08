@@ -18,6 +18,7 @@
         margin-top: 15px;
         font-size: 15px;
         text-transform: uppercase;
+        @include transition-time(0.2s);
     }
     &-brand{
         text-transform: uppercase;

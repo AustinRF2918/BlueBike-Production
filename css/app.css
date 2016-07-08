@@ -504,7 +504,12 @@
   .bb-navbar-nav {
     margin-top: 15px;
     font-size: 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .bb-navbar-brand {
     text-transform: uppercase;
     margin-top: 6px;
