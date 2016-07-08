@@ -4,7 +4,7 @@
     {
         @include desktop
         {
-            padding-top: $introduction-padding-top - 40px;
+            padding-top: $introduction-padding-top;
             padding-bottom: $introduction-padding-bottom;
         }
 
@@ -65,19 +65,9 @@
 
 .introduction-text
 {
-    @include desktop
-    {
-	h1{
-	    font-size: 8vw;
-	}
     position: absolute;
     top: 50%;
+    font-size: 30px;
     transform: translateY(-50%);
-    left: 30%;
-    }
-
-    @include mobile
-    {
-	display: none;
-    }
+    left: 50%;
 }
