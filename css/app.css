@@ -745,6 +745,9 @@
       .introduction h2 {
         font-size: 1.75em; } }
 
+@font-face {
+  font-family: Geometos Rounded;
+  src: url("../fonts/Geometos Rounded.ttf"); }
 @media (min-width: 768px) {
   .introduction-text {
     position: absolute;
@@ -752,7 +755,8 @@
     transform: translateY(-50%);
     left: 30%; }
     .introduction-text h1 {
-      font-size: 8vw; } }
+      font-size: 7vw;
+      font-family: Geometos Rounded; } }
 @media (max-width: 767px) {
   .introduction-text {
     display: none; } }

@@ -62,13 +62,18 @@
 
     color: $section-introduction-text;
 }
+@font-face{
+    font-family: Geometos Rounded;
+    src: url('../fonts/Geometos Rounded.ttf');
 
+}
 .introduction-text
 {
     @include desktop
     {
 	h1{
-	    font-size: 8vw;
+	    font-size: 7vw;
+	    font-family: Geometos Rounded;
 	}
     position: absolute;
     top: 50%;
