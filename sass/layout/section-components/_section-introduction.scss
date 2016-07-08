@@ -53,14 +53,9 @@
         }
     }
 
-    background: url(../img/asset-introduction.jpg) no-repeat center center fixed;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
     color: $section-introduction-text;
+
+    @include generateCoverBackground("../img/asset-introduction.jpg");
 }
 @font-face{
     font-family: Geometos Rounded;
@@ -108,8 +103,10 @@
 	}
 
     position: absolute;
+
     top: 50%;
-    transform: translateY(-50%);
+    @include generateY(-50%);
+
     left: 30%;
     }
 

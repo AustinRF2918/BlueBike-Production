@@ -709,12 +709,12 @@
       color: white; }
 
 .introduction {
-  background: url(../img/asset-introduction.jpg) no-repeat center center fixed;
+  color: white;
+  background: url("../img/asset-introduction.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  color: white; }
+  background-size: cover; }
   @media (min-width: 768px) {
     .introduction-container {
       padding-top: 160px;
@@ -753,6 +753,10 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     left: 30%; }
     .introduction-text h1 {
       font-family: Geometos Rounded; } }
