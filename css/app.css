@@ -148,6 +148,23 @@
     background-color: #0073bf;
     color: white; }
 
+.starlight-transparent {
+  border: 3px solid white;
+  border-color: white;
+  border-radius: 2px;
+  padding: 0;
+  text-align: center;
+  max-width: 250px; }
+  .starlight-transparent::after {
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.75em;
+    font-size: 3em;
+    padding: 0 0.25em;
+    color: #00548d; }
+
 .starlight-inverse {
   border: 3px solid #004573;
   padding: 0;
@@ -687,7 +704,11 @@
       color: white; }
 
 .introduction {
-  background: #0073bf;
+  background: url(../img/asset-introduction.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white; }
   @media (min-width: 768px) {
     .introduction-container {
