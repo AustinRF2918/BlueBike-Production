@@ -743,7 +743,7 @@
         font-size: 2.6em; } }
     @media (max-width: 767px) {
       .introduction h2 {
-        font-size: 1.75em; } }
+        font-size: 1.4em; } }
 
 @font-face {
   font-family: Geometos Rounded;
@@ -755,15 +755,31 @@
     transform: translateY(-50%);
     left: 30%; }
     .introduction-text h1 {
-      font-size: 7vw;
       font-family: Geometos Rounded; } }
+    @media screen and (min-width: 768px) and (max-width: 599px) {
+      .introduction-text h1 {
+        font-size: 3rem; } }
+    @media screen and (min-width: 768px) and (min-width: 600px) {
+      .introduction-text h1 {
+        font-size: 3.5rem; } }
+    @media screen and (min-width: 768px) and (min-width: 768px) {
+      .introduction-text h1 {
+        font-size: 4rem; } }
+    @media screen and (min-width: 768px) and (min-width: 1024px) {
+      .introduction-text h1 {
+        font-size: 4.5rem; } }
+    @media screen and (min-width: 768px) and (min-width: 1200px) {
+      .introduction-text h1 {
+        font-size: 5.5rem; } }
+    @media screen and (min-width: 768px) and (min-width: 1920px) {
+      .introduction-text h1 {
+        font-size: 6.5rem; } }
+
 @media (max-width: 767px) {
   .introduction-text {
     display: none; } }
 .introduction-text-blue {
-  color: #0082d9; }
-.introduction-text-orange {
-  color: #ff9854; }
+  color: #0073bf; }
 
 .portfolio {
   background: #004573;

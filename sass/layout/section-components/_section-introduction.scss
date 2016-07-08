@@ -49,7 +49,7 @@
 
         @include mobile
         {
-            font-size: $introduction-subheader-medium-mobile-size;
+            font-size: $introduction-subheader-medium-mobile-size * .80;
         }
     }
 
@@ -65,16 +65,48 @@
 @font-face{
     font-family: Geometos Rounded;
     src: url('../fonts/Geometos Rounded.ttf');
-
 }
+
 .introduction-text
 {
     @include desktop
     {
 	h1{
-	    font-size: 7vw;
+	    //Responsive cluster for making sure text doesn't get
+	    //too ugly.
+	    @media screen and (max-width: 599px)
+	    {
+		font-size: 3rem;
+	    }
+
+	    @media screen and (min-width: 600px)
+	    {
+		font-size: 3.5rem;
+	    }
+
+	    @media screen and (min-width: 768px)
+	    {
+		font-size: 4rem;
+	    }
+
+	    @media screen and (min-width: 1024px)
+	    {
+		font-size: 4.5rem;
+	    }
+
+	    @media screen and (min-width: 1200px)
+	    {
+		font-size: 5.5rem;
+	    }
+
+	    @media screen and (min-width: 1920px)
+	    {
+		font-size: 6.5rem;
+	    }
+
 	    font-family: Geometos Rounded;
 	}
+
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -88,11 +120,6 @@
 
     &-blue
     {
-	color: lighten($color-palette-5, 5%);
-    }
-
-    &-orange
-    {
-	color: lighten($color-palette-6, 5%);
+	color: $color-palette-5;
     }
 }
