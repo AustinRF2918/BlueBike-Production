@@ -760,6 +760,10 @@
 @media (max-width: 767px) {
   .introduction-text {
     display: none; } }
+.introduction-text-blue {
+  color: #0082d9; }
+.introduction-text-orange {
+  color: #ff9854; }
 
 .portfolio {
   background: #004573;

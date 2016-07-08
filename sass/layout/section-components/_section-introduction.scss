@@ -85,4 +85,14 @@
     {
 	display: none;
     }
+
+    &-blue
+    {
+	color: lighten($color-palette-5, 5%);
+    }
+
+    &-orange
+    {
+	color: lighten($color-palette-6, 5%);
+    }
 }
