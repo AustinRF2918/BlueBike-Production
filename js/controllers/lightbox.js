@@ -1,11 +1,250 @@
 var blueBikeApplication = angular.module("BlueBikeLandingPage", ['ngAnimate']);
 
+var Some = function(obj){
+    this.enumValue = 0;
+    this.internal_object = obj;
+};
+
+Some.prototype.unwrap = function()
+{
+    return this.internal_object;
+};
+
+var None = function(){
+    this.enumValue = 1;
+};
+
+None.prototype.unwrap = function()
+{
+    console.log("Error: Attempted to unwrap none object.");
+    return null;
+};
+
+var Result = function(resultType){
+    if (resultType.enumValue == 0 || resultType.enumValue == 1)
+    {
+	self.internal_result = resultType;
+    }
+    else
+    {
+	console.log("Error: Attempted to pass nonresult type to Result.");
+    }
+};
+
+Result.prototype.resultType = function()
+{
+    if (self.internal_result.enumValue === 0)
+    {
+	return "Some";
+    }
+    else
+    {
+	return "None";
+    }
+};
+
+Result.prototype.unwrap = function()
+{
+    return self.internal_result.unwrap();
+};
+
+var Lightbox = function(debug){
+    this.isDebug = debug;
+    this.internalLightboxCore = new LightboxCore(debug);
+    this.internalLightboxMapper = new LightboxMapper(debug);
+};
+
+Lightbox.prototype.getAttribute = function(str)
+{
+    internalObjects = [this.internalLightboxCore, this.internalLightboxMapper];
+
+    for (var i = 0; i < internalObjects.length; i++)
+    {
+	var retVal = internalObjects[i].getAttribute(str);
+
+	if (retVal.resultType() == "Some")
+	{
+	    return retVal;
+	}
+    };
+    return new Result(new None());
+};
+
+Lightbox.prototype.debugDisplay = function()
+{
+    internalObjects = [this.internalLightboxCore, this.internalLightboxMapper];
+    for (var i = 0; i < internalObjects.length; i++)
+    {
+	internalObjects[i].debugDisplay();
+    }
+};
+
+Lightbox.prototype.addName = function(str)
+{
+    this.internalLightboxMapper.addName(str);
+};
+
+Lightbox.prototype.pushImage = function(str, src)
+{
+    this.internalLightboxMapper.pushImage(str, src);
+};
+
+Lightbox.prototype.getKey = function(str)
+{
+    return this.internalLightboxMapper.getKey(str);
+};
+
+var LightboxCore = function(debug){
+    return (function(){
+	var debugEnabled = debug;
+	var isActive = false;
+	var nameBuffer = "";
+	var imageBufferList = "";
+	var imageBuffer = "";
+	var currentImageBuffer = 0;
+
+	attribute = function(name)
+	{
+	    try{
+		val = eval(name);
+		return(new Result(new Some(val)));
+	    }
+	    catch(e){
+		return(new Result(new None()));
+	    }
+	};
+
+	if (debugEnabled)
+	    console.log("Lightbox initialized.");
+
+	return{
+	    getAttribute: function(str)
+	    {
+		if (debugEnabled)
+		    console.log("Calling getAttribute method on Lightbox object.");
+		    console.log("LIGHTBOX: " + str + " :" +  attribute(str).resultType());
+
+		return new attribute(str);
+	    },
+
+	    debugDisplay: function()
+	    {
+		console.log(debugEnabled);
+		console.log(isActive);
+		console.log(nameBuffer);
+		console.log(imageBufferList);
+		console.log(imageBuffer);
+		console.log(currentImageBuffer);
+	    }
+	};
+    })();
+};
+
+var LightboxMapper = function(debug)
+{
+    return (function (){
+	var internalMap = {};
+	var isDebug = debug;
+
+	if (isDebug)
+	    console.log("Lightbox mapper initialized.");
+
+	var attribute = function(name)
+	{
+	    try{
+		return(new Result(new Some(eval(name))));
+	    }
+	    catch(e){
+		return(new Result(new None()));
+	    }
+	};
+
+	var getKey = function(name)
+	{
+	    if (name in internalMap)
+	    {
+		return new Result(new Some(internalMap[name]));
+	    }
+	    else
+	    {
+		return new Result(new None());
+	    }
+	};
+
+	var addName = function(name)
+	{
+	    if (getKey(name).resultType() == "Some")
+	    {
+		console.log("Attempted to pass existing name into lightboxMapper.");
+	    }
+	    else if (getKey(name).resultType() == "None")
+	    {
+		internalMap[name] = [];
+	    }
+	};
+
+	var pushImage = function(name, key)
+	{
+	    if (getKey(name).resultType() == "None")
+	    {
+		console.log("Attempted to push image to name which does not exist.");
+	    }
+	    else if (getKey(name).resultType() == "Some")
+	    {
+		internalMap[name].push(key);
+	    }
+	};
+
+	return{
+	    addName: addName,
+	    pushImage: pushImage,
+	    getKey: getKey,
+
+	    debugDisplay: function()
+	    {
+		console.log(internalMap);
+		console.log(isDebug);
+	    },
+
+	    getAttribute: function(str)
+	    {
+
+		if (isDebug)
+		    console.log("Calling getAttribute method on LightboxMap object.");
+		    console.log("LIGHTBOXMAPPER: " + str + " :" +  attribute(str).resultType());
+
+		return new attribute(str);
+	    }
+	};
+    })();
+}
+
 blueBikeApplication.controller("lightboxController", function($scope){
-    $scope.lightboxActive = false;
-    $scope.nameBuffer = "";
-    $scope.imageBufferList = "";
-    $scope.imageBuffer = "";
-    $scope.currentImageBuffer = 0;
+    $scope.localLightbox = new Lightbox(true);
+
+    $scope.lightboxActive = $scope.localLightbox.getAttribute("isActive").unwrap();
+    $scope.nameBuffer = $scope.localLightbox.getAttribute("nameBuffer").unwrap();
+    $scope.imageBufferList = $scope.localLightbox.getAttribute("imageBufferList").unwrap();
+    $scope.imageBuffer = $scope.localLightbox.getAttribute("imageBuffer").unwrap();
+    $scope.currentImageBuffer = $scope.localLightbox.getAttribute("currentImageBuffer").unwrap();
+
+
+    $scope.localLightbox.addName("The Card Buggy");
+    $scope.localLightbox.pushImage("The Card Buggy", "img/CardBuggy/CardbuggyMobile.png");
+    $scope.localLightbox.pushImage("The Card Buggy", "img/CardBuggy/CardbuggyMobile.png");
+    $scope.localLightbox.pushImage("The Card Buggy", "img/CardBuggy/CardbuggyMobile.png");
+
+    $scope.localLightbox.addName("Milford Accounting");
+    $scope.localLightbox.pushImage("Milford Accounting", "img/CardBuggy/CardbuggyMobile.png");
+    $scope.localLightbox.pushImage("Milford Accounting", "img/CardBuggy/CardbuggyMobile.png");
+    $scope.localLightbox.pushImage("Milford Accounting", "img/CardBuggy/CardbuggyMobile.png");
+
+    $scope.localLightbox.addName("Karen Polzin");
+    $scope.localLightbox.pushImage("Karen Polzin", "img/CardBuggy/CardbuggyMobile.png");
+    $scope.localLightbox.pushImage("Karen Polzin", "img/CardBuggy/CardbuggyMobile.png");
+    $scope.localLightbox.pushImage("Karen Polzin", "img/CardBuggy/CardbuggyMobile.png");
+
+    $scope.localLightbox.debugDisplay();
 
     //CUSTOM VARIABLES
 	//Focused style
