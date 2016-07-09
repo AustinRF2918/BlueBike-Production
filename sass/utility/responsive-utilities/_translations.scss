@@ -16,3 +16,11 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
+@mixin generateNoSelect()
+{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

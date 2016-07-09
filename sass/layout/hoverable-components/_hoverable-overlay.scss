@@ -3,6 +3,7 @@
     &-overlay
     {
         @include transition-time($hoverable-icon-time);
+	@include generateNoSelect();
         cursor: pointer;
         position: relative;
     }

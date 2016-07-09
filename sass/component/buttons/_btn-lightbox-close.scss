@@ -1,5 +1,7 @@
 .btn-lightbox-close
 {
+    @include generateNoSelect();
+
     &.ng-show-add, &.ng-show-remove{
 	&-active{
 	    transition: $btn-lightbox-transition; 
