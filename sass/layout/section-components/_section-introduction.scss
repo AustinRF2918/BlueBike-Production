@@ -44,7 +44,7 @@
 
         @include desktop
         {
-            font-size: $introduction-subheader-medium-size;
+	    @include generateScalingText(3rem, 3.5rem, 4rem, 4.5rem, 5.5rem, 6.5rem, .5);
         }
 
         @include mobile
@@ -69,35 +69,8 @@
 	h1{
 	    //Responsive cluster for making sure text doesn't get
 	    //too ugly.
-	    @media screen and (max-width: 599px)
-	    {
-		font-size: 3rem;
-	    }
-
-	    @media screen and (min-width: 600px)
-	    {
-		font-size: 3.5rem;
-	    }
-
-	    @media screen and (min-width: 768px)
-	    {
-		font-size: 4rem;
-	    }
-
-	    @media screen and (min-width: 1024px)
-	    {
-		font-size: 4.5rem;
-	    }
-
-	    @media screen and (min-width: 1200px)
-	    {
-		font-size: 5.5rem;
-	    }
-
-	    @media screen and (min-width: 1920px)
-	    {
-		font-size: 6.5rem;
-	    }
+	    @include generateScalingText(3rem, 3.5rem, 4rem, 4.5rem, 5.5rem, 6.5rem, 1);
+	    
 
 	    font-family: Geometos Rounded;
 	}

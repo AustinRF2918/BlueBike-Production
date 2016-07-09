@@ -5,3 +5,36 @@
         display: none !important;
     }
 }
+
+@mixin generateScalingText($f1, $f2, $f3, $f4, $f5, $f6, $scaler)
+{
+    @media screen and (max-width: 599px)
+    {
+	font-size: $f1 * $scaler;
+    }
+
+    @media screen and (min-width: 600px)
+    {
+	font-size: $f2 * $scaler;
+    }
+
+    @media screen and (min-width: 768px)
+    {
+	font-size: $f3 * $scaler;
+    }
+
+    @media screen and (min-width: 1024px)
+    {
+	font-size: $f4 * $scaler;
+    }
+
+    @media screen and (min-width: 1200px)
+    {
+	font-size: $f5 * $scaler;
+    }
+
+    @media screen and (min-width: 1920px)
+    {
+	font-size: $f6 * $scaler;
+    }
+}

@@ -106,8 +106,7 @@ var LightboxCore = function(debug){
 	attribute = function(name)
 	{
 	    try{
-		val = eval(name);
-		return(new Result(new Some(val)));
+		return(new Result(new Some(eval(name))));
 	    }
 	    catch(e){
 		return(new Result(new None()));
@@ -217,7 +216,7 @@ var LightboxMapper = function(debug)
 	    }
 	};
     })();
-}
+};
 
 blueBikeApplication.controller("lightboxController", function($scope){
     $scope.localLightbox = new Lightbox(true);
