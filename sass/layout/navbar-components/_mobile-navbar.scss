@@ -19,6 +19,7 @@
     @include transition-time(0.5s);
     display: block !important;
     height: 0px !important;
+    background: transparent !important;
 
     .mobile-nav-list
     {

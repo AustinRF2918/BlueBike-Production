@@ -554,7 +554,8 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: block !important;
-  height: 0px !important; }
+  height: 0px !important;
+  background: transparent !important; }
   .bb-navbar-disabled .mobile-nav-list {
     height: 0px !important; }
 
