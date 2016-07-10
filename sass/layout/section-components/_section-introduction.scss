@@ -1,5 +1,9 @@
 .introduction
 {
+    img
+    {
+	@include no-select-with-styling();
+    }
     &-container
     {
         @include desktop
@@ -18,6 +22,7 @@
     h1{
         font-family: $introduction-header-font;
         @extend %is-important;
+	@include no-select-with-styling();
 
         @include mobile
         {
@@ -27,6 +32,7 @@
 
     h3{
 	font-family: $introduction-subheader-font;
+	@include no-select-with-styling();
 
         @include desktop
         {
@@ -41,6 +47,7 @@
 
     h2{
         font-family: $introduction-subheader-font;
+	@include no-select-with-styling();
 
         @include desktop
         {

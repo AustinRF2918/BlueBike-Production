@@ -15,6 +15,16 @@
     user-select: none;
 }
 
+@mixin no-select-with-styling
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+	cursor: default;
+}
+
 //For use on icons.
 @mixin extended-transition($time, $size)
 {

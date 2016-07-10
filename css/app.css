@@ -723,6 +723,13 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  .introduction img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default; }
   @media (min-width: 768px) {
     .introduction-container {
       padding-top: 160px;
@@ -732,12 +739,24 @@
       padding-top: 140px;
       padding-bottom: 70px; } }
   .introduction h1 {
-    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default; }
     @media (max-width: 767px) {
       .introduction h1 {
         font-size: 2em; } }
   .introduction h3 {
-    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default; }
     @media (min-width: 768px) {
       .introduction h3 {
         font-size: 1.75em; } }
@@ -745,7 +764,13 @@
       .introduction h3 {
         font-size: 1.25em; } }
   .introduction h2 {
-    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default; }
 @media screen and (min-width: 768px) and (max-width: 599px) {
   .introduction h2 {
     font-size: 1.5rem; } }
