@@ -90,36 +90,39 @@ var createPageHookNumericRange = function(startPoint, stopPoint, linkID, ssCont,
     .setClassToggle(linkID, className)
     .addTo(ssCont);
 };
-
-//Program "starting point"
-$(document).ready(function(){
-    console.log("[DEBUG] Document initialized.");
-
+//Hooking of components.
     //Initialization of ScrollMagic
     console.log("[DEBUG] Initializing ScrollMagic plugin...");
     var controller = new ScrollMagic.Controller();
     console.log("[DEBUG] ScrollMagic has been initialized.");
-
-    //Hooking of components.
     console.log("[DEBUG] Beginning hook process...");
 	console.log("[DEBUG] Hooking test-class-home to navbar on body to about range.");
 	createPageHookNumericRange(0, 100, '.navbar', controller, 70, "viewing-home");
 	console.log("[DEBUG] Hooked.");
 
 	console.log("[DEBUG] Hooking test-class-about to navbar on about to medias range.");
-	createPageHook('#about', '#medias', '.navbar', controller, 0, "viewing-about");
+	createPageHook('#about', '#medias', '.navbar', controller, 0, "viewing-other");
 	console.log("[DEBUG] Hooked.");
 
 	console.log("[DEBUG] Hooking test-class-medias to navbar on medias to portfolio range.");
-	createPageHook('#medias', '#portfolio', '.navbar', controller, 0, "viewing-medias");
+	createPageHook('#medias', '#portfolio', '.navbar', controller, 0, "viewing-other");
 	console.log("[DEBUG] Hooked.");
 
 	console.log("[DEBUG] Hooking test-class-portfolio to navbar on portfolio to contact range.");
-	createPageHook('#portfolio', '#contact', '.navbar', controller, 0, "viewing-portfolio");
+	createPageHook('#portfolio', '#contact', '.navbar', controller, 0, "viewing-other");
 	console.log("[DEBUG] Hooked.");
 
 	console.log("[DEBUG] Hooking test-class-contact to navbar on contact to footer range.");
-	createPageHook('#contact', '#footer-bottom', '.navbar', controller, 0, "viewing-contact");
+	createPageHook('#contact', '#footer-bottom', '.navbar', controller, 0, "viewing-other");
 	console.log("[DEBUG] Hooked.");
+
+$(".element-is-loading").removeClass("element-is-loading");
+
+//Program "starting point"
+$(document).ready(function(){
+    console.log("[DEBUG] Document initialized.");
+
+
+    
 
 });

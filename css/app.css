@@ -565,10 +565,8 @@
   top: 80px;
   height: 170px;
   display: none;
-  background: blue;
   position: fixed;
-  top: 50px;
-  background: blue; }
+  top: 50px; }
   .bb-navbar-toggle-inactive {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -592,35 +590,42 @@
     position: fixed;
     display: block; }
 
-.bb-navbar {
-  background: #004573; }
-  @media screen and (max-width: 767px) {
-    .bb-navbar {
-      height: 50px; } }
-  .bb-navbar-nav-mobile {
-    color: white;
-    font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-top: 8px;
-    margin-bottom: 8px; }
-    .bb-navbar-nav-mobile:hover {
-      color: #ff893a; }
-    .bb-navbar-nav-mobile:focus, .bb-navbar-nav-mobile:active {
-      color: white; }
-  @media screen and (max-width: 767px) {
-    .bb-navbar-nav {
-      display: none !important; } }
-  .bb-navbar-nav-mobile {
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-top: 8px;
-    margin-bottom: 8px; }
-  @media screen and (max-width: 767px) {
-    .bb-navbar-brand {
-      margin-top: 0px;
-      font-size: 19px; } }
+.element-is-loading {
+  -webkit-transition: all 2.5s ease;
+  -moz-transition: all 2.5s ease;
+  -ms-transition: all 2.5s ease;
+  -o-transition: all 2.5s ease;
+  transition: all 2.5s ease;
+  background: transparent !important;
+  color: transparent !important; }
+
+@media screen and (max-width: 767px) {
+  .bb-navbar {
+    height: 50px; } }
+.bb-navbar-nav-mobile {
+  color: white;
+  font-family: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+  .bb-navbar-nav-mobile:hover {
+    color: #ff893a; }
+  .bb-navbar-nav-mobile:focus, .bb-navbar-nav-mobile:active {
+    color: white; }
+@media screen and (max-width: 767px) {
+  .bb-navbar-nav {
+    display: none !important; } }
+.bb-navbar-nav-mobile {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+@media screen and (max-width: 767px) {
+  .bb-navbar-brand {
+    margin-top: 0px;
+    font-size: 19px; } }
 
 .mobile-nav-list {
   position: absolute;
@@ -632,13 +637,24 @@
   height: 120px;
   padding-top: 20px; }
   .viewing-home a {
-    color: #d06176 !important; }
+    color: #00548c !important; }
     .viewing-home a:hover {
       color: #0d9fff !important; }
   .viewing-home #nav-1 {
-    color: #00548c !important; }
+    color: #0082d9 !important; }
     .viewing-home #nav-1:hover {
-      color: #0073bf !important; }
+      color: #0d9fff !important; }
+
+.viewing-other {
+  background: #004573 !important; }
+  .viewing-other a {
+    color: white; }
+    .viewing-other a:hover {
+      color: #ffa263 !important; }
+  .viewing-other #nav-1 {
+    color: white; }
+    .viewing-other #nav-1:hover {
+      color: #ffa263 !important; }
 
 .introduction-viewing {
   background: #004573; }

@@ -1,3 +1,6 @@
+.navbar{
+}
+
 .bb-navbar-enabled
 {
     @include transition-time(0.5s);
@@ -28,30 +31,25 @@
 }
 .bb-navbar-toggle
 {
-	z-index: -9999;
+    z-index: -9999;
     position: absolute;
     top: 80px;
     height: 170px;
     display: none;
-    background: blue;
     position: fixed;
     top: 50px;
-    background: blue;
 
     &-inactive{
 	@include transition-time(0.5s);
-
-	//Create a punnet-square mixin for these.
 	position: fixed;
 	display: none;
-
 	height: 0px;
+
 	.nav-item
 	{
 	    display: none;
 	}
 
-	//Can we do this more elegantly?
 	top: 0px;
 	z-index: -9999;
     }
@@ -68,9 +66,14 @@
     }
 
 }
+.element-is-loading
+{
+    @include transition-time(2.5s);
+    background: transparent !important;
+    color: transparent !important;
+}
 .bb-navbar
 {
-    background: $color-palette-3;
     @media screen and (max-width: 767px)
     {
         height: 50px;

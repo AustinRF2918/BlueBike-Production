@@ -5,7 +5,7 @@
     padding-top: 20px;
 
     a{
-	color: lighten($color-palette-9, 0%) !important;
+	color: darken($color-palette-5, 10%) !important;
 	&:hover
 	{
 	    color: lighten($color-palette-5, 15%) !important;
@@ -13,10 +13,31 @@
     }
 
     #nav-1{
-	color: darken($color-palette-5, 10%) !important;
+	color: lighten($color-palette-5, 5%) !important;
 	&:hover
 	{
-	    color: darken($color-palette-5, 0%) !important;
+	    color: lighten($color-palette-5, 15%) !important;
+	}
+    }
+}
+
+.viewing-other
+{
+    background: $color-palette-3 !important;
+
+    a{
+	color: white;
+	&:hover
+	{
+	    color: $color-palette-7 !important;
+	}
+    }
+
+    #nav-1{
+	color: white;
+	&:hover
+	{
+	    color: $color-palette-7 !important;
 	}
     }
 }

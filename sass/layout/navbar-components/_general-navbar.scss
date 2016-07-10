@@ -5,8 +5,6 @@
     border-radius: 0px;
     height: 80px;
 
-    
-
     &-nav, &-brand{
         font-family: $navbar-font;
         font-weight: 700;
@@ -18,6 +16,7 @@
         text-transform: uppercase;
         @include transition-time(0.2s);
     }
+
     &-brand{
         text-transform: uppercase;
         margin-top: 3px;
