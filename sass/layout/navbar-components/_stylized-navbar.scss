@@ -1,9 +1,11 @@
 .viewing-home
 {
     background: transparent !important;
+    height: 120px;
+    padding-top: 20px;
 
     a{
-	color: lighten($color-palette-5, 5%) !important;
+	color: lighten($color-palette-9, 0%) !important;
 	&:hover
 	{
 	    color: lighten($color-palette-5, 15%) !important;

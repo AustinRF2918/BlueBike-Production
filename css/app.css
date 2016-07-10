@@ -628,9 +628,11 @@
   list-style-type: none; }
 
 .viewing-home {
-  background: transparent !important; }
+  background: transparent !important;
+  height: 120px;
+  padding-top: 20px; }
   .viewing-home a {
-    color: #0082d9 !important; }
+    color: #d06176 !important; }
     .viewing-home a:hover {
       color: #0d9fff !important; }
   .viewing-home #nav-1 {
@@ -729,6 +731,12 @@
       color: white; }
 
 .introduction {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
   color: white;
   background: url("../img/asset-introduction.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;

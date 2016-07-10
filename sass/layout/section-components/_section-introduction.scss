@@ -1,9 +1,12 @@
 .introduction
 {
+    @include no-select-with-styling();
+
     img
     {
 	@include no-select-with-styling();
     }
+
     &-container
     {
         @include desktop
