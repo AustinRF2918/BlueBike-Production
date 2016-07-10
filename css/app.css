@@ -5,6 +5,9 @@
   text-transform: uppercase;
   font-weight: 700; }
 
+body {
+  overflow-x: hidden; }
+
 @media screen and (max-width: 767px) {
   .img-desktop {
     display: none; } }
@@ -635,7 +638,7 @@
 .viewing-home {
   background: transparent !important;
   height: 120px;
-  padding-top: 20px; }
+  padding-top: 30px; }
   .viewing-home a {
     color: #00548c !important; }
     .viewing-home a:hover {

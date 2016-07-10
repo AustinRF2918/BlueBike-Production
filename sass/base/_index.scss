@@ -4,3 +4,8 @@
 @import 'sizing';
 @import 'timings';
 @import 'other';
+
+body
+{
+    overflow-x: hidden;
+}
