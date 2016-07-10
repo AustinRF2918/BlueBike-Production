@@ -241,7 +241,7 @@
   </section>
   </div>
     <section ng-controller="formValidator" class="contact" id="contact">
-      <div ng-show="badFlag" ng-hide="!badFlag" class="modal-alert" ng-click="resetGUIFlags()">
+      <div ng-show="badFlag" ng-hide="!badFlag" class="modal-alert element-is-loading" ng-click="resetGUIFlags()">
 	<div class="modal-alert-container modal-submission-bad" ng-click="$event.stopPropagation()">
 	  <div class="row">
 	    <div class="col-md-12">
@@ -257,7 +257,7 @@
 	  </div>
 	</div>
       </div>
-     <div ng-show="goodFlag" ng-hide="!goodFlag" class="modal-alert" ng-click="resetGUIFlags()">
+     <div ng-show="goodFlag" ng-hide="!goodFlag" class="modal-alert element-is-loading" ng-click="resetGUIFlags()">
 	<div class="modal-alert-container modal-submission-good" ng-click="$event.stopPropagation()">
 	  <div class="row">
 	    <div class="col-md-12">
