@@ -1,0 +1,20 @@
+.viewing-home
+{
+    background: transparent !important;
+
+    a{
+	color: lighten($color-palette-5, 5%) !important;
+	&:hover
+	{
+	    color: lighten($color-palette-5, 15%) !important;
+	}
+    }
+
+    #nav-1{
+	color: darken($color-palette-5, 10%) !important;
+	&:hover
+	{
+	    color: darken($color-palette-5, 0%) !important;
+	}
+    }
+}

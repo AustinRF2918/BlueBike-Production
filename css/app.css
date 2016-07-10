@@ -626,6 +626,17 @@
   padding-left: 15px;
   list-style-type: none; }
 
+.viewing-home {
+  background: transparent !important; }
+  .viewing-home a {
+    color: #0082d9 !important; }
+    .viewing-home a:hover {
+      color: #0d9fff !important; }
+  .viewing-home #nav-1 {
+    color: #00548c !important; }
+    .viewing-home #nav-1:hover {
+      color: #0073bf !important; }
+
 .introduction-viewing {
   background: #004573; }
   .introduction-viewing, .introduction-viewing .active {

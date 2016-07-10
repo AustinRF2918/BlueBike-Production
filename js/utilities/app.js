@@ -73,6 +73,24 @@ var createPageHook = function(startPoint, stopPoint, linkID, ssCont, offset, cla
     .addTo(ssCont);
 };
 
+//Creates a hook to a page that toggles a class if on a certain LinkID.
+//startPoint: Element on the DOM that we will designate as our starting point, or,
+//when it is scrolled into view, fire our class toggle.
+//stopPoint: Construct a range for the element that startPoint designates to this
+//element.
+//linkID: Element that we are going to do class toggling on.
+//ssCont: the controller that we initialized and are putting our hook into.
+//offset: Offset variable for toggling: refer to original scrollspy offset.
+//className: Class that we are toggling.
+var createPageHookNumericRange = function(startPoint, stopPoint, linkID, ssCont, offset, className){
+    new ScrollMagic.Scene({
+	offset: startPoint -  offset,
+	duration: stopPoint - startPoint
+    })
+    .setClassToggle(linkID, className)
+    .addTo(ssCont);
+};
+
 //Program "starting point"
 $(document).ready(function(){
     console.log("[DEBUG] Document initialized.");
@@ -85,7 +103,7 @@ $(document).ready(function(){
     //Hooking of components.
     console.log("[DEBUG] Beginning hook process...");
 	console.log("[DEBUG] Hooking test-class-home to navbar on body to about range.");
-	createPageHook('body', '#about', '.navbar', controller, 0, "viewing-home");
+	createPageHookNumericRange(0, 100, '.navbar', controller, 70, "viewing-home");
 	console.log("[DEBUG] Hooked.");
 
 	console.log("[DEBUG] Hooking test-class-about to navbar on about to medias range.");
