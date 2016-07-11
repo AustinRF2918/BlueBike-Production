@@ -3,7 +3,8 @@
     border: 0px black solid;
 }
 
-.jump-in
+.wait
 {
-    //To be implemented.
+    @include transition-time(.5s);
+    opacity: 0;
 }

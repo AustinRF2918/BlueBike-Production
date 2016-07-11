@@ -408,6 +408,14 @@ body, html {
 .no-border {
   border: 0px black solid; }
 
+.wait {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0; }
+
 .icon-instagram {
   border-radius: 100%;
   -webkit-transform: scale(0.8);

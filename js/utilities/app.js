@@ -56,6 +56,28 @@ $(window).scroll(function(){
 });
 
 //Creates a hook to a page that toggles a class if on a certain LinkID.
+//This will only fire once on a page.
+//startPoint: Element on the DOM that we will designate as our starting point, or,
+//when it is scrolled into view, fire our class toggle.
+//stopPoint: Construct a range for the element that startPoint designates to this
+//element.
+//linkID: Element that we are going to do class toggling on.
+//ssCont: the controller that we initialized and are putting our hook into.
+//offset: Offset variable for toggling: refer to original scrollspy offset.
+//className: Class that we are toggling.
+var createPageHookOneShot = function(startPoint, stopPoint, linkID, ssCont, offset, className){
+    new ScrollMagic.Scene({
+	offset: $(startPoint).offset().top - offset,
+	duration: $(stopPoint).offset().top - $(startPoint).offset().top
+    })
+    .removeClassToggle()
+    .setClassToggle(linkID, className)
+    .addTo(ssCont)
+    .reverse(false)
+    .addTo(ssCont);
+};
+
+//Creates a hook to a page that toggles a class if on a certain LinkID.
 //startPoint: Element on the DOM that we will designate as our starting point, or,
 //when it is scrolled into view, fire our class toggle.
 //stopPoint: Construct a range for the element that startPoint designates to this
@@ -108,6 +130,11 @@ var createPageHookNumericRange = function(startPoint, stopPoint, linkID, ssCont,
 	console.log("[DEBUG] Hooking test-class-medias to navbar on medias to portfolio range.");
 	createPageHook('#medias', '#portfolio', '.navbar', controller, 0, "viewing-other");
 	console.log("[DEBUG] Hooked.");
+	console.log("[DEBUG] Hooking fadeins to icons on on medias to portfolio range.");
+	createPageHookOneShot('#medias', '#portfolio', '.card-block', controller, 400, "fadeIn");
+	createPageHookOneShot('#medias', '#portfolio', '.card-block', controller, 400, "wait");
+	console.log("[DEBUG] Hooked.");
+
 
 	console.log("[DEBUG] Hooking test-class-portfolio to navbar on portfolio to contact range.");
 	createPageHook('#portfolio', '#contact', '.navbar', controller, 0, "viewing-other");
