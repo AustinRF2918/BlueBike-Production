@@ -16,22 +16,32 @@ $("#navbar-mobile-toggler").mousedown(function(){
 });
 
 //Sanity test.
-var switchClass = function(className, elementSelector)
+var switchClass = function(className, elementSelector, r)
 {
-    return function(){
-    console.log("[DEBUG] Switching class: " + className + " on: " + elementSelector);
-    $("#" + className).addClass(elementSelector);
-    };
+    if (r === true)
+    {
+	return function(){
+	console.log("[DEBUG] Switching class: " + className + " on: " + elementSelector);
+	$("#" + className).addClass(elementSelector);
+	};
+    }
+    else
+    {
+	return function(){
+	console.log("[DEBUG] Switching class: " + className + " on: " + elementSelector);
+	$("#" + className).removeClass(elementSelector);
+	};
+    }
 };
 
 //Autogeneration of waypoints.
 //Selector is ID of element.
 //Function is a lambda that will run when function is scrolled into view.
-var generateWaypoint = function(viewSelector, className, elementSelector){
+var generateWaypoint = function(viewSelector, className, elementSelector, r){
     return (new Waypoint.Inview({
 	element: document.getElementById(viewSelector),
 
-	enter: switchClass(className, elementSelector),
+	enter: switchClass(className, elementSelector, r),
 
 	exit: function()
 	{
@@ -155,18 +165,9 @@ var createPageHookNumericRange = function(startPoint, stopPoint, linkID, ssCont,
 	console.log("[DEBUG] Hooking test-class-medias to navbar on medias to portfolio range.");
 	createPageHook('#medias', '#portfolio', '.navbar', controller, 0, "viewing-other");
 	console.log("[DEBUG] Hooked.");
-	console.log("[DEBUG] Hooking fadeins to icons on on medias to portfolio range.");
-
-
-	createPageHookOneShot('#medias', '#portfolio', '.card-block', controller, 400, "fadeIn");
-	createPageHookOneShot('#medias', '#portfolio', '.card-block', controller, 400, "wait-medias");
-
-
 
 	console.log("[DEBUG] Hooking test-class-portfolio to navbar on portfolio to contact range.");
 	createPageHook('#portfolio', '#contact', '.navbar', controller, 0, "viewing-other");
-	createPageHook('#portfolio', '#contact', '.image-clickable', controller, 800, "fadeIn");
-	createPageHook('#portfolio', '#contact', '.image-clickable', controller, 800, "wait-portfolio");
 	console.log("[DEBUG] Hooked.");
 
 	console.log("[DEBUG] Hooking test-class-contact to navbar on contact to footer range.");
@@ -179,16 +180,16 @@ $(".element-is-loading").removeClass("element-is-loading");
 $(document).ready(function(){
     console.log("[DEBUG] Document initialized.");
 
-    generateClassOnView('card-one', 'card-test');
-    generateClassOnView('card-two', 'card-test');
-    generateClassOnView('card-three', 'card-test');
+    generateClassOnView('card-one', 'wait', false);
+    generateClassOnView('card-two', 'wait', false);
+    generateClassOnView('card-three', 'wait', false);
 
-    generateClassOnView('Cardbuggy', 'gallery-test');
-    generateClassOnView('Milford', 'gallery-test');
-    generateClassOnView('Karen', 'gallery-test');
+    generateClassOnView('Cardbuggy', 'wait', false);
+    generateClassOnView('Milford', 'wait', false);
+    generateClassOnView('Karen', 'wait', false);
     
-    generateClassOnView('icon-instagram', 'icon-test');
-    generateClassOnView('icon-facebook', 'icon-test');
-    generateClassOnView('icon-twitter', 'icon-test');
+    generateClassOnView('icon-instagram', 'wait', false);
+    generateClassOnView('icon-facebook', 'wait', false);
+    generateClassOnView('icon-twitter', 'wait', false);
 });
 

@@ -408,7 +408,7 @@ body, html {
 .no-border {
   border: 0px black solid; }
 
-.wait-medias {
+.wait {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -416,13 +416,12 @@ body, html {
   transition: all 1s ease;
   opacity: 0; }
 
-.wait-portfolio {
+.animated {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0; }
+  transition: all 1s ease; }
 
 .fadeIn {
   -webkit-transition: all 1s ease;
