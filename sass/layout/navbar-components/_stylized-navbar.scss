@@ -40,6 +40,11 @@
 
 .viewing-other
 {
+    .mobile-nav-list{
+	position: fixed;
+	top: 50px !important;
+	@include transition-time(0.7s);
+    }
     background: $color-palette-3 !important;
 
     a{

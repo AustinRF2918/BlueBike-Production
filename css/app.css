@@ -588,6 +588,13 @@ body, html {
   height: 0px !important;
   background: transparent; }
   .bb-navbar-disabled .mobile-nav-list {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: -20px !important;
+    padding-left: 0px;
     height: 0px !important; }
 
 .bb-navbar-toggle {
@@ -642,7 +649,7 @@ body, html {
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-left: 30px; }
+  padding-left: 30px !important; }
   .bb-navbar-nav-mobile:hover {
     color: #ff893a; }
   .bb-navbar-nav-mobile:focus, .bb-navbar-nav-mobile:active {
@@ -695,6 +702,14 @@ body, html {
 
 .viewing-other {
   background: #004573 !important; }
+  .viewing-other .mobile-nav-list {
+    position: fixed;
+    top: 50px !important;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
   .viewing-other a {
     color: white; }
     .viewing-other a:hover {
