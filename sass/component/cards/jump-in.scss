@@ -5,16 +5,16 @@
 
 .wait
 {
-    @include transition-time(1s);
+    @include transition-time(3s);
     opacity: 0;
 }
 
 .animated
 {
-    @include transition-time(1s);
+    @include transition-time(2.5s);
 }
 
 .fadeIn
 {
-    @include transition-time(1s);
+    @include transition-time(2.5s);
 }

@@ -409,26 +409,26 @@ body, html {
   border: 0px black solid; }
 
 .wait {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
   opacity: 0; }
 
 .animated {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
+  -webkit-transition: all 2.5s ease;
+  -moz-transition: all 2.5s ease;
+  -ms-transition: all 2.5s ease;
+  -o-transition: all 2.5s ease;
+  transition: all 2.5s ease; }
 
 .fadeIn {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
+  -webkit-transition: all 2.5s ease;
+  -moz-transition: all 2.5s ease;
+  -ms-transition: all 2.5s ease;
+  -o-transition: all 2.5s ease;
+  transition: all 2.5s ease; }
 
 .icon-instagram {
   border-radius: 100%;
@@ -681,7 +681,7 @@ body, html {
   padding-top: 30px; }
   .viewing-home.bb-navbar-toggle-active {
     position: absolute;
-    height: 405px !important;
+    height: 100vh !important;
     padding-top: 80px;
     margin-top: 0px;
     top: 0px;
