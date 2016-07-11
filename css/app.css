@@ -572,6 +572,9 @@ body, html {
   display: block !important;
   height: 170px !important; }
   .bb-navbar-enabled .mobile-nav-list {
+    position: absolute;
+    list-style-type: none;
+    left: 0px;
     padding-left: 0px;
     height: 170px !important; }
 
@@ -635,8 +638,11 @@ body, html {
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 30px; }
   .bb-navbar-nav-mobile:hover {
     color: #ff893a; }
   .bb-navbar-nav-mobile:focus, .bb-navbar-nav-mobile:active {
@@ -648,16 +654,19 @@ body, html {
   font-size: 15px;
   text-transform: uppercase;
   margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  width: 100vw; }
 @media screen and (max-width: 767px) {
   .bb-navbar-brand {
     margin-top: 0px;
     font-size: 19px; } }
 
-.mobile-nav-list {
-  position: absolute;
-  padding-left: 15px;
-  list-style-type: none; }
+@media screen and (max-width: 768px) {
+  .nav-link.bb-navbar-nav-mobile {
+    margin-top: 0px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+    padding-bottom: 8px; } }
 
 .viewing-home {
   background: transparent !important;

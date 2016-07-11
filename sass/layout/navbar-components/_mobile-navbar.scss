@@ -6,13 +6,13 @@
 {
     @include transition-time(0.5s);
     display: block !important;
-
-    //Refactor sizes.
     height: 170px !important;
 
     .mobile-nav-list
     {
-	//Refactor sizes.
+	position: absolute;
+	list-style-type: none;
+	left: 0px;
 	padding-left: 0px;
 	height: 170px !important;
     }
@@ -95,8 +95,11 @@
         font-weight: 700;
 	font-size: 15px;
 	text-transform: uppercase;
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 30px;
     }
 
     &-nav{
@@ -112,6 +115,7 @@
             text-transform: uppercase;
             margin-top: 8px;
             margin-bottom: 8px;
+	    width: 100vw;
         }
     }
     &-brand{
@@ -126,9 +130,13 @@
     
 }
 
-.mobile-nav-list
+.nav-link.bb-navbar-nav-mobile
 {
-    position: absolute;
-    padding-left: 15px;
-    list-style-type: none;
+    @media screen and (max-width: 768px)
+    {
+    margin-top: 0px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+    }
 }
