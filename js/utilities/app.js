@@ -182,5 +182,13 @@ $(document).ready(function(){
     generateClassOnView('card-one', 'card-test');
     generateClassOnView('card-two', 'card-test');
     generateClassOnView('card-three', 'card-test');
+
+    generateClassOnView('Cardbuggy', 'gallery-test');
+    generateClassOnView('Milford', 'gallery-test');
+    generateClassOnView('Karen', 'gallery-test');
+    
+    generateClassOnView('icon-instagram', 'icon-test');
+    generateClassOnView('icon-facebook', 'icon-test');
+    generateClassOnView('icon-twitter', 'icon-test');
 });
 
