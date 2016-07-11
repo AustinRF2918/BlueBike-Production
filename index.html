@@ -184,22 +184,22 @@
 	<div class="row m-t-2">
 	  <div class="col-md-4">
 	    <div class="card no-border" data-src="..." alt="">
-	      <div class="card-block wait text-xs-center animated">
-		<img class="animated" src="img/asset-phone.png"></i>
+	      <div class="card-block wait-medias text-xs-center animated">
+		<img id="card-one" class="animated" src="img/asset-phone.png"></i>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-md-4">
 	    <div class="card no-border" data-src="..." alt="">
-	      <div class="card-block wait text-xs-center animated">
-		<img class="animated" src="img/asset-desktop.png"></i>
+	      <div class="card-block wait-medias text-xs-center animated">
+		<img id="card-two" class="animated" src="img/asset-desktop.png"></i>
 	      </div>
 	    </div>
 	  </div>
 	  <div class="col-md-4">
 	    <div class="card no-border" data-src="..." alt="">
-	      <div class="card-block wait text-xs-center animated">
-		<img class="animated" src="img/asset-laptop.png"></i>
+	      <div class="card-block wait-medias text-xs-center animated">
+		<img id="card-three" class="animated" src="img/asset-laptop.png"></i>
 	      </div>
 	    </div>
 	  </div>
@@ -229,7 +229,7 @@
 	</div>
 	<div class="col-md-4 m-t-2 portfolio-caption">
 	  <div ng-click="toggleLightbox(2)" class="portfolio-overlay">
-	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-cake.png"/></a>
+	  <a class="portfolio-clickable" href="#"><img class="image-clickable wait-portfolio animated img-fluid" src="img/asset-cake.png"/></a>
 	  </div>
 	</div>
 	<div class="col-md-4 m-t-2 portfolio-caption">
@@ -337,6 +337,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/shortcuts/inview.min.js"></script>
   <script src="js/utilities/app.js"></script> 
   <script src="js/utilities/easy-scroll.js"></script> 
   <script src="js/controllers/lightbox.js"></script> 

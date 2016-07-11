@@ -3,8 +3,19 @@
     border: 0px black solid;
 }
 
-.wait
+.wait-medias
 {
-    @include transition-time(.5s);
+    @include transition-time(1s);
     opacity: 0;
+}
+
+.wait-portfolio
+{
+    @include transition-time(1s);
+    opacity: 0;
+}
+
+.fadeIn
+{
+    @include transition-time(1s);
 }
