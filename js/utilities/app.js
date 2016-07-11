@@ -102,6 +102,7 @@ var createPageHookNumericRange = function(startPoint, stopPoint, linkID, ssCont,
 
 	console.log("[DEBUG] Hooking test-class-about to navbar on about to medias range.");
 	createPageHook('#about', '#medias', '.navbar', controller, 0, "viewing-other");
+	createPageHook('#about', '#medias', '.navbar-two', controller, 0, "viewing-other");
 	console.log("[DEBUG] Hooked.");
 
 	console.log("[DEBUG] Hooking test-class-medias to navbar on medias to portfolio range.");

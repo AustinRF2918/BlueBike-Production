@@ -5,7 +5,7 @@
   text-transform: uppercase;
   font-weight: 700; }
 
-body {
+body, html {
   overflow-x: hidden; }
 
 @media screen and (max-width: 767px) {
@@ -538,6 +538,9 @@ body {
   .bb-navbar-button {
     display: none !important; } }
 
+.navbar-two {
+  background: black; }
+
 .bb-navbar-enabled {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -558,18 +561,17 @@ body {
   transition: all 0.5s ease;
   display: block !important;
   height: 0px !important;
-  background: transparent !important; }
+  background: transparent; }
   .bb-navbar-disabled .mobile-nav-list {
     height: 0px !important; }
 
 .bb-navbar-toggle {
   z-index: -9999;
   position: absolute;
-  top: 80px;
   height: 170px;
   display: none;
   position: fixed;
-  top: 50px; }
+  top: 49px; }
   .bb-navbar-toggle-inactive {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
