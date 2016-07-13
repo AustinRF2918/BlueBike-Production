@@ -1,10 +1,10 @@
 .bb-navbar-button
 {
-    background: transparent;
-    border: 1px solid $navbar-button-border;
-    border-radius: 4px;
+    background: $color-palette-3;
+    border: 0px solid $navbar-button-border;
+    border-radius: 7px;
     padding: 6px 7px;
-    &:hover, &:active, &:focus{
+    &:hover, &:active{
 	background: $navy-blue-dark;
     }
 }

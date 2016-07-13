@@ -36,11 +36,11 @@ body, html {
     padding-right: .75rem; } }
 
 .bb-navbar-button {
-  background: transparent;
-  border: 1px solid #1a242f;
-  border-radius: 4px;
+  background: #004573;
+  border: 0px solid #1a242f;
+  border-radius: 7px;
   padding: 6px 7px; }
-  .bb-navbar-button:hover, .bb-navbar-button:active, .bb-navbar-button:focus {
+  .bb-navbar-button:hover, .bb-navbar-button:active {
     background: #002640; }
 
 .bb-navbar-icon-bar {
@@ -718,6 +718,11 @@ body, html {
     color: white; }
     .viewing-other #nav-1:hover {
       color: #ffa263 !important; }
+
+.bb-navbar-icon-bar {
+  height: .2em;
+  margin-top: .2em;
+  margin-bottom: .2em; }
 
 .introduction-viewing {
   background: #004573; }
