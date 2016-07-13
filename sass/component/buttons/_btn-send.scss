@@ -1,6 +1,6 @@
 .btn-send
 {
-    transition: $btn-send-transition;
+    @include transition-time(0.2s);
     border: $btn-send-border;
     color: $btn-send-text;
     background: $btn-send-background;
@@ -8,12 +8,14 @@
     width: $btn-send-width;
     font-family: $button-general-font;
     font-size: $btn-send-text-size;
+    z-index: 99;
 }
 
 .btn-send-success
 {
     &:hover
     {
+	@include scale(1.2);
         background: $btn-send-background-fade-good;
 	border: $btn-send-border-hover-good;
     }
@@ -23,6 +25,7 @@
 {
     &:hover
     {
+	@include scale(1.2);
         background: $btn-send-background-fade-bad;
 	border: $btn-send-border-hover-bad;
     }

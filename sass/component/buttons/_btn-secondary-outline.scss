@@ -10,7 +10,8 @@
 
     &:hover
     {
-    transition: $btn-secondary-outline-transition;
+	@include transition-time($btn-secondary-outline-transition);
+	@include scale(1.2);
         background: $btn-secondary-outline-background-fade;
         border: 2px olidbtn-secondary-outline-border;
         color: $btn-secondary-outline-text-fade;
