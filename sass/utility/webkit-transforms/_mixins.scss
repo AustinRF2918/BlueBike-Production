@@ -7,11 +7,11 @@
 }
 
 @mixin scale($amount){
-    -webkit-transform: scale($amount);
-    -moz-transform: scale($amount);
-    -ms-transform: scale($amount);
-    -o-transform: scale($amount);
-    transition: scale($amount);
+    -webkit-transform: scale($amount) !important;
+    -moz-transform: scale($amount) !important;
+    -ms-transform: scale($amount) !important;
+    -o-transform: scale($amount) !important;
+    transition: scale($amount) !important;
 }
 
 @mixin no-select

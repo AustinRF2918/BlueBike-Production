@@ -35,6 +35,15 @@ body, html {
     margin: 0 !important;
     padding-right: .75rem; } }
 
+@media screen and (min-width: 768px) {
+  .p-t-m1-desktop {
+    postion: relative;
+    margin-top: -3.5%; } }
+@media screen and (max-width: 767px) {
+  .p-t-m1-desktop {
+    postion: relative;
+    margin-top: 3.5%; } }
+
 .bb-navbar-button {
   background: #004573;
   border: 0px solid #1a242f;
@@ -66,11 +75,11 @@ body, html {
     -ms-transition-duration: 0.2s ease-in all;
     -o-transition-duration: 0.2s ease-in all;
     transition-duration: 0.2s ease-in all;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transition: scale(1.2);
+    -webkit-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+    transition: scale(1.2) !important;
     background: white;
     border: 2px olidbtn-secondary-outline-border;
     color: black; }
@@ -91,20 +100,20 @@ body, html {
   z-index: 99; }
 
 .btn-send-success:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transition: scale(1.2);
+  -webkit-transform: scale(1.2) !important;
+  -moz-transform: scale(1.2) !important;
+  -ms-transform: scale(1.2) !important;
+  -o-transform: scale(1.2) !important;
+  transition: scale(1.2) !important;
   background: #61d084;
   border: #61d084; }
 
 .btn-send-failure:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transition: scale(1.2);
+  -webkit-transform: scale(1.2) !important;
+  -moz-transform: scale(1.2) !important;
+  -ms-transform: scale(1.2) !important;
+  -o-transform: scale(1.2) !important;
+  transition: scale(1.2) !important;
   background: #d06176;
   border: #d06176; }
 
@@ -155,11 +164,11 @@ body, html {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px; }
     .btn-modal-success:hover {
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transition: scale(1.2);
+      -webkit-transform: scale(1.2) !important;
+      -moz-transform: scale(1.2) !important;
+      -ms-transform: scale(1.2) !important;
+      -o-transform: scale(1.2) !important;
+      transition: scale(1.2) !important;
       background: #1d6232;
       border: #1d6232; }
   .btn-modal-failure {
@@ -175,13 +184,35 @@ body, html {
     width: 250px;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .btn-modal-failure:hover {
-      -webkit-transform: scale(1.2);
-      -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transition: scale(1.2);
+      -webkit-transform: scale(1.2) !important;
+      -moz-transform: scale(1.2) !important;
+      -ms-transform: scale(1.2) !important;
+      -o-transform: scale(1.2) !important;
+      transition: scale(1.2) !important;
       background: #621d2a;
       border: #621d2a; }
+
+.btn-learn-more {
+  transition-duration: 0.2s !important;
+  border: white;
+  color: #004573;
+  background: white;
+  line-height: 60px;
+  width: 250px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  z-index: 99;
+  animation-fill-mode: forwards; }
+  .btn-learn-more:hover {
+    -webkit-transition: all 0.3s ease;
+    -webkit-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+    transition: scale(1.2) !important;
+    transition-duration: 0.2s !important;
+    background: #61d084;
+    border: #61d084; }
 
 .starlight {
   border: 3px solid white;

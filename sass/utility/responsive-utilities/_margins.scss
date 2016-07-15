@@ -29,3 +29,17 @@
 	padding-right: .75rem;
     }
 }
+
+.p-t-m1-desktop
+{
+    @media screen and (min-width: 768px)
+    {
+	postion: relative;
+	margin-top: -3.5%;
+    }
+    @media screen and (max-width: 767px)
+    {
+	postion: relative;
+	margin-top: 3.5%;
+    }
+}

@@ -1,0 +1,22 @@
+.btn-learn-more
+{
+    transition-duration: 0.2s !important;
+    border: $btn-send-border;
+    color: $btn-send-text;
+    background: $btn-send-background;
+    line-height: $btn-send-height;
+    width: $btn-send-width;
+    font-family: $button-general-font;
+    font-size: $btn-send-text-size;
+    z-index: 99;
+    animation-fill-mode: forwards;
+
+    &:hover
+    {
+	-webkit-transition: all 0.3s ease;
+	@include scale(1.2);
+	transition-duration: 0.2s !important;
+        background: $btn-send-background-fade-good;
+	border: $btn-send-border-hover-good;
+    }
+}
