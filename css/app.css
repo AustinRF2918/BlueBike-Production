@@ -197,12 +197,18 @@ body, html {
   border: white;
   color: #004573;
   background: white;
-  line-height: 60px;
-  width: 250px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   z-index: 99;
   animation-fill-mode: forwards; }
+  @media screen and (min-width: 768px) {
+    .btn-learn-more {
+      line-height: 60px;
+      width: 250px; } }
+  @media screen and (max-width: 767px) {
+    .btn-learn-more {
+      line-height: 45px;
+      width: 187.5px; } }
   .btn-learn-more:hover {
     -webkit-transition: all 0.3s ease;
     -webkit-transform: scale(1.2) !important;
