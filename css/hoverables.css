@@ -66,20 +66,25 @@
 .looking-glass-effect h2 {
   overflow: hidden;
   text-transform: uppercase;
-  text-align: center;
   position: relative;
   font-size: 17px;
-  top: 40%;
-  padding: 10px;
   background-color: transparent;
   color: #FFF;
-  padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-150%,-400%,0);
   transform: translate3d(-150%,-400%,0);
+
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 48%;
+  -webkit-transform: translateY(-48%);
+  -moz-transform: translateY(-48%);
+  -ms-transform: translateY(-48%);
+  transform: translateY(-48%);
 }
 
 .looking-glass-effect a, .looking-glass-effect p {
