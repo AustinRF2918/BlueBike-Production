@@ -191,5 +191,7 @@ $(document).ready(function(){
     generateClassOnView('icon-instagram', 'wait', false);
     generateClassOnView('icon-facebook', 'wait', false);
     generateClassOnView('icon-twitter', 'wait', false);
+
+    window.setTimeout(function(){$('.btn-learn-more').removeClass('bounceInUp')}, 500);
 });
 
