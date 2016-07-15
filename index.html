@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link href="css/app.css" rel="stylesheet">
+    <link href="/css/hoverables.css" rel="stylesheet"></link>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -110,7 +111,7 @@
 	</div>
 	<div class="row">
 	    <div class="col-xs-12 text-xs-center">
-	      <a href="#about" class="slow-scroll animated bounceInUp btn btn-learn-more m-t-2">Learn More</a>
+	      <a href="#about" class="slow-scroll animated bounceInUp btn btn-learn-more m-t-1">Learn More</a>
 	    </div>
 	</div>
 	 </div>
@@ -227,20 +228,35 @@
 	</div>
       </div>
       <div class="row">
-	<div class="col-md-4 m-t-2">
-	  <div ng-click="toggleLightbox(1)" id="Cardbuggy" class="wait portfolio-overlay">
-	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-cabin.png"/></a>
+	<div class="col-md-4 m-t-2"> 
+	  <div ng-click="toggleLightbox(1)" id="Cardbuggy" class="wait">
+	    <div class="looking-glass-effect">
+	      <img class="img-responsive" src="img/asset-cabin.png"/>
+	      <div class="looking-glass-effect-overlay">
+		<h2>Cardbuggy</h2>
+	      </div>
+	    </div>
 	  </div>
 	</div>
-	<div class="col-md-4 m-t-2 portfolio-caption">
-	  <div ng-click="toggleLightbox(2)" id="Milford" class="wait portfolio-overlay">
-	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-cake.png"/></a>
-	  </div>
+	<div class="col-md-4 m-t-2">  
+	  <div ng-click="toggleLightbox(2)" id="Milford" class="wait">
+	    <div class="looking-glass-effect">
+	      <img class="img-responsive" src="img/asset-cake.png"/>
+	      <div class="looking-glass-effect-overlay">
+		<h2>Milford Accounting</h2>
+	      </div>
+	    </div>
+	  </div> 
 	</div>
-	<div class="col-md-4 m-t-2 portfolio-caption">
-	  <div ng-click="toggleLightbox(3)" id="Karen" class="wait portfolio-overlay">
-	  <a class="portfolio-clickable" href="#"><img class="img-fluid" src="img/asset-tent.png"/></a>
-	  </div>
+	<div class="col-md-4 m-t-2">  
+	  <div ng-click="toggleLightbox(3)" id="Karen" class="wait">
+	    <div class="looking-glass-effect looking-glass-modification">
+	      <img class="img-responsive" src="img/asset-tent.png"/>
+	      <div class="looking-glass-effect-overlay">
+		<h2>Karen Polzin Modeling</h2>
+	      </div>
+	    </div>
+	  </div> 
 	</div>
       </div>
     </div>
@@ -350,6 +366,5 @@
   <script src="js/controllers/navbar.js"></script> 
   <script src="js/controllers/forms.js"></script> 
   <script src="js/utilities/easy-scroll.js"></script> 
-  <link href="css/show-modals-at-load.css" rel="stylesheet"/>
 </body>
 </html>
