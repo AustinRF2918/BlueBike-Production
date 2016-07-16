@@ -442,6 +442,9 @@ body, html {
   .md-t-3 {
     margin-top: 15vh !important; } }
 
+.card-block img {
+  width: 210px !important; }
+
 .modal-alert {
   position: fixed;
   height: 100vh;
