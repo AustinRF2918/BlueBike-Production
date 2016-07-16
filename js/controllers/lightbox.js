@@ -279,10 +279,19 @@ blueBikeApplication.controller("lightboxController", function($scope){
 
 	    makeLarger($scope.selectionMap[0], $scope.unfocused, $scope.focused)
 
+	    
 	    $scope.nameBufferNumeric = arguments - 1;
 	    $scope.nameBuffer = $scope.names[arguments - 1];
 	    $scope.imageBufferList = $scope.assetMap[$scope.nameBuffer];
 	    $scope.imageBuffer = $scope.imageBufferList[0];
+
+	    $('.lightbox-image').hide();
+	    $('.loader-image').show();
+	    $('.lightbox-image').on('load', function(){
+		$('.lightbox-image').show();
+		$('.loader-image').hide();
+	    });
+
 
 	    //console.log("Showing lightbox");
 	    //console.log("Toggling Lightbox: ", arguments);
@@ -375,5 +384,6 @@ var makeLarger = function($selector, nonFocused, focused, optionalCallback)
 	$selector.switchClass(nonFocused, focused, 250, "easeInOutQuad");
     }
 };
+
 
 
