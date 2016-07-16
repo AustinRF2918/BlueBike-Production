@@ -292,16 +292,17 @@ blueBikeApplication.controller("lightboxController", function($scope){
 		$('.loader-image').hide();
 	    });
 
+	    window.setTimeout(function(){
+		$('.lightbox-image').show();
+		$('.loader-image').hide();
+	    }, 7000);
 
-	    //console.log("Showing lightbox");
-	    //console.log("Toggling Lightbox: ", arguments);
 	}
 
 	if ($scope.lightboxActive && arguments == "close")
 	{
 	    $scope.lightboxActive = !$scope.lightboxActive;
 	    $scope.currentImageBuffer = 0;
-	    //console.log("Hiding lightbox");
 	}
     };
 
@@ -315,6 +316,18 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	{
 	    //console.log("Media buffer at invalid position.")
 	}
+
+	window.setTimeout(function(){
+	    $('.lightbox-image').show();
+	    $('.loader-image').hide();
+	}, 7000);
+
+	$('.lightbox-image').hide();
+	$('.loader-image').show();
+	$('.lightbox-image').on('load', function(){
+	$('.lightbox-image').show();
+	$('.loader-image').hide();
+	});
 
 	//console.log("Seting currentImageBuffer: ", numeric);
 	$scope.currentImageBuffer = numeric;
