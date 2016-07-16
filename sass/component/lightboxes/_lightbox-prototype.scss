@@ -13,10 +13,6 @@
 	opacity: 0;
     }
 
-    &-hidden
-    {
-    }
-
     //Positioning
     z-index: $lightbox-z-index;
 
@@ -50,4 +46,16 @@
     width: $full-screen-width;
     position: fixed;
 
+}
+
+.md-t-3 {
+    @media screen and (min-width: 1000px)
+    {
+	margin-top: 22.5vh !important;
+    }
+
+    @media screen and (max-width: 999px)
+    {
+	margin-top: 15vh !important;
+    }
 }

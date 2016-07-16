@@ -395,11 +395,9 @@ body, html {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none; }
-  @media screen and (max-width: 768px) {
-    .lightbox-image {
-      padding: -5vw;
-      margin: -5vw; } }
+  -ms-user-select: none;
+  padding: -10vw;
+  margin: -10vw; }
 
 .lightbox-wrapper {
   z-index: 1050;
@@ -436,6 +434,13 @@ body, html {
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
     opacity: 0; }
+
+@media screen and (min-width: 1000px) {
+  .md-t-3 {
+    margin-top: 22.5vh !important; } }
+@media screen and (max-width: 999px) {
+  .md-t-3 {
+    margin-top: 15vh !important; } }
 
 .modal-alert {
   position: fixed;

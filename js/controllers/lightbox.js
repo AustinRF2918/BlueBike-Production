@@ -247,10 +247,10 @@ blueBikeApplication.controller("lightboxController", function($scope){
 
     //CUSTOM VARIABLES
 	//Focused style
-	$scope.focused = "col-md-2";
+	$scope.focused = "col-lg-2";
 
 	//Nonfocused style
-	$scope.unfocused = "col-md-1";
+	$scope.unfocused = "col-lg-1";
 
 	//Number of photo/types in gallery.
 	$scope.selectionNumber = 3;

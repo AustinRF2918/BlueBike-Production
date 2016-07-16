@@ -28,9 +28,6 @@
     width: auto;
     @include generateNoSelect();
 
-    @media screen and (max-width: 768px)
-    {
-	padding: -5vw;
-	margin: -5vw;
-    }
+	padding: -10vw;
+	margin: -10vw;
 }
