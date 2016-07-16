@@ -468,7 +468,6 @@ body, html {
     -ms-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    z-index: -10000;
     opacity: 0; }
   .modal-alert-container {
     margin-top: 30vh;

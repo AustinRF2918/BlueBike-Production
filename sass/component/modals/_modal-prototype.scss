@@ -9,7 +9,6 @@
 
     &.ng-hide{
 	@include transition-time(0.2s);
-	z-index: -10000;
 	opacity: 0;
     }
 
@@ -17,6 +16,7 @@
     height: 100vh;
     width: 100vw;
     top: $lightbox-wrapper-height-offset;
+    
 
     &-container{
 	@media screen and (min-width: 1150px)

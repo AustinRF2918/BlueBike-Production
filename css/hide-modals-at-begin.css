@@ -1,5 +1,4 @@
 .modal-alert
 {
-    z-index: -10000;
-    display: hidden;
+    z-index: 10000;
 }
