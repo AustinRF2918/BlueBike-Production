@@ -21,14 +21,12 @@ var switchClass = function(className, elementSelector, r)
     if (r === true)
     {
 	return function(){
-	console.log("[DEBUG] Switching class: " + className + " on: " + elementSelector);
 	$("#" + className).addClass(elementSelector);
 	};
     }
     else
     {
 	return function(){
-	console.log("[DEBUG] Switching class: " + className + " on: " + elementSelector);
 	$("#" + className).removeClass(elementSelector);
 	};
     }
@@ -147,32 +145,15 @@ var createPageHookNumericRange = function(startPoint, stopPoint, linkID, ssCont,
     .setClassToggle(linkID, className)
     .addTo(ssCont);
 };
-//Hooking of components.
-    //Initialization of ScrollMagic
-    console.log("[DEBUG] Initializing ScrollMagic plugin...");
-    var controller = new ScrollMagic.Controller();
-    console.log("[DEBUG] ScrollMagic has been initialized.");
-    console.log("[DEBUG] Beginning hook process...");
-	console.log("[DEBUG] Hooking test-class-home to navbar on body to about range.");
-	createPageHookNumericRange(0, 100, '.navbar', controller, 70, "viewing-home");
-	console.log("[DEBUG] Hooked.");
 
-	console.log("[DEBUG] Hooking test-class-about to navbar on about to medias range.");
-	createPageHook('#about', '#medias', '.navbar', controller, 0, "viewing-other");
-	createPageHook('#about', '#medias', '.navbar-two', controller, 0, "viewing-other");
-	console.log("[DEBUG] Hooked.");
+var controller = new ScrollMagic.Controller();
 
-	console.log("[DEBUG] Hooking test-class-medias to navbar on medias to portfolio range.");
-	createPageHook('#medias', '#portfolio', '.navbar', controller, 0, "viewing-other");
-	console.log("[DEBUG] Hooked.");
-
-	console.log("[DEBUG] Hooking test-class-portfolio to navbar on portfolio to contact range.");
-	createPageHook('#portfolio', '#contact', '.navbar', controller, 0, "viewing-other");
-	console.log("[DEBUG] Hooked.");
-
-	console.log("[DEBUG] Hooking test-class-contact to navbar on contact to footer range.");
-	createPageHook('#contact', '#footer-bottom', '.navbar', controller, 0, "viewing-other");
-	console.log("[DEBUG] Hooked.");
+createPageHookNumericRange(0, 100, '.navbar', controller, 70, "viewing-home");
+createPageHook('#about', '#medias', '.navbar', controller, 0, "viewing-other");
+createPageHook('#about', '#medias', '.navbar-two', controller, 0, "viewing-other");
+createPageHook('#medias', '#portfolio', '.navbar', controller, 0, "viewing-other");
+createPageHook('#portfolio', '#contact', '.navbar', controller, 0, "viewing-other");
+createPageHook('#contact', '#footer-bottom', '.navbar', controller, 0, "viewing-other");
 
 $(".element-is-loading").removeClass("element-is-loading");
 
