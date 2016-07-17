@@ -159,8 +159,6 @@ $(".element-is-loading").removeClass("element-is-loading");
 
 //Program "starting point"
 $(document).ready(function(){
-    console.log("[DEBUG] Document initialized.");
-
     generateClassOnView('card-one', 'wait', false);
     generateClassOnView('card-two', 'wait', false);
     generateClassOnView('card-three', 'wait', false);
