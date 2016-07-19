@@ -11,7 +11,8 @@
     {
         @include desktop
         {
-            padding-top: $introduction-padding-top - 40px;
+	    min-height: $introduction-height;
+            padding-top: $introduction-padding-top;
             padding-bottom: $introduction-padding-bottom;
         }
 
@@ -77,8 +78,6 @@
     @include desktop
     {
 	h1{
-	    //Responsive cluster for making sure text doesn't get
-	    //too ugly.
 	    @include generateScalingText(3rem, 3.5rem, 4rem, 4.5rem, 5.5rem, 6.5rem, 1);
 	    
 

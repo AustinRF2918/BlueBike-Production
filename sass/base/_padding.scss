@@ -13,8 +13,9 @@ $offset-modulation: 1;
 $introduction-padding-offset: 50px * $offset-modulation;
 
 //Desktop
-$introduction-padding-top: 150px + $introduction-padding-offset * $offset-modulation;
-$introduction-padding-bottom: 100px + $introduction-padding-offset * $offset-modulation;
+$introduction-padding-top: 20vh;
+$introduction-padding-bottom: 20vh;
+$introduction-height: 100vh;
 
 //Mobile
 $introduction-padding-mobile-top: 90px + $introduction-padding-offset * $offset-modulation;
