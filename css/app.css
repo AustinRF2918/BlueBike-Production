@@ -509,20 +509,6 @@ body, html {
   transition-duration: 3s;
   opacity: 0; }
 
-.animated {
-  -webkit-transition-duration: 2.5s;
-  -moz-transition-duration: 2.5s;
-  -ms-transition-duration: 2.5s;
-  -o-transition-duration: 2.5s;
-  transition-duration: 2.5s; }
-
-.fadeIn {
-  -webkit-transition-duration: 2.5s;
-  -moz-transition-duration: 2.5s;
-  -ms-transition-duration: 2.5s;
-  -o-transition-duration: 2.5s;
-  transition-duration: 2.5s; }
-
 .icon-instagram {
   border-radius: 100%;
   -webkit-transform: scale(0.8);
