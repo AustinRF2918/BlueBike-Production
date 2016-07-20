@@ -1,36 +1,111 @@
 var transitTime = 0;
-var navStatus = false;
+
+//Make call by references to make reusable.
+var enableMobileNavigation = function(fn)
+{
+    offset = $(this).offset();
+    height = 40;
+
+    $(".bb-navbar-toggle").addClass("bb-navbar-enabled", transitTime, "easeInElastic");
+    $(".bb-navbar-toggle").addClass("bb-navbar-toggle-active", transitTime, "easeInElastic");
+    $(".bb-navbar-toggle").removeClass("bb-navbar-disabled", transitTime, "easeOutElastic");
+    $(".bb-navbar-toggle").removeClass("bb-navbar-toggle-inactive", transitTime, "easeOutElastic");
+
+    if (fn)
+    {
+	fn();
+    }
+};
+
+//Make call by references to make reusable.
+var disableMobileNavigation = function(fn)
+{
+    $(".bb-navbar-toggle").addClass("bb-navbar-disabled", transitTime, "easeInElastic");
+    $(".bb-navbar-toggle").addClass("bb-navbar-toggle-inactive", transitTime, "easeInElastic");
+    $(".bb-navbar-toggle").removeClass("bb-navbar-enabled", transitTime, "easeInElastic");
+    $(".bb-navbar-toggle").removeClass("bb-navbar-toggle-active", transitTime, "easeInElastic");
+
+    if (fn)
+    {
+	fn();
+    }
+};
+
+
+
+var NavbarModule = (function() {
+    var state = 0;
+    var togglerEvents = [];
+    var togglerElement;
+
+    var _functionWrapper = function(event, stateIn, stateOut, functor) {
+	$(togglerElement).bind(event, function(){
+	    if (stateIn === state){
+		functor(function(){window.setTimeout(function(){state = stateOut}, 50)});
+	    }
+	});
+    };
+
+    var _pushEvent = function(event, stateIn, stateOut, functor) {
+	if (togglerElement) {
+	    console.log(typeof functor);
+	    togglerEvents.push(_functionWrapper(event, stateIn, stateOut, functor));
+	}
+	else {
+	    throw "Attempted to push event to NavbarModule when togglerElement is undefined";
+	}
+    };
+
+    var _addHandler = function(handler) {
+	if (!togglerElement) {
+	    togglerElement = handler;
+	}
+	else {
+	    throw "Attempted to pass handler to NavbarModule when handler is already defined.";
+	}
+    };
+
+    return {
+	pushEvent: _pushEvent,
+	addHandler: _addHandler
+    };
+})();
+
 $(".hover-icon").hide();
 
-$("#navbar-mobile-toggler").mousedown(function(){
-    if (navStatus == false)
-    {
-	enableMobileNavigation();
-	
-    }
-    else
+NavbarModule.addHandler($("#navbar-mobile-toggler").mousedown());
+NavbarModule.pushEvent("click", 0, 1, enableMobileNavigation);
+NavbarModule.pushEvent("click", 1, 0, disableMobileNavigation);
+
+
+var generateClassAdder = function(className, elementSelector) {
+    return function(){ $("#" + className).addClass(elementSelector);};
+};
+
+var generateClassRemover = function(className, elementSelector) {
+    return function(){ $("#" + className).removeClass(elementSelector);};
+};
+
+var switchClass = function(className, elementSelector, r)
+{
+    return r ? classGenerator = generateClassAdder(className, elementSelector) : classGenerator = generateClassRemover(className, elementSelector);
+};
+
+var disableConditionalMobileNavigation = function()
+{
+    if (navStatus == true)
     {
 	disableMobileNavigation();
     }
-	
+};
+
+$(window).resize(function(){
+    disableConditionalMobileNavigation();
 });
 
-//Sanity test.
-var switchClass = function(className, elementSelector, r)
-{
-    if (r === true)
-    {
-	return function(){
-	$("#" + className).addClass(elementSelector);
-	};
-    }
-    else
-    {
-	return function(){
-	$("#" + className).removeClass(elementSelector);
-	};
-    }
-};
+$(window).scroll(function(){
+    disableConditionalMobileNavigation();
+});
 
 //Autogeneration of waypoints.
 //Selector is ID of element.
@@ -52,44 +127,9 @@ var generateClassOnView = function(elementName, className){
     return generateWaypoint(elementName, elementName, className);
 };
 
-//Make call by references to make reusable.
-var enableMobileNavigation = function()
-{
-    offset = $(this).offset();
-    height = 40;
 
-    $(".bb-navbar-toggle").addClass("bb-navbar-enabled", transitTime, "easeInElastic");
-    $(".bb-navbar-toggle").addClass("bb-navbar-toggle-active", transitTime, "easeInElastic");
-    $(".bb-navbar-toggle").removeClass("bb-navbar-disabled", transitTime, "easeOutElastic");
-    $(".bb-navbar-toggle").removeClass("bb-navbar-toggle-inactive", transitTime, "easeOutElastic");
-    navStatus = true;
-};
 
-//Make call by references to make reusable.
-var disableMobileNavigation = function()
-{
-    $(".bb-navbar-toggle").addClass("bb-navbar-disabled", transitTime, "easeInElastic");
-    $(".bb-navbar-toggle").addClass("bb-navbar-toggle-inactive", transitTime, "easeInElastic");
-    $(".bb-navbar-toggle").removeClass("bb-navbar-enabled", transitTime, "easeInElastic");
-    $(".bb-navbar-toggle").removeClass("bb-navbar-toggle-active", transitTime, "easeInElastic");
-    navStatus = false;
-};
 
-var disableConditionalMobileNavigation = function()
-{
-    if (navStatus == true)
-    {
-	disableMobileNavigation();
-    }
-};
-
-$(window).resize(function(){
-    disableConditionalMobileNavigation();
-});
-
-$(window).scroll(function(){
-    disableConditionalMobileNavigation();
-});
 
 //Creates a hook to a page that toggles a class if on a certain LinkID.
 //This will only fire once on a page.

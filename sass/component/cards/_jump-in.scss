@@ -9,3 +9,6 @@
     opacity: 0;
 }
 
+.animated {
+    @include transition-time(2s);
+}
