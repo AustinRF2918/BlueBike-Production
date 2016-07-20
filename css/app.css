@@ -217,7 +217,8 @@ body, html {
     -o-transform: scale(1.2) !important;
     transition: scale(1.2) !important;
     transition-duration: 0.2s !important;
-    background: #61d084;
+    background: #0073bf;
+    color: white;
     border: #61d084; }
 
 .starlight {
