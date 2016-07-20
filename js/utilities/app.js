@@ -91,22 +91,6 @@ var switchClass = function(className, elementSelector, r)
     return r ? classGenerator = generateClassAdder(className, elementSelector) : classGenerator = generateClassRemover(className, elementSelector);
 };
 
-var disableConditionalMobileNavigation = function()
-{
-    if (navStatus == true)
-    {
-	disableMobileNavigation();
-    }
-};
-
-$(window).resize(function(){
-    disableConditionalMobileNavigation();
-});
-
-$(window).scroll(function(){
-    disableConditionalMobileNavigation();
-});
-
 //Autogeneration of waypoints.
 //Selector is ID of element.
 //Function is a lambda that will run when function is scrolled into view.
