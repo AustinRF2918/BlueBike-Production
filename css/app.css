@@ -44,6 +44,9 @@ body, html {
     postion: relative;
     margin-top: 3.5%; } }
 
+.hide-before-load {
+  display: none !important; }
+
 .bb-navbar-button {
   background: #004573;
   border: 0px solid #1a242f;

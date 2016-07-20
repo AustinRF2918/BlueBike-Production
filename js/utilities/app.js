@@ -172,5 +172,6 @@ $(document).ready(function(){
     generateClassOnView('icon-twitter', 'wait', false);
 
     window.setTimeout(function(){$('.btn-learn-more').removeClass('bounceInUp')}, 500);
+    window.setTimeout(function(){$('.hide-before-load').removeClass('hide-before-load')}, 5);
 });
 
