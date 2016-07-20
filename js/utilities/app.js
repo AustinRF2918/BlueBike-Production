@@ -111,10 +111,6 @@ var generateClassOnView = function(elementName, className){
     return generateWaypoint(elementName, elementName, className);
 };
 
-
-
-
-
 //Creates a hook to a page that toggles a class if on a certain LinkID.
 //This will only fire once on a page.
 //startPoint: Element on the DOM that we will designate as our starting point, or,
