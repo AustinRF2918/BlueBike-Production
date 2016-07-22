@@ -1,4 +1,3 @@
-
 blueBikeApplication.controller("formValidator", function($scope, $http){
     $scope.badFlag = false;
     $scope.goodFlag = false;
@@ -31,7 +30,6 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 
     $scope.refreshGUIFlags = function()
     {
-	//console.log("refresh GUI Flags.");
 	if ($scope.nameGood && $scope.emailGood && $scope.phoneGood && $scope.messageGood)
 	{
 	    $scope.submit();
@@ -73,7 +71,6 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 
     $scope.resetGUIFlags = function()
     {
-	//console.log("reset GUI Flags.");
 	$scope.badFlag = false;
 	$scope.goodFlag = false;
     };
@@ -111,7 +108,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    defocusInput($("#phone"), $scope.phoneGood, "form-valid");
 	}
 	$scope.stylizeButton([$scope.messageGood, $scope.phoneGood, $scope.emailGood, $scope.messageGood]);
-    }
+    };
 
     $scope.checkName = function()
     {
@@ -123,7 +120,7 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
 	    $scope.nameGood = true;
 	    stylizeInput($("#name"), "form-invalid", "form-valid", $scope.nameGood);
 	}
-	else if ($scope.name.length < 5)
+	else if ($scope.name.length < 2)
 	{
 	    $scope.nameGood = false;
 	    stylizeInput($("#name"), "form-invalid", "form-valid", $scope.nameGood);
@@ -228,7 +225,6 @@ blueBikeApplication.controller("formValidator", function($scope, $http){
     };
 });
 
-//For during typing.
 var stylizeInput = function($selector, badStyle, goodStyle, currentStatus)
 {
     if (currentStatus === true)
@@ -239,25 +235,23 @@ var stylizeInput = function($selector, badStyle, goodStyle, currentStatus)
     {
 	$selector.switchClass(goodStyle, badStyle, 150, "easeInOutQuad");
     }
-}
+};
 
-//For changing of input to turn off green style.
 var defocusInput = function($selector, currentStatus, goodStyle)
 {
     if ($selector.hasClass(goodStyle))
     {
 	$selector.switchClass(goodStyle, "INACTIVESTYLE", "easeInOutQuad");
     }
-}
+};
 
-//For when we focus good input to make it green again.
 var focusInput = function($selector, currentStatus, goodStyle)
 {
     if (currentStatus === true)
     {
 	$selector.switchClass("INACTIVESTYLE", goodStyle, 250, "easeInOutQuad");
     }
-}
+};
 
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
