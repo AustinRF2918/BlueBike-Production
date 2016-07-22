@@ -48,7 +48,6 @@ var NavbarModule = (function() {
 
     var _pushEvent = function(event, stateIn, stateOut, functor) {
 	if (togglerElement) {
-	    console.log(typeof functor);
 	    togglerEvents.push(_functionWrapper(event, stateIn, stateOut, functor));
 	}
 	else {
