@@ -44,6 +44,12 @@ body, html {
     postion: relative;
     margin-top: 3.5%; } }
 
+@media screen and (max-width: 900px) and (min-width: 768px) {
+  .center-vertically {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); } }
+
 .hide-before-load {
   display: none !important; }
 
