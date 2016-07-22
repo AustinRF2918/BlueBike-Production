@@ -25,5 +25,11 @@ $desktop-width: $major-breakpoint + 1px;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      left: 0px;
+      margin-right: 0px;
+      overflow-x: hidden !important;
     }
+}
+
+body, html {
 }
