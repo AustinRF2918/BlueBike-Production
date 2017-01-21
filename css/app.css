@@ -205,6 +205,7 @@ body, html {
       border: #621d2a; }
 
 .btn-learn-more {
+  margin-top: 50px !important;
   transition-duration: 0.2s !important;
   border: white;
   color: #004573;

@@ -1,9 +1,10 @@
-.btn-learn-more
-{
+.btn-learn-more {
+    margin-top: 50px !important;
     transition-duration: 0.2s !important;
     border: $btn-send-border;
     color: $btn-send-text;
     background: $btn-send-background;
+
     @media screen and (min-width: 768px)
     {
 	line-height: $btn-send-height;
