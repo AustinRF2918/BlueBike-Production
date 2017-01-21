@@ -183,36 +183,36 @@
 		    <h2 class="m-b-2">100% Responsive Websites</h2>
 		    <hr class="starlight-medias m-y-1">
 		</div>
+		<div class="section-subheader col-md-12 text-xs-center">
+		    <h3>60% of online traffic comes from mobile devices.</h3>
+		    <h3><strong>We can help you take advantage of that.</strong></h3>
+		</div>
 	    </div>
-	    <div class="row text-xs-center m-t-1">
-		<div class="col-md-12 m-t-1">
-		  <h3>60% of online traffic comes from mobile devices.</h3>
-		  <h3><strong>We can help you take advantage of that.</strong></h3>
+
+	    <div class="row m-t-2">
+	    <div class="col-md-4">
+		<div class="card no-border" alt="Phone">
+		<div class="card-block text-xs-center animated">
+		    <img id="card-one" class="page-card animated wait" src="img/asset-phone.png"></img>
+		</div>
+		</div>
 	    </div>
-	</div>
-	<div class="row m-t-2">
-	  <div class="col-md-4">
-	    <div class="card no-border" alt="Phone">
-	      <div class="card-block text-xs-center animated">
-		<img id="card-one" class="page-card animated wait" src="img/asset-phone.png"></img>
-	      </div>
+	    <div class="col-md-4">
+		<div class="card no-border" alt="Desktop">
+		<div class="card-block text-xs-center animated">
+		    <img id="card-two" class="page-card animated wait" src="img/asset-desktop.png"></img>
+		</div>
+		</div>
 	    </div>
-	  </div>
-	  <div class="col-md-4">
-	    <div class="card no-border" alt="Desktop">
-	      <div class="card-block text-xs-center animated">
-		<img id="card-two" class="page-card animated wait" src="img/asset-desktop.png"></img>
-	      </div>
+	    <div class="col-md-4">
+		<div class="card no-border" alt="Laptop">
+		<div class="card-block text-xs-center animated">
+		    <img id="card-three" class="page-card animated wait" src="img/asset-laptop.png"></img>
+		</div>
+		</div>
 	    </div>
-	  </div>
-	  <div class="col-md-4">
-	    <div class="card no-border" alt="Laptop">
-	      <div class="card-block text-xs-center animated">
-		<img id="card-three" class="page-card animated wait" src="img/asset-laptop.png"></img>
-	      </div>
 	    </div>
-	  </div>
-	</div>
+
         <div class="row m-t-1">
 	    <div class="col-md-6 col-md-offset-3 m-t-2">
 	      <p class="">We think that the <strong>small things make a big difference</strong>. It is 2017 and more and more users access the web using mobile devices. <strong>Your site should look beautiful on any device</strong>, whether that device be a widescreen monitor, tablet or an iPhone. <strong>Where everyone else cuts corners, we pay attention to the details.</strong></p>
@@ -220,14 +220,20 @@
 	</div>
 	</div>
   </section>
+
   <section class="portfolio" id="portfolio">
     <div class="container portfolio-container">
+
       <div class="row">
-	<div class="col-md-12 text-xs-center">
-	  <h2>Recent Work</h2>
-	   <hr class="starlight-portfolio m-y-1">
+	<div class="section-header col-md-12 text-xs-center">
+	    <h2 class="m-b-2">Recent Work</h2>
+	    <hr class="starlight-portfolio m-y-1">
+	</div>
+	<div class="section-subheader col-md-12 text-xs-center">
+	    <h3>Examples Of Some Of Our Work.</h3>
 	</div>
       </div>
+
       <div class="row">
 	<div class="col-md-4 p-y-2 text-xs-center">
 	  <div ng-click="toggleLightbox(1)" id="Cardbuggy" class="wait">
@@ -262,6 +268,7 @@
       </div>
     </div>
   </section>
+
   </div>
     <section ng-controller="formValidator" class="contact hide-before-load" id="contact">
       <div ng-show="badFlag" ng-hide="!badFlag" class="modal-alert element-is-loading" ng-click="resetGUIFlags()">
@@ -298,13 +305,17 @@
       </div>
     <div class="container contact-container">
       <div class="row">
-	<div class="col-md-12 text-xs-center">
-	  <h2>Contact</h2>
-	   <hr class="starlight-contact m-b-1">
-	  <h4 class="m-t-3 m-b-1">Send us an email and we'll get back to you as soon as possible!</h4>
+	<div class="section-header col-md-12 text-xs-center">
+	    <h2 class="m-b-2">Contact Us</h2>
+	    <hr class="starlight-contact m-y-1">
+	</div>
+	<div class="section-subheader col-md-12 text-xs-center">
+	    <h3>Send us an email and we'll get back to you as soon as possible!</h3>
 	</div>
       </div>
+
     <script src="js/utilities/hide-it.js"></script> 
+
 	    <div class="row m-t-1">
 	     <div class="form-group col-md-6 col-md-offset-3">
 	       <input ng-focus="focusForm(1)" ng-blur="defocusForm()" ng-focus="checkName()" ng-change="checkName()" ng-model="name" type="text" class="form-control m-t-2" placeholder="Name" id="name"></input>
