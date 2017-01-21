@@ -1,22 +1,15 @@
-.lightbox-portfolio
-{
-    &-wrapper
-    {
-	//Stylization
+.lightbox-portfolio {
+    &-wrapper {
 	font-family: $lightbox-portfolio-header-font;
 	background: $lightbox-portfolio-background;
     }
 
-    &-top-wrapper
-    {
-	//Stylization
+    &-top-wrapper {
 	font-family: $lightbox-portfolio-header-font;
 	background: $lightbox-portfolio-background;
     }
 	
-    &-header
-    {
-	//WARNING: MUST BE REFACTORED WITH SASS CONSTANTS.
+    &-header {
 	color: $lightbox-portfolio-text;
 	padding-top: $top-lightbox-portfolio-padding-top;
     }
@@ -25,9 +18,14 @@
 .lightbox-image{
     max-height: 50vh;
     max-width: 95vw;
+
+    @media screen and (max-width: 767px) {
+	max-height: 35vh;
+    }
+
     width: auto;
     @include generateNoSelect();
 
-	padding: -10vw;
-	margin: -10vw;
+    padding: -10vw;
+    margin: -10vw;
 }

@@ -412,6 +412,9 @@ body, html {
   -ms-user-select: none;
   padding: -10vw;
   margin: -10vw; }
+  @media screen and (max-width: 767px) {
+    .lightbox-image {
+      max-height: 35vh; } }
 
 .lightbox-wrapper {
   z-index: 1050;
