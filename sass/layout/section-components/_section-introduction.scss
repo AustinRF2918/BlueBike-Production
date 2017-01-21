@@ -68,7 +68,8 @@
 
     @include generateCoverBackground("../img/asset-introduction.jpg");
 }
-@font-face{
+
+@font-face {
     font-family: Geometos Rounded;
     src: url('../fonts/Geometos Rounded.ttf');
 }
@@ -100,5 +101,15 @@
     &-blue
     {
 	color: $color-palette-5;
+    }
+}
+
+#introduction-subheader {
+    @media screen and (max-width: 767px) {
+	color: black;
+    }
+
+    @media screen and (min-width: 768px) {
+	color: white;
     }
 }

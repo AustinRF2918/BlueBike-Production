@@ -1034,6 +1034,13 @@ body, html {
 .introduction-text-blue {
   color: #0073bf; }
 
+@media screen and (max-width: 767px) {
+  #introduction-subheader {
+    color: black; } }
+@media screen and (min-width: 768px) {
+  #introduction-subheader {
+    color: white; } }
+
 .portfolio {
   background: #004573;
   color: white; }
