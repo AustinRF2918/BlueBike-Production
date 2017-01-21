@@ -458,6 +458,11 @@ body, html {
 .card-block img {
   width: 210px !important; }
 
+.page-card {
+  transition: .2s linear all !important; }
+  .page-card:hover {
+    transform: scale(1.2); }
+
 .modal-alert {
   position: fixed;
   height: 100vh;

@@ -13,10 +13,8 @@
 	opacity: 0;
     }
 
-    //Positioning
     z-index: $lightbox-z-index;
 
-    //Generalizeable Positionings.
     height: $full-screen-height - $lightbox-wrapper-height-offset + 0.1vh;
     width: $full-screen-width;
     position: fixed;
@@ -37,10 +35,9 @@
 	@include transition-time(0.2s);
 	opacity: 0;
     }
-    //Positioning
+
     z-index: $lightbox-z-index;
 
-    //Generalizeable Positionings.
     height: $lightbox-wrapper-height-offset;
     top: 0px;
     width: $full-screen-width;
@@ -63,5 +60,13 @@
 .card-block {
     img {
 	width: 210px !important;
+    }
+}
+
+.page-card {
+    transition: .2s linear all !important;
+
+    &:hover {
+	transform: scale(1.2);
     }
 }
