@@ -7,14 +7,10 @@ blueBikeApplication.controller("lightboxController", function($scope){
     //Nonfocused style
     $scope.unfocused = "col-lg-1";
 
-    //Number of photo/types in gallery.
-    $scope.selectionNumber = 3;
 
     //Mapping of selection numbers to
     $scope.selectionMap = {0 : $('#medium-phone'), 1 : $('#medium-desktop'), 2: $('#medium-laptop')}
 
-    //Names of s.
-    $scope.names = ["The Card Buggy", "Milford Accounting", "Karen Polzin"]
 
     //Mapping of  names to link lists, with selection number as the number of possibiities.
     $scope.assetMap = {
@@ -28,25 +24,34 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	    "url": "http://www.milfordaccounting.com"
 	},
 
-	"Karen Polzin" : {
+	"Juventus" : {
 	    "images": ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"],
 	    "url": "http://www.karenpolzin.com"
 	},
 
-	"The Card Buggy" : {
+	"Stonewater" : {
 	    "images": ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/cardbuggypurchase.png", "img/CardBuggy/cardbuggycontact.png"],
 	    "url": "http://www.cardbuggy.com"
 	},
 
-	"Milford Accounting" : {
+	"WIWD" : {
 	    "images": ["img/MilfordAccounting/milfordmobile.png", "img/MilfordAccounting/milfordabout.png", "img/MilfordAccounting/milfordaccountingcontact.png"],
 	    "url": "http://www.milfordaccounting.com"
 	},
 
-	"Karen Polzin" : {
+	"T-Burkes" : {
 	    "images": ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"],
 	    "url": "http://www.karenpolzin.com"
 	}
+    }
+
+
+    $scope.selectionNumber = 3;
+    $scope.names = []
+
+    for (var itemNum = 0; itemNum < Object.keys($scope.assetMap).length; itemNum++) {
+	keys = Object.keys($scope.assetMap);
+	$scope.names.push(keys[itemNum]);
     }
 
     $scope.toggleLightbox = function(arguments) {
@@ -54,7 +59,10 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	    $scope.lightboxActive = !$scope.lightboxActive;
 
 	    for (var i = 1; i < $scope.selectionNumber; i++) {
-		makeSmaller($scope.selectionMap[i], $scope.focused, $scope.unfocused)
+		try {
+		    makeSmaller($scope.selectionMap[i], $scope.focused, $scope.unfocused)
+		} catch(e) {
+		}
 	    }
 
 	    makeLarger($scope.selectionMap[0], $scope.unfocused, $scope.focused)
@@ -80,9 +88,9 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	    }, 7000);
 	}
 
+	$scope.currentImageBuffer = 0;
 	if ($scope.lightboxActive && arguments == "close") {
 	    $scope.lightboxActive = !$scope.lightboxActive;
-	    $scope.currentImageBuffer = 0;
 	}
     };
 
@@ -141,11 +149,12 @@ var makeSmaller = function($selector, focused, nonFocused, optionalCallback, opt
 	$selector.switchClass(focused, nonFocused, 250, "easeInOutQuad");
     }
 
-    if (optionalCallback != null) {
-	setTimeout(function(){
+    try{
+	if (optionalCallback != null) {
 	    $selector.switchClass(focused, nonFocused, 250, "easeInOutQuad");
 	    optionalCallback(optionalSelector, nonFocused, focused);
-	});
+	}
+    } catch (e) {
     }
 };
 
