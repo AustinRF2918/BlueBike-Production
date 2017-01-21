@@ -178,17 +178,10 @@ $(".element-is-loading").removeClass("element-is-loading");
 
 //Program "starting point"
 $(document).ready(function(){
-    generateClassOnView('card-one', 'wait', false);
-    generateClassOnView('card-two', 'wait', false);
-    generateClassOnView('card-three', 'wait', false);
 
-    generateClassOnView('Cardbuggy', 'wait', false);
-    generateClassOnView('Milford', 'wait', false);
-    generateClassOnView('Karen', 'wait', false);
-    
-    generateClassOnView('icon-instagram', 'wait', false);
-    generateClassOnView('icon-facebook', 'wait', false);
-    generateClassOnView('icon-twitter', 'wait', false);
+    $(".wait").each(function(item) {
+	generateClassOnView(this.id, 'wait', false);
+    });
 
     window.setTimeout(function(){$('.btn-learn-more').removeClass('bounceInUp')}, 500);
     window.setTimeout(function(){$('.hide-before-load').removeClass('hide-before-load')}, 5);

@@ -31,6 +31,21 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	"Karen Polzin" : {
 	    "images": ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"],
 	    "url": "http://www.karenpolzin.com"
+	},
+
+	"The Card Buggy" : {
+	    "images": ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/cardbuggypurchase.png", "img/CardBuggy/cardbuggycontact.png"],
+	    "url": "http://www.cardbuggy.com"
+	},
+
+	"Milford Accounting" : {
+	    "images": ["img/MilfordAccounting/milfordmobile.png", "img/MilfordAccounting/milfordabout.png", "img/MilfordAccounting/milfordaccountingcontact.png"],
+	    "url": "http://www.milfordaccounting.com"
+	},
+
+	"Karen Polzin" : {
+	    "images": ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"],
+	    "url": "http://www.karenpolzin.com"
 	}
     }
 
