@@ -105,11 +105,5 @@
 }
 
 #introduction-subheader {
-    @media screen and (max-width: 767px) {
-	color: black;
-    }
-
-    @media screen and (min-width: 768px) {
-	color: white;
-    }
+    color: white;
 }

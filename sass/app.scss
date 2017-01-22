@@ -2,3 +2,8 @@
 @import 'utility/index';
 @import 'component/index';
 @import 'layout/index';
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}

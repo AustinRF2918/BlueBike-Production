@@ -1043,12 +1043,8 @@ body, html {
 .introduction-text-blue {
   color: #0073bf; }
 
-@media screen and (max-width: 767px) {
-  #introduction-subheader {
-    color: black; } }
-@media screen and (min-width: 768px) {
-  #introduction-subheader {
-    color: white; } }
+#introduction-subheader {
+  color: white; }
 
 .portfolio {
   background: #004573;
@@ -1261,5 +1257,9 @@ body, html {
   width: 0px;
   height: 0px;
   position: absolute; }
+
+body {
+  width: 100vw;
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=app.css.map */
