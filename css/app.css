@@ -1194,6 +1194,9 @@ body, html {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.8em; }
 
+.section-subheader {
+  margin-top: 15px; }
+
 .portfolio-overlay {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;

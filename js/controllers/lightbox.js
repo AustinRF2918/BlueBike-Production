@@ -15,33 +15,33 @@ blueBikeApplication.controller("lightboxController", function($scope){
     //Mapping of  names to link lists, with selection number as the number of possibiities.
     $scope.assetMap = {
 	"The Card Buggy" : {
-	    "images": ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/cardbuggypurchase.png", "img/CardBuggy/cardbuggycontact.png"],
-	    "url": "http://www.cardbuggy.com"
+	    "images": ["img/cardbuggy1.png", "img/cardbuggy2.png", "img/cardbuggy3.png"],
+	    "url": "http://www.thecardbuggy.com"
 	},
 
 	"Milford Accounting" : {
-	    "images": ["img/MilfordAccounting/milfordmobile.png", "img/MilfordAccounting/milfordabout.png", "img/MilfordAccounting/milfordaccountingcontact.png"],
+	    "images": ["img/milf1.png", "img/milf2.png", "img/milf3.png"],
 	    "url": "http://www.milfordaccounting.com"
 	},
 
 	"Juventus" : {
-	    "images": ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"],
-	    "url": "http://www.karenpolzin.com"
+	    "images": ["img/juveskin1.png", "img/juveskin2.png", "img/juveskin3.png"],
+	    "url": "http://www.juveskin.com"
 	},
 
-	"Stonewater" : {
-	    "images": ["img/CardBuggy/CardbuggyMobile.png", "img/CardBuggy/cardbuggypurchase.png", "img/CardBuggy/cardbuggycontact.png"],
-	    "url": "http://www.cardbuggy.com"
+	"Stonewater Subdivision" : {
+	    "images": ["img/stone1.png", "img/stone2.png", "img/stone3.png"],
+	    "url": "http://www.stonewatersub.org"
 	},
 
-	"WIWD" : {
-	    "images": ["img/MilfordAccounting/milfordmobile.png", "img/MilfordAccounting/milfordabout.png", "img/MilfordAccounting/milfordaccountingcontact.png"],
-	    "url": "http://www.milfordaccounting.com"
+	"WIWD Foundation" : {
+	    "images": ["img/wiwd1.png", "img/wiwd2.png", "img/wiwd3.png"],
+	    "url": "http://www.boomdetroit.com"
 	},
 
-	"T-Burkes" : {
-	    "images": ["img/KarenPolzin/karenpolzinmobile.png", "img/KarenPolzin/karenpolzinlaptop.png", "img/KarenPolzin/karenpolzinmodeling.png"],
-	    "url": "http://www.karenpolzin.com"
+	"T-Burkes Paving Company" : {
+	    "images": ["img/burke1.png", "img/burke2.png", "img/burke3.png"],
+	    "url": "http://www.andrewjacoblee.com"
 	}
     }
 
