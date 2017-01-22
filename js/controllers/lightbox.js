@@ -25,7 +25,7 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	},
 
 	"Juventus" : {
-	    "images": ["img/juveskin1.png", "img/juveskin2.png", "img/juveskin3.png"],
+	    "images": ["img/juveskin1.png", "img/juveskin2.png", "img/juventus3.png"],
 	    "url": "http://www.juveskin.com"
 	},
 
@@ -36,12 +36,12 @@ blueBikeApplication.controller("lightboxController", function($scope){
 
 	"WIWD Foundation" : {
 	    "images": ["img/wiwd1.png", "img/wiwd2.png", "img/wiwd3.png"],
-	    "url": "http://www.boomdetroit.com"
+	    "url": ""
 	},
 
 	"T-Burkes Paving Company" : {
 	    "images": ["img/burke1.png", "img/burke2.png", "img/burke3.png"],
-	    "url": "http://www.andrewjacoblee.com"
+	    "url": ""
 	}
     }
 
