@@ -25,7 +25,7 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	},
 
 	"Juventus" : {
-	    "images": ["img/juveskin1.png", "img/juveskin2.png", "img/juventus3.png"],
+	    "images": ["img/juveskin1.png", "img/juveskin2.png", "img/juveskin3.png"],
 	    "url": "http://www.juveskin.com"
 	},
 
@@ -39,7 +39,7 @@ blueBikeApplication.controller("lightboxController", function($scope){
 	    "url": ""
 	},
 
-	"T-Burkes Paving Company" : {
+	"T-Burkes Paing Company" : {
 	    "images": ["img/burke1.png", "img/burke2.png", "img/burke3.png"],
 	    "url": ""
 	}
